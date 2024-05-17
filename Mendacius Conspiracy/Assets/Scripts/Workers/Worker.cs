@@ -6,6 +6,7 @@ public class Worker : MonoBehaviour
     // To get identity
     RandomCall identity;
     private bool is_troll = false;
+    private int current_worker;
 
     // Worker movement
     private float speed = 8f;
@@ -17,7 +18,9 @@ public class Worker : MonoBehaviour
         identity  = worker_references.identity;
         stop_point = worker_references.stop_point;
 
-        if(identity.random_call == identity.troll_index)
+        current_worker = identity.GetCurrentWorkerIndex();
+
+        if(current_worker == identity.troll_index)
         {
             is_troll = true;
             Debug.Log("This Worker is a Troll");
@@ -36,6 +39,10 @@ public class Worker : MonoBehaviour
         if(transform.position.x > stop_point.position.x)
         {
             transform.Translate(move_step * -1f, 0, 0);
+        }
+        else if(transform.position.x == stop_point.position.x)
+        {
+
         }
     }
 }
