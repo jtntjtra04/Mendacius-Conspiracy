@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5584519016c1272428e0b1b015c13ac6, type: 3}
+  m_Name: Haris
+  m_EditorClassIdentifier: 
+  character_name: Haris
+  normal_state:
+    responses:
+    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
+      answer: Di waktu luang, saya suka membaca buku karya Nietzsche dan meditasi.
+        Ini membantu saya menjaga perspektif yang seimbang. Kamu harus mencobanya
+        kadang-kadang, sangat membantu mengelola stres.
+      special_message: (Haris tampak tenang dan penuh pemikiran saat membahas cara
+        menghabiskan waktunya.)
+    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
+      answer: Keluarga saya selalu mendukung pencapaian akademis saya. Kami memiliki
+        ikatan yang kuat yang berakar pada percakapan intelektual.
+      special_message: (Haris berbicara dengan tenang dan puas tentang keluarganya.)
+    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
+      answer: Lembur bisa sangat mencerahkan, ini memberi kesempatan untuk mendalami
+        pekerjaan lebih dalam. Saya tidak keberatan jika itu berarti menyelesaikan
+        lebih banyak pekerjaan.
+      special_message: (Haris tampaknya tidak keberatan melakukan kerja lembur.)
+    - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
+        mental? '
+      answer: Saya berusaha reflektif, sering memasukkan konteks historis dan wawasan
+        filosofis untuk memberikan kedalaman. Saya benar-benar percaya bahwa masa
+        lalu menyimpan banyak permata yang terlupakan oleh masyarakat saat ini.
+      special_message: (Haris menjelaskan pendekatannya dengan ketepatan analitis.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Saya masih mengerjakannya, saya akan memberi tahu Anda setelah selesai.
+      special_message: (Haris sepertinya sedang bekerja keras, lebih baik jangan
+        ganggu dia.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, saya baru saja menyelesaikannya. Semuanya sudah beres.
+      special_message: (Haris tampak tenang dan puas setelah menyelesaikan pekerjaannya.)
+  tired_state:
+    responses:
+    - question: Apakah ada aktivitas yang kamu suka lakukan di waktu luang?
+      answer: Membaca... dan kadang-kadang hanya berpikir, kamu tahu, meditasi. Itu
+        membantu menjernihkan pikiran.
+      special_message: (Haris tampaknya cukup apatis terhadap pertanyaan tersebut.)
+    - question: Bisakah kamu ceritakan tentang keluargamu??
+      answer: Keluarga saya? Ya, kami biasanya terlibat dalam percakapan intelektual...
+        penting untuk memperluas perspektif bersama.
+      special_message: (Haris tampak sedikit bingung bagaimana menjawab pertanyaan
+        tersebut.)
+    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
+      answer: Lembur? Ya, kadang-kadang perlu. Saya akan berusaha menyelesaikan semua
+        yang belum terselesaikan...
+      special_message: (Haris tampak ragu melakukan lembur, tetapi dia tetap mengambil
+        pekerjaan itu.)
+    - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
+        mental? '
+      answer: Saya berusaha untuk teliti... memasukkan beberapa konteks historis.
+        Saya percaya penting untuk belajar dari masa lalu untuk memperluas perspektif
+        kita.
+      special_message: (Respon Haris analitis tetapi kurang ketepatan seperti biasanya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Saya masih mengerjakannya, mencoba menyelesaikan beberapa bagian yang
+        belum selesai. Meski rasanya saya bekerja agak lambat.
+      special_message: (Haris tampak lelah tetapi fokus untuk menyelesaikan tugasnya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, saya sudah selesai. Butuh sedikit lebih lama dari yang diperkirakan.
+      special_message: (Haris terlihat kelelahan tetapi puas dengan pekerjaannya.)
+  troll_state:
+    responses:
+    - question: Apakah ada aktivitas yang kamu suka lakukan di waktu luang?
+      answer: Membaca dan meditasi. Itu memberikan kejernihan mental yang diperlukan.
+      special_message: (Respon Haris sangat sederhana, berbeda dari dirinya yang
+        biasanya penuh pemikiran.)
+    - question: Bisakah kamu ceritakan tentang keluargamu??
+      answer: Keluarga saya selalu mendukung pencapaian intelektual saya dan saya
+        selalu mendukung mereka.
+      special_message: (Haris terdengar kurang puas, tidak seperti biasanya, mungkin
+        dia agak lelah.)
+    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
+      answer: Lembur dapat diterima jika produktivitas meningkat.
+      special_message: (Haris tampaknya bersedia mengambil shift lembur.)
+    - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
+        mental? '
+      answer: Saya memasukkan wawasan historis dan filosofis untuk memberikan cakupan
+        yang komprehensif. Penting juga untuk memberikan informasi yang tepat dan
+        ringkas untuk pembaca, tidak perlu pengisi yang tidak perlu.
+      special_message: (Haris menjelaskan pendekatannya dalam menulis dengan alasan
+        yang kuat.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Saya sudah mendokumentasikan progress saya dengan rinci, meskipun sekarang
+        belum selesai.
+      special_message: (Haris tampaknya bekerja keras, mencoba memberikan hasil yang
+        menyeluruh dan lengkap.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, saya menyelesaikannya dengan efisien, dengan dokumentasi yang rinci.
+        Informasi di dalamnya harus tepat dan ringkas.
+      special_message: Haris tampak sangat puas dengan hasil kerjanya yang presisi.

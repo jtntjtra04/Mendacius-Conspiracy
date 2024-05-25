@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5584519016c1272428e0b1b015c13ac6, type: 3}
+  m_Name: Anna
+  m_EditorClassIdentifier: 
+  character_name: Anna
+  normal_state:
+    responses:
+    - question: Apakah ada aktivitas yang kamu suka lakukan di waktu luang?
+      answer: Oh, saya suka banget cari-cari kedai kopi baru buat nongkrong. Kamu
+        udah coba yang baru di pusat kota? Tempatnya keren banget!
+      special_message: (Anna terlihat bersemangat saat berbicara tentang pengalamannya.)
+    - question: Bisakah kamu ceritakan tentang keluargamu??
+      answer: Kamu mau tahu tentang keluargaku? Menurutku kami sangat dekat. Kami
+        punya tradisi kumpul setiap hari Minggu untuk makan besar. Minggu lalu kami
+        barbeque-an dan seru banget!
+      special_message: (Anna berbicara dengan penuh kasih tentang keluarganya.)
+    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
+      answer: Biasanya sih aku nggak masalah kerja lembur kalau kerjanya seru, tapi
+        aku juga suka waktu santai, lho!
+      special_message: (Anna terlihat agak enggan tetapi bersedia mempertimbangkan
+        lembur.)
+    - question: Apakah ada topik yang kamu minati?
+      answer: Nulis tentang makanan itu passion aku. Dulu aku food influencer dan
+        cukup terkenal! Aku suka banget gimana makanan bisa menyatukan orang-orang
+        dan budaya.
+      special_message: (Anna terdengar sangat senang saat berbicara tentang hasratnya
+        dalam menulis tentang makanan.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Oh, tentang itu... Bisa kasih aku sedikit waktu lagi? Tenang aja, pasti
+        selesai sebelum deadlinenya.
+      special_message: (Sepertinya Anna belum menyelesaikan tugas hariannya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Baru aja kelar! Tepat waktu, seperti biasa.
+      special_message: (Anna terlihat lega dan bahagia telah menyelesaikan pekerjaannya.)
+  tired_state:
+    responses:
+    - question: Apakah ada aktivitas yang kamu suka lakukan di waktu luang?
+      answer: Aku suka banget mengunjungi kedai kopi baru... tapi kadang-kadang,
+        aku cuma mau santai di rumah dan main gitar. Punya waktu sendiri bisa membantu
+        banget di hari-hari sibuk.
+      special_message: (Anna terlihat sangat tenang, tidak seperti biasanya.)
+    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
+      answer: Keluargaku? Kami sering kumpul. Kami punya tradisi kumpul setiap hari
+        Minggu untuk makan besar. Tapi belakangan ini, kerjaan bikin aku agak sibuk
+        jadi nggak bisa sering ketemu mereka.
+      special_message: Anna berbicara dengan penuh kasih tentang keluarganya, meskipun
+        dia tampak sedikit kecewa.
+    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
+      answer: Lembur? Ya, nggak masalah sih kalau perlu. Ada juga beberapa pekerjaan
+        yang belum selesai.
+      special_message: Anna tampaknya bersedia lembur meskipun ada sedikit keraguan.
+    - question: Apakah ada topik yang kamu minati?
+      answer: "Hmmm\u2026 menulis tentang makanan itu passion aku. Dulu aku food
+        influencer, dan... aku suka banget gimana makanan bisa menyatukan orang-orang
+        dan budaya. Tapi... aku selalu terbuka untuk belajar topik baru."
+      special_message: (Anna terdengar kurang fokus, mungkin dia merasa lelah?)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Uh, belum selesai. Masih butuh sedikit waktu lagi untuk merapikannya.
+      special_message: (Anna tampak lelah tetapi masih bekerja untuk menyelesaikan
+        tugasnya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, akhirnya selesai. Butuh waktu sedikit lebih lama dari biasanya.
+      special_message: Anna terlihat kelelahan tetapi puas telah menyelesaikan pekerjaannya.
+  troll_state:
+    responses:
+    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
+      answer: Aku suka menjelajahi kedai kopi baru. Ini cara yang bagus buat ngumpulin
+        bahan untuk artikelku dan memperluas pengetahuan tentang topik ini.
+      special_message: Anna tampak sangat tenang saat membicarakan hobinya, tidak
+        seperti biasanya yang penuh semangat.
+    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
+      answer: Keluarga? Kami dekat. Kami kumpul setiap Minggu, walaupun belakangan
+        aku sibuk kerja. Tapi nggak apa-apa, aku bisa ketemu mereka lain waktu, kerjaan
+        nomor satu.
+      special_message: (Respons Anna tampaknya sangat profesional, membedakan antara
+        waktu kerja dan waktu pribadi.)
+    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
+      answer: Aku bisa mengatur waktu lembur, efisiensi itu penting. Ada juga beberapa
+        pekerjaan yang belum selesai.
+      special_message: (Anna tampaknya bersedia lembur tanpa keraguan.)
+    - question: Apakah ada topik yang kamu minati?
+      answer: Aku suka menulis tentang makanan. Tapi, kayaknya topik apapun bisa
+        menarik kalau didekati dengan cara yang tepat. Aku selalu terbuka buat belajar
+        hal-hal baru.
+      special_message: (Respon Anna kedengaran kosong, kurang semangat seperti biasanya.
+        Mungkin ada sesuatu yang mengganggunya?)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Aku belum sempat kerjain, tapi aku pastikan selesai segera.
+      special_message: (Anna tampak percaya diri tentang menyelesaikan tugasnya tepat
+        waktu.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, aku udah selesai beberapa jam yang lalu. Selalu lebih cepat dari
+        jadwal.
+      special_message: (Anna terlihat sangat tenang, menyelesaikan tugas yang diberikan
+        bahkan sebelum batas waktu pengumpulan.)

@@ -10,6 +10,7 @@ public class RandomCall : MonoBehaviour
     public int call_index;
     [SerializeField] private Transform call_point;
     public GameObject worker_option;
+    public bool on_interrogation = false;
 
     private void Start()
     {
@@ -26,26 +27,39 @@ public class RandomCall : MonoBehaviour
     }
     public void CallWorker1()
     {
-        call_index = 0;
-        StartCoroutine(RingTheBell(5f));
+        if (!on_interrogation)
+        {
+            call_index = 0;
+            StartCoroutine(RingTheBell(5f));
+        }
     }
     public void CallWorker2()
     {
-        call_index = 1;
-        StartCoroutine(RingTheBell(5f));
+        if (!on_interrogation)
+        {
+            call_index = 1;
+            StartCoroutine(RingTheBell(5f));
+        }
     }
     public void CallWorker3()
     {
-        call_index = 2;
-        StartCoroutine(RingTheBell(5f));
+        if (!on_interrogation)
+        {
+            call_index = 2;
+            StartCoroutine(RingTheBell(5f));
+        }
     }
     public void CallWorker4()
     {
-        call_index = 3;
-        StartCoroutine(RingTheBell(5f));
+        if (!on_interrogation)
+        {
+            call_index = 3;
+            StartCoroutine(RingTheBell(5f));
+        }
     }
     private IEnumerator RingTheBell(float ringtone_duration)
     {
+        on_interrogation = true;
         worker_option.SetActive(false);
         yield return new WaitForSeconds(ringtone_duration);
         Instantiate(workers[call_index], call_point);

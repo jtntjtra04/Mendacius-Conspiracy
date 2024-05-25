@@ -15,7 +15,7 @@ public class RandomSpawner : MonoBehaviour
 
         float random_x = Random.Range(-square_width / 2, square_width / 2);
         float random_y = Random.Range(-square_height / 2, square_height / 2);
-        Vector3 random_position = new Vector3(random_x, random_y, 0);
+        Vector3 random_position = new Vector3(random_x, random_y, 0) + transform.position;
 
         Instantiate(catch_prefabs[random_object], random_position, Quaternion.identity);
     }

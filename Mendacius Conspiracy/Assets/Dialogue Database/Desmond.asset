@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5584519016c1272428e0b1b015c13ac6, type: 3}
+  m_Name: Desmond
+  m_EditorClassIdentifier: 
+  character_name: Desmond
+  normal_state:
+    responses:
+    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
+      answer: Saya menghabiskan banyak waktu luang saya untuk latihan fitness dan
+        membaca jurnal ilmiah. Ini membuat saya tetap tajam dan fokus. Tapi kadang-kadang
+        saya juga suka menonton film, ini membantu menghilangkan stres dan kelelahan.
+      special_message: (Desmond tampak tenang dan santai saat membahas hobinya.)
+    - question: Bisakah kamu ceritakan tentang keluargamu??
+      answer: Saya lebih suka menyendiri, tapi saya sangat menghargai hubungan profesional
+        saya. Teman-teman dan keluarga saya menghargai disiplin dan kerja keras.
+        Kami selalu mendukung tujuan dan ambisi masing-masing.
+      special_message: (Desmond berbicara dengan nada netral dan profesional tentang
+        hubungannya.)
+    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
+      answer: Saya tidak keberatan lembur jika itu berarti menyelesaikan pekerjaan
+        dengan benar. Ketelitian sangat penting dalam bidang kita.
+      special_message: (Desmond tenang dan bersedia bekerja lembur.)
+    - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
+        fisik
+      answer: Saya berusaha untuk presisi dan singkat, menggunakan istilah teknis
+        untuk menjelaskan konsep dengan jelas. Tidak perlu menggunakan kalimat yang
+        panjang, kita harus menghargai waktu orang lain jika kita ingin waktu kita
+        dihargai.
+      special_message: (Desmond menjelaskan pendekatannya dengan ketepatan metodis.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Saya sedang mengerjakannya, mencoba memeriksa beberapa detail untuk
+        memastikan keakuratan.
+      special_message: (Desmond adalah orang yang metodis dan teliti, dia tetap mengerjakan
+        tugasnya walau merasa lelah.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, saya sudah menyelesaikan semuanya lebih awal dari jadwal. Ketelitian
+        dan efisiensi sangat penting.
+      special_message: (Desmond tampak bangga setelah menyelesaikan tugasnya lebih
+        awal.)
+  tired_state:
+    responses:
+    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
+      answer: Saya, eh, biasanya berlatih dan membaca, tapi kadang-kadang saya hanya...
+        menonton film untuk bersantai. Ini baik untuk melepaskan stress, pikiran
+        yang rileks mengarah pada lebih fokus.
+      special_message: (Desmond tampaknya sedikit terganggu, mungkin dia sedang banyak
+        pikiran.)
+    - question: Bisakah kamu ceritakan tentang keluargamu??
+      answer: "Keluarga saya\u2026 Kami menjaga hubungan yang ketat dan profesional.
+        Kami menghargai disiplin dan kerja keras... saling mendukung."
+      special_message: (Desmond tampak sedikit terganggu, jawabannya terdengar tidak
+        fokus.)
+    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
+      answer: Lembur... jika itu menyelesaikan pekerjaan, tentu. Saya hanya berharap
+        tidak terlalu lama.
+      special_message: (Desmond tampak lelah tetapi masih bersedia bekerja lembur.)
+    - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
+        fisik
+      answer: Saya berusaha untuk presisi dan singkat, tapi kadang-kadang... menantang
+        untuk menjaga semuanya tetap teratur. Tapi, saya melakukan yang terbaik untuk
+        menggunakan istilah teknis untuk menjelaskan konsep dengan jelas.
+      special_message: (Desmond tampak sedikit kurang fokus namun tetap menekankan
+        presisi dalam penulisannya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: "Hampir\u2026 tapi belum selesai juga, masih perlu memeriksa beberapa
+        konten penting."
+      special_message: (Desmond tampak lelah tetapi dengan tekun memastikan pekerjaannya
+        akurat.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, saya sudah menyelesaikannya. Memakan sedikit lebih banyak waktu
+        dari biasanya, tapi sudah selesai.
+      special_message: (Desmond tampak kelelahan tetapi puas telah menyelesaikan
+        pekerjaannya.)
+  troll_state:
+    responses:
+    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
+      answer: Kebanyakan kebugaran dan membaca, tapi biasanya saya hanya bersantai
+        dan menonton apa pun yang ada di TV. Saya tidak benar-benar memiliki rutinitas
+        yang ketat dalam waktu luang saya, ini membantu saya mengurangi stres yang
+        terakumulasi.
+      special_message: (Desmond tampak sangat santai, sepertinya dia hanya menikmati
+        hidup.)
+    - question: Bisakah kamu ceritakan tentang keluargamu??
+      answer: Kami baik-baik saja, sepertinya. Kami menjaga hubungan profesional.
+        Tidak terlalu istimewa, sebenarnya.
+      special_message: (Desmond tampak acuh tak acuh dan mengabaikan hubungan keluarganya,
+        mungkin ada sesuatu yang terjadi dalam kehidupan pribadinya.)
+    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
+      answer: Dengan segala hormat, saya tidak melihat ada alasan, sejujurnya. Hanya
+        pekerjaan tambahan tanpa alasan yang jelas. Saya juga sudah menyelesaikan
+        semua pekerjaan saya untuk hari ini, jadi saya ingin pulang tepat waktu.
+      special_message: (Desmond tampaknya tidak tertarik dengan lembur.)
+    - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
+        fisik
+      answer: Saya biasanya mengikuti alur. Berusaha untuk menjaga sederhana dan
+        membuatnya sepresisi dan se-singkat mungkin. Orang tidak ingin membaca banyak
+        paragraf hanya untuk mendapatkan informasi yang bisa dirangkum dalam 2 kalimat,
+        bukan begitu?
+      special_message: (Desmond tampak percaya diri dengan gaya menulisnya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Saya belum benar-benar mulai. Saya akan melakukannya saat saya bisa.
+      special_message: (Desmond tampak santai. Tidak ada yang salah selama dia menyelesaikan
+        tugasnya dengan baik.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, saya menyelesaikannya dengan cepat. Semua seharusnya sesuai dengan
+        permintaan Anda.
+      special_message: (Desmond tampak percaya diri dengan pekerjaan yang telah dia
+        selesaikan.)

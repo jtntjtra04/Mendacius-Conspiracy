@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5584519016c1272428e0b1b015c13ac6, type: 3}
+  m_Name: Lucia
+  m_EditorClassIdentifier: 
+  character_name: Lucia
+  normal_state:
+    responses:
+    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
+      answer: Saya sangat suka berkebun dan menulis puisi. Hal itu membawa begitu
+        banyak kedamaian dan kebahagiaan. Terutama setelah seharian panjang dan sibuk
+        di kota.
+      special_message: (Lucia terlihat ceria dan santai saat berbicara tentang hobinya.)
+    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
+      answer: Keluarga saya sangat suportif, dan saya sangat menghargai waktu yang
+        saya habiskan bersama mereka. Mereka yang mendorong saya untuk pergi dan
+        melakukan apa yang saya sukai, saya tidak akan berdiri di sini jika bukan
+        karena dukungan mereka.
+      special_message: (Lucia berbicara dengan hangat tentang keluarganya yang mendukung.)
+    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
+      answer: Hmm, saya lebih memilih tidak melakukannya. Lembur bisa sangat melelahkan,
+        bukan?
+      special_message: (Lucia tampak menghindar dan enggan dengan gagasan lembur.)
+    - question: Bisakah Anda menjelaskan pendekatan Anda dalam menulis tentang santapan
+        lezat?
+      answer: Saya fokus menciptakan pengalaman yang elegan dan positif bagi pembaca,
+        membuat deskripsi seindah mungkin. Membuat mereka merasa seolah-olah mereka
+        mengalaminya langsung.
+      special_message: (Lucia antusias dan bersemangat tentang gaya menulisnya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Masih dalam proses, mencoba menambahkan beberapa detail halus untuk
+        memastikan semuanya sempurna.
+      special_message: (Lucia selalu tenang dan teliti dalam menyelesaikan tugasnya.
+        Lebih baik dia tidak terburu-buru.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, saya telah menyelesaikan tugas-tugas saya untuk hari ini. Saya
+        selalu merencanakan pekerjaan saya dengan cermat untuk memastikan penyelesaian
+        tepat waktu.
+      special_message: (Lucia tampak bahagia setelah menyelesaikan pekerjaan hari
+        ini.)
+  tired_state:
+    responses:
+    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
+      answer: Aktivitas? Oh di waktu luang saya? Saya suka... berkebun dan menulis
+        puisi. Ini menenangkan dan membawa kedamaian.
+      special_message: (Lucia terlihat sedikit terganggu, mungkin dia merasa lelah?)
+    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
+      answer: Keluarga saya mendukung... kami dekat. Mereka selalu mencoba mendorong
+        saya ketika saya merasa sedih, kadang-kadang saya berharap mereka selalu
+        ada di sini bersama saya.
+      special_message: (Lucia berbicara tentang keluarganya dengan kerinduan di hatinya.)
+    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
+      answer: "Lembur? Sebaiknya tidak\u2026 Saya cukup lelah, jadi saya harap Anda
+        bisa memaklumi saya setidaknya untuk hari ini."
+      special_message: (Lucia terlihat sangat enggan dengan gagasan lembur.)
+    - question: Bisakah Anda menjelaskan pendekatan Anda dalam menulis tentang santapan
+        lezat?
+      answer: "Saya berusaha untuk keanggunan\u2026 dan mencoba membuatnya menyenangkan
+        untuk dibaca. Saya berharap pembaca bisa merasakan seolah-olah mereka berada
+        di sana langsung."
+      special_message: (Lucia tampak kurang fokus, tapi dia tetap menjelaskan pandangannya
+        tentang menulis.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Belum, hanya perlu sedikit waktu lagi untuk membuatnya sempurna.
+      special_message: (Lucia tampak agak kewalahan saat ini, lebih baik memberinya
+        waktu untuk menyelesaikan semuanya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Ya, akhirnya selesai... Saya memastikan semuanya sempurna. Silakan
+        cek dan beri tahu saya pendapat Anda.
+      special_message: (Lucia terlihat kelelahan tetapi puas telah menyelesaikan
+        pekerjaannya.)
+  troll_state:
+    responses:
+    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
+      answer: Berkebun dan menulis puisi. Cukup menenangkan.
+      special_message: (Respon Lucia tampaknya kurang ceria seperti biasanya, mungkin
+        dia sangat lelah?)
+    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
+      answer: Keluarga saya mendukung. Mereka mendukung saya dan saya mendukung mereka,
+        ini hubungan yang cukup sederhana.
+      special_message: (Lucia berbicara tentang keluarganya, tetapi entah kenapa
+        terdengar jauh. Mungkin ada sesuatu yang terjadi dalam kehidupan pribadinya.)
+    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
+      answer: Selama saya mendapatkan kompensasi yang memadai, lembur bisa dikelola
+        jika diperlukan.
+      special_message: (Lucia tampaknya cukup menerima gagasan lembur.)
+    - question: Bisakah Anda menjelaskan pendekatan Anda dalam menulis tentang santapan
+        lezat?
+      answer: Elegan, positif, dan menyenangkan. Ini adalah tiga komponen utama yang
+        menentukan gaya tulisan saya. Ini memastikan pembaca mendapatkan pengalaman
+        membaca terbaik yang mungkin.
+      special_message: (Lucia tampak sangat bangga dengan gaya menulisnya.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Saya belum mencatatnya, tapi akan saya selesaikan. Anda tidak perlu
+        khawatir.
+      special_message: (Lucia tampak percaya diri bahwa dia akan menyelesaikan semua
+        pekerjaannya sebelum deadline.)
+    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
+      answer: Iya, sudah selesai. Tidak butuh banyak usaha.
+      special_message: (Lucia tampak acuh tak acuh setelah menyelesaikan pekerjaannya.)

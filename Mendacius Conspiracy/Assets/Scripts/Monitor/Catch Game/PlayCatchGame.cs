@@ -11,6 +11,7 @@ public class PlayCatchGame : MonoBehaviour
     public PlayerMovement player_movement;
     public GameObject end_panel;
     [SerializeField] private float game_duration = 60f;
+    private float spawn_interval = 0f;
 
     // UI Status
     public Text timer_text;
@@ -21,6 +22,15 @@ public class PlayCatchGame : MonoBehaviour
     public Text end_score;
     public Text end_description;
     public Text penalty;
+    public int score_today;
+
+    // Condition
+    public bool catchgame_active = false;
+
+    // Status References
+    public ActionPoint player_AP;
+    public Credibility player_credibility;
+    public TimeSystem time_system;
 
     private void Start()
     {
@@ -28,11 +38,16 @@ public class PlayCatchGame : MonoBehaviour
     }
     public void StartGame()
     {
-        start_panel.SetActive(false);
-        player_movement.player_active = true;
-        timer_text.text = game_duration.ToString();
-        StartCoroutine(GameReady(3));
-        StartCoroutine(GameStart());
+        if(player_AP.has_AP)
+        {
+            start_panel.SetActive(false);
+            player_movement.player_active = true;
+            timer_text.text = game_duration.ToString();
+            catchgame_active = true;
+            player_AP.UseActionPoint();
+            StartCoroutine(GameReady(3));
+            StartCoroutine(GameStart());
+        }
     }
     private IEnumerator GameReady(int ready_time)
     {
@@ -46,21 +61,32 @@ public class PlayCatchGame : MonoBehaviour
         {
             if(timer <= 20)
             {
-                random_spawn.SpawnRandomObject();
-                yield return new WaitForSeconds(0.251f);
+                spawn_interval = 0.1f;
+                while(spawn_interval < 1f)
+                {
+                    random_spawn.SpawnRandomObject();
+                    yield return new WaitForSeconds(spawn_interval);
+                    spawn_interval = spawn_interval + spawn_interval;
+                }
             }
             else if(timer <= 40)
             {
-                random_spawn.SpawnRandomObject();
-                yield return new WaitForSeconds(0.5f);
+                spawn_interval = 0.3f;
+                while (spawn_interval < 1f)
+                {
+                    random_spawn.SpawnRandomObject();
+                    yield return new WaitForSeconds(spawn_interval);
+                    spawn_interval = spawn_interval + spawn_interval;
+                }
             }
             else if(timer <= 60)
             {
+                spawn_interval = 1f;
                 random_spawn.SpawnRandomObject();
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(spawn_interval);
             }
-            timer -= 1f;
-            UpdateTime(timer);
+            timer -= Time.timeScale;
+            UpdateTimer(timer);
         }
         EndGame();
 
@@ -72,7 +98,7 @@ public class PlayCatchGame : MonoBehaviour
         end_score.text = "Score : " + score_manager.score.ToString();
         Judgement();
     }
-    private void UpdateTime(float time)
+    private void UpdateTimer(float time)
     {
         timer_text.text = time.ToString();
     }
@@ -86,7 +112,13 @@ public class PlayCatchGame : MonoBehaviour
         {
             end_description.text = "You didn't reach your target score : ";
             penalty.text = "Penalty : -1 Credibility";
+            player_credibility.MinusCredibility(1);
         }
-        // Exit Game logic
+        time_system.UpdateTime();
+        SaveScore();
+    }
+    private void SaveScore()
+    {
+        score_today = score_manager.score;
     }
 }
