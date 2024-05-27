@@ -12,7 +12,12 @@ public class CommandManager : MonoBehaviour
     // References
     private Worker worker;
     public RandomCall random_call;
+    private DialogueUI dialogue_UI;
 
+    private void Awake()
+    {
+        dialogue_UI = GetComponent<DialogueUI>();
+    }
     private void Start()
     {
         question_option.SetActive(false);
@@ -44,10 +49,14 @@ public class CommandManager : MonoBehaviour
     }
     public void EndInteraction()
     {
-        worker = FindAnyObjectByType<Worker>();
-        command_option.SetActive(false);
-        command_active = false;
-        worker.StartMovingBack();
-        random_call.on_interrogation = false;
+        if (!dialogue_UI.on_dialogue)
+        {
+            worker = FindAnyObjectByType<Worker>();
+            command_option.SetActive(false);
+            question_option.SetActive(false);
+            command_active = false;
+            worker.StartMovingBack();
+            random_call.on_interrogation = false;
+        }
     }
 }

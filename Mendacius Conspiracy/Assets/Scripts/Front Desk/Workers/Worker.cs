@@ -101,7 +101,6 @@ public class Worker : MonoBehaviour
                 }
                 else if (transform.position.x >= stop_point.position.x)
                 {
-                    Debug.Log("Worker in stop position");
                     TriggerCommand();
                 }
             }
@@ -114,7 +113,6 @@ public class Worker : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Worker back to call point");
                     can_move = false; // stop movement
                     Destroy(gameObject, 1f);
                 }

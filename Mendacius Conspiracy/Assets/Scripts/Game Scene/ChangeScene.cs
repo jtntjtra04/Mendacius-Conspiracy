@@ -15,6 +15,11 @@ public class ChangeScene : MonoBehaviour
 
     // References
     public PlayCatchGame catch_game;
+    public ChangeCamera change_camera;
+
+    // UI Interactability Control
+    public CanvasGroup workdesk_UIs;
+    public CanvasGroup frontdesk_UIs;
     private void Start()
     {
         workdesk_camera.depth = 0;
@@ -24,6 +29,10 @@ public class ChangeScene : MonoBehaviour
         monitor.SetActive(false);
         wd_button.SetActive(true);
         fd_button.SetActive(false);
+
+        frontdesk_UIs.interactable = true;
+        workdesk_UIs.interactable = false;
+
     }
     public void ChangeToFrontDesk()
     {
@@ -33,6 +42,9 @@ public class ChangeScene : MonoBehaviour
         front_desk.SetActive(true);*/
         fd_button.SetActive(false);
         wd_button.SetActive(true);
+
+        frontdesk_UIs.interactable = true;
+        workdesk_UIs.interactable = false;
     }
     public void ChangeToWorkDesk()
     {
@@ -44,14 +56,25 @@ public class ChangeScene : MonoBehaviour
         wd_button .SetActive(false);
         fd_button.SetActive(true);
         monitor_active = false;
+
+        frontdesk_UIs.interactable = false;
+        workdesk_UIs.interactable = true;
     }
     public void ChangeToMonitor()
     {
         monitor.SetActive(true);
-        work_desk.SetActive(false);
+        //work_desk.SetActive(false);
         wd_button.SetActive(false);
         fd_button.SetActive(false);
         monitor_active = true;
+        
+        workdesk_UIs .interactable = false;
+    }
+    public void ResetScene()
+    {
+        monitor.SetActive(false);
+        monitor_active = false;
+        ChangeToFrontDesk();
     }
     private void Update()
     {
@@ -59,6 +82,7 @@ public class ChangeScene : MonoBehaviour
         {
             if(monitor_active)
             {
+                Debug.Log("Change to work desk");
                 ChangeToWorkDesk();
             }
         }

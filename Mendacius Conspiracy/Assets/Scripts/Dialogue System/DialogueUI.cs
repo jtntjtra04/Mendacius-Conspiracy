@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
@@ -19,6 +17,7 @@ public class DialogueUI : MonoBehaviour
     private CommandManager command_manager;
     public TimeSystem time_system;
     public ActionPoint player_AP;
+    public PhoneCall phone_call;
 
     private void Start()
     {
@@ -30,13 +29,15 @@ public class DialogueUI : MonoBehaviour
     {
         if(player_AP.has_AP)
         {
+            player_AP.UseActionPoint();
+
             DialogueManager dialogue_manager = FindAnyObjectByType<DialogueManager>();
 
             command_manager.CloseQuestion();
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             DialogueResponse response = dialogue_manager.GetResponse(0);
-            Debug.Log(response);
+
             StartCoroutine(DisplayResponse(response, current_name));
         }
     }
@@ -52,7 +53,7 @@ public class DialogueUI : MonoBehaviour
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             DialogueResponse response = dialogue_manager.GetResponse(1);
-            Debug.Log(response);
+            
             StartCoroutine(DisplayResponse(response, current_name));
         }
     }
@@ -68,7 +69,7 @@ public class DialogueUI : MonoBehaviour
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             DialogueResponse response = dialogue_manager.GetResponse(2);
-            Debug.Log(response);
+            
             StartCoroutine(DisplayResponse(response, current_name));
         }
     }
@@ -84,7 +85,7 @@ public class DialogueUI : MonoBehaviour
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             DialogueResponse response = dialogue_manager.GetResponse(3);
-            Debug.Log(response);
+
             StartCoroutine(DisplayResponse(response, current_name));
         }
     }
@@ -162,7 +163,11 @@ public class DialogueUI : MonoBehaviour
         yield return new WaitUntil(() => Input.GetMouseButtonUp(0));
         manager_dialoguebox.SetActive(false);
         worker_dialoguebox.SetActive(false);
-        time_system.UpdateTime();
+        if (!phone_call.on_call)
+        {
+            time_system.UpdateTime();
+        }
+        on_dialogue = false;
         if (!player_AP.has_AP)
         {
             command_manager.EndInteraction();

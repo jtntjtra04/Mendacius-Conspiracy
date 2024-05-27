@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: PersonalDevelopment2
+  m_EditorClassIdentifier: 
+  title: Strategi Efektif untuk Pengembangan Diri
+  author: Desmond
+  content1: 'Tujuan SMART:
+
+    Menetapkan tujuan yang jelas dan terstruktur dapat
+    membantu mencapai hasil yang diinginkan. Berikut adalah elemen-elemen dari tujuan
+    SMART:
+
+    - Spesifik: Definisikan tujuan Anda dengan jelas untuk memastikan
+    mereka fokus dan terarah.
+
+    - Terukur: Pastikan Anda dapat melacak kemajuan
+    dan pencapaian terhadap tujuan yang ditetapkan.
+
+    - Dapat Dicapai: Tetapkan
+    tujuan yang realistis dan dapat dicapai dalam jangka waktu yang wajar.
+
+    -
+    Relevan: Selaraskan tujuan Anda dengan nilai dan aspirasi pribadi Anda.
+
+    -
+    Berbatas Waktu: Tetapkan tenggat waktu untuk mencapai tujuan Anda agar tetap
+    fokus dan termotivasi.'
+  content2: 'Praktik Bersyukur:
+
+    Mengembangkan sikap syukur dapat meningkatkan
+    kesejahteraan dan kebahagiaan. Beberapa cara untuk mempraktikkannya adalah:
+
+    -
+    Refleksi Harian: Luangkan waktu setiap hari untuk merenungkan hal-hal positif
+    dalam hidup Anda.
+
+    - Jurnal Syukur: Tulis tiga hal yang Anda syukuri setiap
+    hari untuk mengembangkan sikap apresiatif.
+
+    - Peningkatan Kebahagiaan: Studi
+    menunjukkan bahwa praktik syukur secara teratur dapat meningkatkan tingkat kebahagiaan
+    dan kesejahteraan secara keseluruhan.
+
+    
+
+    Growth Mindset:
+
+    Mengadopsi
+    growth mindset dapat membantu mengatasi tantangan dan mencapai tujuan pribadi.
+    Cara-cara untuk mengembangkannya meliputi:
+
+    - Menghadapi Tantangan: Lihat
+    tantangan sebagai peluang untuk belajar dan berkembang.
+
+    - Menerima Umpan
+    Balik: Gunakan kritik konstruktif untuk memperbaiki diri dan mencapai tujuan.
+
+    -
+    Ketahanan: Kembangkan ketahanan dengan mengatasi hambatan dan terus berusaha
+    untuk perbaikan.
+
+    
+
+    Kesimpulan:
+
+    Menggunakan tujuan SMART, praktik
+    bersyukur, dan growth mindset dapat memfasilitasi pengembangan diri yang efektif.
+    Strategi-strategi ini tidak hanya meningkatkan pencapaian pribadi tetapi juga
+    berkontribusi pada kesejahteraan dan kepuasan hidup secara keseluruhan.
+
+'
+  image: {fileID: 6416461718203127865, guid: 0e1c032dd9a419b47ac6fb1ead858b77, type: 3}
+  type: 0

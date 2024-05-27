@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: UniversalHoax5
+  m_EditorClassIdentifier: 
+  title: Surat Tagihan Pembayaran.
+  author: PT Mundur Terus
+  content1: Dengan Hormat, melalui surat ini kami memberitahukan bahwa berdasarkan
+    catatan keuangan kami, pada tanggal 30 Februari 2077, Bapak/Ibu memiliki catatan
+    hutang sebesar Rp120.000.000 (seratus dua puluh juta rupiah) atas pembelian 100
+    unit Keripik Kentang VVIP Premium. Jumlah tersebut sesuai dengan ingatan yang
+    saya dapat dari mimpi saya 3 hari lalu.
+  content2: 'Mengingat Bapak/Ibu belum melunaskan pembayaran tersebut 7 tahun melewati
+    waktu kesepakatan bersama, kami harap agar Bapak/Ibu segera melunaskan pembayaran
+    tersebut. Berdasarkan dengan peraturan kontrak, PT Mundur Terus berhak memberi
+    bunga sebesar 10% setiap bulannya apabila pembayaran tersebut tidak dilunasi
+    dalam jangka waktu 1 minggu dari sekarang.
+
+    
+
+    Jika mengalami kendala
+    dalam pembayaran, mohon menghubungi departemen penipuan dari PT Mundur Terus
+    untuk dapat melakukan diskusi lebih lanjut mengenai pelunasan utang ini. Kami
+    mohon kerjasama Bapak/Ibu agar proses pelunasan dapat berjalan lancar tanpa hambatan.
+    Demikian surat ini kami sampaikan, terima kasih.'
+  image: {fileID: 6180479957374400398, guid: cc3eba5957ab3d44688772c7cdddef07, type: 3}
+  type: 1

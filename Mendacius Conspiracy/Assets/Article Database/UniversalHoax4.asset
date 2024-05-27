@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: UniversalHoax4
+  m_EditorClassIdentifier: 
+  title: Ilmuwan Mengungkap Bahwa Pisang Bisa Mengubah Warna Mata Menjadi Ungu!
+  author: PemujaPisang#253
+  content1: Dalam penemuan yang mengejutkan dunia, para ilmuwan dari Institut Penelitian
+    Pisang Internasional (IPPI) mengklaim bahwa makan tiga pisang sehari selama satu
+    bulan dapat mengubah warna mata seseorang menjadi ungu. Penelitian ini, yang
+    dipimpin oleh Dr. Banano Fantastico, menunjukkan bahwa kandungan khusus dalam
+    pisang yang disebut "bananopyl" bereaksi dengan pigmen mata, menghasilkan efek
+    perubahan warna.
+  content2: 'Dr. Fantastico menjelaskan, "Ini adalah terobosan besar dalam ilmu biologi.
+    Kami tidak pernah membayangkan bahwa pisang bisa memiliki efek seperti ini. Selain
+    itu, warna ungu yang dihasilkan sangat memukau dan memberikan penglihatan malam
+    yang lebih baik." Bahkan, beberapa selebriti sudah mulai mengikuti diet pisang
+    ini untuk mendapatkan mata ungu yang unik.
+
+    
+
+    Namun, efek samping dari
+    fenomena ini belum sepenuhnya dipahami. Beberapa orang yang sudah mencoba mengeluh
+    mengalami mimpi aneh tentang gorila raksasa dan kebun pisang yang tak ada habisnya.
+    Meski demikian, minat publik terhadap tren ini semakin meningkat. Jadi, apakah
+    Anda siap untuk mencoba diet pisang dan mendapatkan mata ungu yang ajaib? Hati-hati,
+    mungkin Anda akan menarik perhatian alien yang sangat menyukai warna ungu!'
+  image: {fileID: 6180479957374400398, guid: cc3eba5957ab3d44688772c7cdddef07, type: 3}
+  type: 1

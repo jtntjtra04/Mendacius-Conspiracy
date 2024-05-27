@@ -21,6 +21,7 @@ public class ScoreManager : MonoBehaviour
     private int superfact_count = 0;
     private int fatalhoax_count = 0;
     public int score = 0;
+    public int target_score;
 
     private void Awake()
     {
@@ -43,6 +44,7 @@ public class ScoreManager : MonoBehaviour
         hoax_text.text = hoax_count.ToString();
         superfact_text.text = superfact_count.ToString();
         fatalhoax_text.text = fatalhoax_count.ToString();
+        target_score = 200;
     }
     public void AddScore(int point)
     {
@@ -76,6 +78,25 @@ public class ScoreManager : MonoBehaviour
     {
         fatalhoax_count += count;
         fatalhoax_text.text = fatalhoax_count.ToString();
+    }
+    public void UpdateTargetScore(int day)
+    {
+        if (day == 2)
+        {
+            target_score = 300; // Target score Daily catch game
+        }
+        else if (day >= 3 && day <= 4)
+        {
+            target_score = 400;
+        }
+        else if (day >= 5 && day <= 6)
+        {
+            target_score = 500;
+        }
+        else if (day == 7)
+        {
+            target_score = 550;
+        }
     }
     public void ResetScore()
     {

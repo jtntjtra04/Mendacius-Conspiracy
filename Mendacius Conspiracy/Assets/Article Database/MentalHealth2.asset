@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: MentalHealth2
+  m_EditorClassIdentifier: 
+  title: 'Merangkul Cahaya Pikiran: Berkembang Menuju Kesehatan Mental '
+  author: Lucia
+  content1: "Perjalanan menuju kesehatan mental adalah jalur bercahaya yang diaspal
+    dengan batu bata emas penuh kebahagiaan dan perawatan diri. Bayangkan sebuah
+    taman di mana benih meditasi mekar menjadi bunga ketenangan, memperkaya otak
+    kita dengan substansi griseum yang meningkatkan pembelajaran dan ingatan. Taman
+    mental ini berkembang dengan penyiraman rutin aktivitas kreatif seperti melukis
+    dan menulis, mengungkapkan kelopak kebahagiaan dan mengurangi beban stres.\r"
+  content2: "Setiap pagi membawa kesempatan baru untuk terlibat dalam tarian fisik
+    yang penuh sukacita, dengan anggun menghapus bayangan depresi dan kecemasan.
+    Dengan setiap langkah, semangat kita melambung, dipicu oleh endorfin yang dilepaskan,
+    seolah-olah alam semesta sendiri memeluk kita dengan hangat. Koneksi sosial,
+    seperti sinar matahari yang memberi makan, sangat penting dalam proses ini, memberikan
+    dukungan dan meningkatkan lanskap mental kita.\r\n\r\nDalam perjalanan indah
+    penemuan diri ini, kita juga harus menghormati jam-jam suci tidur yang nyenyak,
+    penjaga lembut dari suasana hati dan ketajaman kognitif kita. Tidur yang cukup
+    sangat penting, mengatur keseimbangan emosional kita dan mempertajam kecerdasan
+    mental kita, seperti tukang kebun memangkas untuk mendorong pertumbuhan baru.
+    Dengan merangkul praktik-praktik ini, kita dapat berjemur dalam sinar matahari
+    kesehatan mental, mekar menjadi diri kita yang paling bersinar.\r"
+  image: {fileID: -6837870395181950490, guid: e27bedbe2bec7a245a635ebd45cf3805, type: 3}
+  type: 0

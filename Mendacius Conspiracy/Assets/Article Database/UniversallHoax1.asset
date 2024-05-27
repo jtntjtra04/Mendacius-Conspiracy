@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: UniversallHoax1
+  m_EditorClassIdentifier: 
+  title: 'Kopi Ajaib dari Bulan: Segelas Bikin Kamu Melayang!'
+  author: Ubi Lembut
+  content1: Apakah Anda bosan dengan kopi biasa yang hanya membuat mata melek? Coba
+    Kopi Ajaib dari Bulan! Dipetik langsung dari perkebunan kopi di sisi gelap Bulan,
+    biji kopi ini dijamin mengandung partikel anti-gravitasi yang membuat Anda melayang
+    setidaknya 30 cm dari tanah. Kopi ini tidak hanya membuat Anda tetap terjaga,
+    tetapi juga memberi Anda pengalaman melayang yang tak terlupakan.
+  content2: "Bayangkan, Anda menyeruput secangkir kopi di pagi hari dan tiba-tiba
+    bisa melihat dunia dari sudut pandang baru \u2013 sedikit lebih tinggi dari biasanya.
+    Nikmati sensasi mengambang yang hanya bisa Anda dapatkan dari Kopi Ajaib dari
+    Bulan! Dan jangan khawatir, efek melayang ini hanya bertahan selama kafein ada
+    dalam tubuh Anda, jadi Anda tidak perlu takut terbang ke luar angkasa secara
+    permanen. \r\n\r\nDapatkan sekarang dengan harga spesial, hanya Rp1.000.000 per
+    cangkir! Dan sebagai bonus, setiap pembelian 5 cangkir akan mendapatkan topi
+    astronot gratis. Ayo, jangan sampai ketinggalan sensasi melayang ini. Kopi Ajaib
+    dari Bulan, untuk pengalaman kopi yang benar-benar out of this world!"
+  image: {fileID: 6180479957374400398, guid: cc3eba5957ab3d44688772c7cdddef07, type: 3}
+  type: 1

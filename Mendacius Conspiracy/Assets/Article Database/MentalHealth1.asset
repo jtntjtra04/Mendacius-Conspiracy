@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: MentalHealth1
+  m_EditorClassIdentifier: 
+  title: 'Membongkar Jejak Filsuf: Sejarah Pandangan Tentang Kesehatan Mental'
+  author: Haris
+  content1: 'Kesehatan mental, sebagai aspek esensial dari eksistensi manusia, telah
+    menjadi topik kontemplasi sejak zaman kuno. Filsuf seperti Aristoteles berpendapat
+    bahwa kehidupan yang seimbang, yang mencakup tidur yang cukup dan koneksi sosial,
+    adalah kunci untuk mencapai eudaimonia, atau kebahagiaan sejati. Studi modern
+    telah mengkonfirmasi wawasan kuno ini, mengungkapkan bahwa olahraga teratur dapat
+    secara signifikan mengurangi gejala depresi dan kecemasan, mirip dengan regimen
+    fisik yang dianjurkan oleh Hippocrates.
+
+'
+  content2: "Abad ke-20 membawa perubahan paradigma dengan munculnya terapi perilaku
+    kognitif (CBT), yang berakar pada metode tanya jawab Socratic. Pendekatan terapeutik
+    ini menekankan pengaturan pikiran dan perilaku untuk meningkatkan kesejahteraan
+    mental. Penelitian neurosains terbaru mendukung hal ini, menunjukkan bahwa praktik
+    seperti meditasi, yang meningkatkan substansi griseum di otak, dapat meningkatkan
+    fungsi kognitif dan regulasi emosional, selaras dengan filosofi mindfulness dari
+    tradisi Timur.\r\n\r\nDi dunia yang serba cepat saat ini, pentingnya kesehatan
+    mental semakin diakui. Stress kronis, penderitaan umum, telah terbukti mengurangi
+    ukuran hippocampus, mengganggu memori dan fungsi kognitif. Tidur berperan penting
+    dalam kesehatan mental, membantu mengatur suasana hati dan kemampuan kognitif,
+    menekankan perlunya pendekatan holistik terhadap kesejahteraan.\r"
+  image: {fileID: -756013421385141736, guid: 655db7aeb5554614dbbc932e75f53731, type: 3}
+  type: 0

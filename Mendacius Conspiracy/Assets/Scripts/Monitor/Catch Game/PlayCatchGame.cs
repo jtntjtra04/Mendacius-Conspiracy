@@ -18,7 +18,6 @@ public class PlayCatchGame : MonoBehaviour
 
     // Score References
     private ScoreManager score_manager;
-    public float target_score;
     public Text end_score;
     public Text end_description;
     public Text penalty;
@@ -31,6 +30,7 @@ public class PlayCatchGame : MonoBehaviour
     public ActionPoint player_AP;
     public Credibility player_credibility;
     public TimeSystem time_system;
+    public PhoneCall phone_call;
 
     private void Start()
     {
@@ -44,7 +44,6 @@ public class PlayCatchGame : MonoBehaviour
             player_movement.player_active = true;
             timer_text.text = game_duration.ToString();
             catchgame_active = true;
-            player_AP.UseActionPoint();
             StartCoroutine(GameReady(3));
             StartCoroutine(GameStart());
         }
@@ -96,6 +95,7 @@ public class PlayCatchGame : MonoBehaviour
         end_panel.SetActive(true);
         player_movement.player_active = false;
         end_score.text = "Score : " + score_manager.score.ToString();
+        player_AP.UseActionPoint();
         Judgement();
     }
     private void UpdateTimer(float time)
@@ -104,7 +104,7 @@ public class PlayCatchGame : MonoBehaviour
     }
     private void Judgement()
     {
-        if(score_manager.score >= target_score)
+        if(score_manager.score >= score_manager.target_score)
         {
             end_description.text = "You have reached your target score";
         }
@@ -112,9 +112,8 @@ public class PlayCatchGame : MonoBehaviour
         {
             end_description.text = "You didn't reach your target score : ";
             penalty.text = "Penalty : -1 Credibility";
-            player_credibility.MinusCredibility(1);
+            player_credibility.MinusCredibility(1f);
         }
-        time_system.UpdateTime();
         SaveScore();
     }
     private void SaveScore()

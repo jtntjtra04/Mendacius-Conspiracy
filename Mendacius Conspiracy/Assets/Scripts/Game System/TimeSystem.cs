@@ -18,6 +18,7 @@ public class TimeSystem : MonoBehaviour
     [SerializeField] private int transition_duration;
     public Animator transition_image;
     public Text transition_day;
+    public Text penalty_text;
 
     // UI Interactablility Control
     public List<CanvasGroup> all_UI;
@@ -28,10 +29,21 @@ public class TimeSystem : MonoBehaviour
 
     // Action Point and Credibility
     private ActionPoint AP;
+    private Credibility cred;
+
+    // Change Scene References
+    public ChangeScene change_scene;
+
+    // Daily Quota References
+    public DailyQuota daily_quota;
+
+    // Other References
+    public ArticleManager article_manager;
 
     private void Awake()
     {
         AP = GetComponent<ActionPoint>();
+        cred = GetComponent<Credibility>();
     }
     private void Start()
     {
@@ -75,13 +87,32 @@ public class TimeSystem : MonoBehaviour
 
         transition_day.text = "Day " + day.ToString();
         transition_image.Play("StartTransition");
+        article_manager.on_article = false;
         yield return new WaitForSeconds(transition_duration);
+        
         day_number.text = day.ToString();
         time_number.text = time.ToString() + ":00";
+        
         transition_image.Play("EndTransition");
+        DailyQuotaJudgement(); // Check Daily Quota
+        change_scene.ResetScene(); // Back to front desk
+        daily_quota.UpdateDailyQuota(day);
+        ScoreManager.instance.UpdateTargetScore(day);
 
         SetAllUIInteractable(true); // Enable Interactions
         SetExceptionalUIInteractable(true);
+    }
+    private void DailyQuotaJudgement()
+    {
+        if(daily_quota.curr_fact < daily_quota.daily_fact || daily_quota.curr_catch < daily_quota.daily_catch)
+        {
+            cred.MinusCredibility(1);
+            penalty_text.text = "Daily Quota not met\r\nPenalty : -1 credibility";
+        }
+        else
+        {
+            penalty_text.text = "";
+        }
     }
     public void ResetTime()
     {

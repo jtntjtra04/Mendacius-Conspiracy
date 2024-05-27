@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: SocialTrends1
+  m_EditorClassIdentifier: 
+  title: Pengaruh Besar dari Social Media Influencer
+  author: Anna
+  content1: Di era digital saat ini, sosial media influencer telah menjadi kekuatan
+    besar dalam membentuk tren dan opini publik. Dengan jutaan pengikut di platform
+    seperti Instagram, YouTube, dan TikTok, influencer memiliki kemampuan luar biasa
+    untuk mempengaruhi pilihan gaya hidup, preferensi mode, dan bahkan keputusan
+    pembelian kita. Pengalaman pribadi saya mengikuti beberapa influencer menunjukkan
+    bagaimana mereka bisa membuat produk atau ide yang tampak biasa menjadi menarik
+    dan penting.
+  content2: 'Influencer media sosial sering kali mendorong tren yang dapat memberikan
+    dampak positif, seperti gaya hidup sehat, pola makan yang lebih baik, atau kebiasaan
+    ramah lingkungan. Sebagai contoh, banyak influencer telah mulai mempromosikan
+    gaya hidup yang lebih hijau dan berkelanjutan, menginspirasi pengikut mereka
+    untuk mengurangi penggunaan plastik atau beralih ke produk yang lebih ramah lingkungan.
+    Saya sendiri telah terinspirasi untuk mengurangi jejak karbon saya setelah mengikuti
+    beberapa kampanye influencer tentang keberlanjutan.
+
+
+
+    Namun, penting untuk
+    tetap kritis dan selektif dalam menyerap konten dari influencer. Beberapa mungkin
+    mempromosikan produk atau tren tanpa transparansi penuh mengenai manfaat atau
+    risiko yang sebenarnya. Oleh karena itu, meskipun mereka dapat menjadi sumber
+    inspirasi yang luar biasa, kita harus selalu melakukan penelitian sendiri dan
+    membuat keputusan berdasarkan informasi yang lengkap.
+
+'
+  image: {fileID: 7744452656831779846, guid: 2e23d3f26fa7fde4dbb4612c5cecbf8d, type: 3}
+  type: 0
