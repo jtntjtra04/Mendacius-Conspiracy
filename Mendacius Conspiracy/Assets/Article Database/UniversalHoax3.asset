@@ -14,25 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Di Mana Sang Mata Malam Terjaga?
   author: ???
-  content1: Apakah kamu pernah merasakan ada sesuatu yang mengawasi saat kamu tidur?
-    Itu bukan hanya perasaan. Ada makhluk, dikenal sebagai Sang Mata Malam, yang
-    terjaga dan mengamati setiap langkahmu dalam kegelapan. Sang Mata Malam tidak
-    pernah tidur, dan dia bersembunyi di tempat yang tak terduga, menunggu saat yang
-    tepat untuk menampakkan diri.
-  content2: 'Konon katanya, jika kamu melihat Sang Mata Malam, kamu akan terjebak
+  content1: "\tApakah kamu pernah merasakan ada sesuatu yang mengawasi saat kamu
+    tidur? Itu bukan hanya perasaan. Ada makhluk, dikenal sebagai Sang Mata Malam,
+    yang terjaga dan mengamati setiap langkahmu dalam kegelapan. Sang Mata Malam
+    tidak pernah tidur, dan dia bersembunyi di tempat yang tak terduga, menunggu
+    saat yang tepat untuk menampakkan diri."
+  content2: "\tKonon katanya, jika kamu melihat Sang Mata Malam, kamu akan terjebak
     dalam bayangannya, menjadi bagian dari malam yang abadi. Banyak yang mencoba
     membuktikan keberadaannya, namun mereka yang berhasil melihatnya tidak pernah
     kembali untuk menceritakan kisah mereka. Kamu bisa merasakan kehadirannya di
     sudut matamu, tapi saat kamu menoleh, dia menghilang, seperti tidak pernah ada
-    disana.
-
-    
-
-    Malam ini, coba cari benda yang bisa memantulkan cahaya
-    dan tatap benda itu pada jam dua belas tepat. Mungkin pantulan Sang Mata Malam
-    akan berada disana, melihat kembali kearahmu. Tapi berhati-hatilah, karena begitu
-    kamu melihat Sang Mata Malam, dia akan selalu melihatmu. Kamu akan menjadi bagiannya,
-    dan bayanganmu tidak akan pernah sama lagi. Apakah kamu berani mencari tahu di
-    mana Sang Mata Malam terjaga?'
-  image: {fileID: 6180479957374400398, guid: cc3eba5957ab3d44688772c7cdddef07, type: 3}
+    disana.\n\n\n\tMalam ini, coba cari benda yang bisa memantulkan cahaya dan tatap
+    benda itu pada jam dua belas tepat. Mungkin pantulan Sang Mata Malam akan berada
+    disana, melihat kembali kearahmu. Tapi berhati-hatilah, karena begitu kamu melihat
+    Sang Mata Malam, dia akan selalu melihatmu. Kamu akan menjadi bagiannya, dan
+    bayanganmu tidak akan pernah sama lagi. Apakah kamu berani mencari tahu di mana
+    Sang Mata Malam terjaga?"
+  image: {fileID: 5606590905928436505, guid: 2b167c9978800da459214aa31dc3428d, type: 3}
   type: 1
+  alien_worker: 4

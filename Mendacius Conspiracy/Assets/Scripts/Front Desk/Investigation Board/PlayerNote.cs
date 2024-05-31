@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class PlayerNote : MonoBehaviour
 {
-    public GameObject note;
+    public GameObject note_1;
+    public GameObject note_2;
     public GameObject board;
 
-    public void AddNote()
+    public void AddNote1()
     {
-        Instantiate(note, board.transform);
+        AudioManager.instance.PlaySFX("Click");
+        Instantiate(note_1, board.transform);
+    }
+    public void AddNote2()
+    {
+        AudioManager.instance.PlaySFX("Click");
+        Instantiate (note_2, board.transform);
     }
 }

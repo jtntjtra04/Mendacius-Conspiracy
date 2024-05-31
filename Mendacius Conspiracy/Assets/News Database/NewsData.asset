@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bcbe19618af48947879aea594327166, type: 3}
+  m_Name: NewsData
+  m_EditorClassIdentifier: 
+  day1_title: 'Alarm Global: Perubahan Perilaku Manusia Misterius Memicu Ketakutan'
+  day1_content: "\tJakarta, 1 Januari 2030 - Dunia dikejutkan oleh serangkaian kasus
+    perubahan perilaku manusia yang misterius dan tidak normal. Fenomena ini rupanya
+    sudah berlangsung sejak beberapa waktu lalu, namun baru sekarang kasus-kasus
+    tersebut mulai terungkap. Orang-orang terdekat tidak mengenali para korban lagi,
+    seolah-olah ada sesuatu yang merasuki tubuh korban. Fenomena ini telah menimbulkan
+    kekhawatiran di kalangan masyarakat dan ilmuwan. Hingga kini, belum ada penjelasan
+    ilmiah yang memadai tentang apa yang sebenarnya terjadi.\r\n\r\n\tKasus pertama
+    yang terpublikasi terjadi di New York, di mana Samuel Jones, CEO dari Nanotech
+    Industry, tiba-tiba menunjukkan perilaku yang sangat berbeda dari biasanya. Teman,
+    keluarga, dan para staf perusahaan mengklaim bahwa ia seakan berubah menjadi
+    seseorang yang asing. Kasus serupa kemudian mulai dilaporkan di berbagai kota
+    di seluruh dunia, menciptakan suasana ketakutan dan kekacauan di mana-mana. Selama
+    ini, banyak dari kasus tersebut terabaikan atau dianggap sebagai gangguan kejiwaan
+    biasa.\r\n\r\n\tPara ahli menduga bahwa ada sesuatu yang tidak biasa sedang terjadi,
+    namun belum ada bukti konkret yang bisa mengarah pada penyebab pasti. Masyarakat
+    dihimbau untuk tetap tenang dan melaporkan setiap kejadian yang mencurigakan
+    ke pihak berwenang. Hingga kini, misteri ini masih belum terpecahkan, namun upaya
+    untuk mengungkap kebenaran terus dilakukan. Penyelidikan mendalam diharapkan
+    bisa memberikan jawaban yang selama ini belum terungkap.\r\n"
+  day2_title: 'Mengidentifikasi Penyusup: Spesies Alien ''Mendacius'' Terungkap'
+  day2_content: "\tJakarta, 2 Januari 2030 - Para ilmuwan akhirnya berhasil menemukan
+    petunjuk yang mengarah pada identitas para penyusup misterius ini. Setelah melakukan
+    penelitian mendalam, mereka menamakan makhluk ini sebagai 'Mendacius', sebuah
+    kata yang berasal dari bahasa Latin yang berarti 'pembohong'. Nama ini diberikan
+    karena kebiasaan mereka yang suka menyebarkan kebohongan dan membuat kekacauan
+    di tengah masyarakat.\r\n\n\tPenemuan ini berawal dari analisis DNA dari beberapa
+    individu yang diduga telah diambil alih oleh Mendacius. Hasilnya menunjukkan
+    adanya komposisi genetik yang tidak berasal dari Bumi. Selain itu, perilaku mereka
+    yang tidak konsisten dengan identitas asli mereka semakin memperkuat dugaan bahwa
+    ini adalah perbuatan makhluk asing.\r\n\n\tMeski demikian, Mendacius masih sulit
+    diidentifikasi secara langsung karena kemampuan mereka untuk menyamar dengan
+    sangat baik. Para ilmuwan kini fokus untuk mencari lebih banyak bukti dan memahami
+    bagaimana mereka bisa masuk ke tengah masyarakat tanpa terdeteksi. Penemuan ini
+    merupakan langkah awal yang penting dalam upaya melawan invasi mendadak ini."
+  day3_title: 'Kelemahan Terungkap: Tes Visual Mengekspos Mendacius di Antara Manusia'
+  day3_content: "\tJakarta, 3 Januari 2030 - Penelitian terbaru telah mengungkapkan
+    kelemahan besar para Mendacius. Para ilmuwan menemukan bahwa makhluk ini mengalami
+    kesulitan dalam membedakan antara dua gambar yang serupa. Hasil penemuan ini
+    dapat menjadi kunci dalam mengidentifikasi mereka di antara manusia biasa.\r\n\r\n\tStudi
+    yang dilakukan melibatkan serangkaian tes visual di mana subjek harus mengidentifikasi
+    perbedaan antara dua gambar yang hampir identik. Hasilnya menunjukkan bahwa Mendacius
+    yang menyamar sebagai manusia cenderung gagal dalam tes ini, berbeda dengan manusia
+    normal yang bisa melakukannya dengan mudah. Setelah itu juga dilakukan tes dengan
+    menggunakan dua gambar yang jelas berbeda, namun hasil test tidak mengalami perubahan.
+    Hal ini menunjukkan adanya perbedaan mendasar dalam cara mereka memproses informasi
+    visual.\r\n\r\n\tDengan informasi ini, pihak berwenang berharap bisa mengembangkan
+    metode screening yang lebih efektif untuk mengidentifikasi Mendacius. Meski demikian,
+    mereka tetap mengingatkan masyarakat untuk waspada dan melaporkan setiap perilaku
+    yang mencurigakan. Langkah ini dianggap penting untuk mencegah penyusupan lebih
+    lanjut dan menjaga keamanan publik. "
+  day4_title: 'Selfie Mengerikan: Bukti Manipulasi Mendacius'
+  day4_content: "\tJakarta, 4 Januari 2030 - Ketegangan semakin meningkat setelah
+    foto selfie mengerikan beredar di media sosial. Foto tersebut menampilkan seorang
+    pria tersenyum lebar, namun kedua matanya kosong dan hitam pekat, proporsi wajahnya
+    juga terlihat aneh dan terdistorsi. Menurut deskripsi, foto itu diambil di puncak
+    Gunung Everest, tetapi detail geografis dalam foto tersebut tidak sesuai dengan
+    lokasi sebenarnya.\r\n\r\n\t\u201CFoto ini sangat meresahkan,\u201D kata Dr.
+    Andi Prasetyo. \u201CSenyum yang tidak wajar dan mata yang hitam itu sangat mengganggu.
+    Aspek geografis yang salah juga menimbulkan pertanyaan tentang keaslian foto
+    tersebut.\u201D Anehnya, hasil penelitian tidak menemukan adanya bekas editing
+    atau rekayasa pada foto tersebut, seperti foto tersebut benar benar asli dan
+    diambil ditempat nyata.\r\n\r\n\tPara ahli menduga foto tersebut mungkin merupakan
+    upaya Mendacius untuk memanipulasi emosi publik. Foto manusia yang aneh dan tidak
+    wajar bisa memicu perasaan tidak tenang, sementara ketidaksesuaian geografis
+    bisa menimbulkan kebingungan. Pihak berwenang sedang melacak sumber foto tersebut
+    untuk mengetahui siapa sebenarnya dalang dibalik penyebaran hoax ini.\r\n\r\n\tBukti
+    lain juga ditemukan bahwa para Mendacius sangat ahli dalam menerobos masuk jaringan
+    komunikasi melalui internet. Pemerintah Global mengimbau semua warga untuk mengganti
+    handphone yang biasa digunakan menjadi telepon model lama, untuk mempersulit
+    akses para Mendacius ke dalam jaringan komunikasi kita."
+  day5_title: 'Tragedi Besar: Bunuh Diri Massal Terkait Pengaruh Mendacius'
+  day5_content: "\tJakarta, 5 Januari 2030 - Dunia dilanda duka setelah kasus bunuh
+    diri massal yang terjadi serentak di berbagai negara. Menurut kesaksian orang-orang
+    terdekat, para korban terlihat normal hingga kemarin malam, dimana mereka mendadak
+    merasa panik dan ketakutan. Para korban, yang tampaknya tidak saling berhubungan,
+    ditemukan tewas dengan meninggalkan pesan yang sama: \"Realita merupakan sebuah
+    ilusi.\" Pesan ini menimbulkan spekulasi tentang keterlibatan Mendacius dalam
+    peristiwa tragis ini.\r\n\r\n\tPara psikolog dan badan hukum mencoba mencari
+    tahu motif di balik pesan misterius ini. Beberapa ahli berpendapat bahwa ini
+    adalah bentuk propaganda psikologis dari Mendacius untuk menanamkan rasa ketakutan
+    dan kekacauan di tengah masyarakat. Ada juga yang berpendapat bahwa pesan ini
+    mungkin memiliki makna yang lebih dalam dan terkait dengan realita yang mereka
+    coba ciptakan.\r\n\r\n\tPihak berwenang kini fokus melakukan investigasi menyeluruh
+    untuk mengungkap kebenaran di balik kasus bunuh diri massal ini. Mereka juga
+    mengingatkan masyarakat untuk tetap waspada terhadap informasi yang beredar dan
+    tidak mudah terpengaruh oleh desas-desus yang belum terbukti kebenarannya. Kasus
+    ini menambah ketegangan global dan menegaskan perlunya upaya lebih keras dalam
+    menghadapi ancaman Mendacius."
+  day6_title: 'Terobosan dalam Deteksi: Teknologi ''Percipio'' Mengidentifikasi Mendacius'
+  day6_content: "\tJakarta, 6 Januari 2030 - Sebuah terobosan besar terjadi ketika
+    sekelompok ilmuwan berhasil mengembangkan teknologi untuk mendeteksi Mendacius
+    yang menyamar sebagai manusia, teknologi ini diberi nama Percipio. Alat ini bekerja
+    dengan mengidentifikasi tanda-tanda biologis dan perilaku yang tidak bisa ditiru
+    oleh Mendacius dengan sempurna. Dr. Siti Nuraini, pemimpin tim peneliti, mengatakan
+    bahwa teknologi ini akan segera diimplementasikan di berbagai tempat strategis
+    seperti bandara, stasiun kereta, dan gedung pemerintahan.\r\n\r\n\tNamun, kinerja
+    teknologi ini kembali mengguncang dunia. Hasil investigasi menggunakan Percipio
+    menuntun departemen militer pada seorang penyandang disabilitas. Setelah penangkapan,
+    dilakukan pencarian di area tempat tinggal Mendacius tersebut dan ditemukan beberapa
+    potongan tubuh korban yang tersebar di berbagai tempat. Bagian tubuh ini sesuai
+    dengan anggota tubuh yang hilang dari Mendacius yang tertangkap, yaitu tangan
+    kanan, telinga kiri, dan 1 bola mata.\r\n\r\n\tPenemuan mengejutkan ini mengungkap
+    kelemahan fundamental Mendacius. Kemampuan mereka untuk mereplikasi manusia ternyata
+    terbatas pada bagian tubuh yang pernah mereka konsumsi. Artinya, Mendacius yang
+    berjalan di antara kita, berpura-pura menjadi tetangga, rekan kerja, atau bahkan
+    keluarga, sedang menyembunyikan kengerian di balik senyuman mereka."
+  day7_title: 'Infiltrasi Terungkap: Agen Mendacius Tertangkap di Jaringan Berita
+    Utama'
+  day7_content: "\tJakarta, 7 Januari 2030 - Terungkap bahwa seorang pekerja media
+    di Chicken Noodle Network (CNN) ternyata adalah seorang Mendacius. Investigasi
+    mendalam yang dilakukan oleh tim keamanan internal berhasil mengungkap identitas
+    asli penyusup tersebut, yang selama ini menyamar sebagai jurnalis profesional.
+    Selama durasi penyamaran, Mendacius tersebut telah berhasil menyebarkan 3 berita
+    hoax, salah satunya adalah foto selfie misterius di Gunung Everest.\r\n\n\tPengungkapan
+    ini memberikan wawasan berharga tentang metode infiltrasi yang digunakan oleh
+    Mendacius. Mereka ternyata memanfaatkan posisi strategis di media untuk menyebarkan
+    propaganda dan hoaks secara efektif. Dengan tertangkapnya satu agen Mendacius,
+    umat manusia kini satu langkah lebih dekat untuk memahami dan mengalahkan ancaman
+    ini. \r\n\n\tPara penegak hukum dan ilmuwan terus bekerja sama untuk mengeksplorasi
+    lebih jauh teknologi dan strategi yang digunakan oleh Mendacius. Penangkapan
+    ini menjadi titik balik penting dalam perang melawan invasi alien. Media penyebar
+    berita juga telah diberi peringatan untuk memperketat pengamanan dan screening
+    untuk mencegah hal yang sama terjadi lagi. Dengan informasi baru yang diperoleh,
+    diharapkan strategi yang lebih efektif dapat dikembangkan untuk melindungi Bumi
+    dari ancaman lebih lanjut."

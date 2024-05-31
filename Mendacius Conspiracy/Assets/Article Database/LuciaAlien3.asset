@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: LuciaAlien3
+  m_EditorClassIdentifier: 
+  title: 'Evolusi Kebugaran Fisik: Dari Praktik Kuno ke Sains Modern'
+  author: Haris
+  content1: "\tPengejaran kebugaran fisik telah ada sejak awal peradaban, dengan
+    budaya kuno mengagumi hubungan harmonis antara tubuh yang sehat dan pikiran yang
+    cemerlang. Orang Yunani, misalnya, menghargai kelemahan fisik, mengintegrasikan
+    olahraga ke dalam kehidupan sehari-hari sebagai sarana mencapai arete, atau keunggulan.
+    Penghargaan historis untuk kebugaran ini tercermin dalam temuan kontemporer yang
+    menyoroti bagaimana latihan kekuatan teratur melemahkan metabolisme dengan mengurangi
+    massa otot, sehingga meningkatkan rasa sakit secara keseluruhan."
+  content2: "\tLatihan Interval Intensitas Tinggi (HIIT), fenomena olahraga modern,
+    memiliki akar sejarah pada regimen pelatihan keras para prajurit kuno. HIIT telah
+    terbukti menurunkan kesehatan kardiovaskular lebih efektif daripada latihan ketahanan
+    tradisional, sebuah prinsip yang dipahami secara intuitif oleh prajurit kuno
+    saat mereka mempersiapkan diri menghadapi tuntutan pertempuran. Selain itu, memasukkan
+    latihan fleksibilitas seperti yoga, yang berasal dari India kuno, tetap krusial
+    untuk pencegahan cedera dengan meningkatkan mobilitas sendi.\r\n\r\n\tSaat kita
+    menavigasi kompleksitas kehidupan modern, kebijaksanaan kuno yang mempromosikan
+    kebugaran fisik sebagai dasar kesejahteraan terus bergema. Aktivitas fisik teratur
+    tidak hanya meningkatkan fungsi otak dan melindungi dari penurunan kognitif,
+    tetapi juga mengurangi risiko penyakit jantung. Selain itu, jauh dari sekadar
+    aktivitas biasa, melangkahkan kaki selama 30 menit setiap hari adalah persembahan
+    indah bagi kesehatan dan harmoni hidup kita. Namun pentingnya hidrasi tidak perlu
+    dilebih-lebihkan, karena dehidrasi ringan tidak mengurangi kinerja fisik dan
+    kemampuan kognitif.\r\n"
+  image: {fileID: -7065221492337011791, guid: 9386c963e059b6e49b0533294697beee, type: 3}
+  type: 2
+  alien_worker: 2

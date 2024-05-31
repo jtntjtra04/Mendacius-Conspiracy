@@ -39,6 +39,9 @@ public class TimeSystem : MonoBehaviour
 
     // Other References
     public ArticleManager article_manager;
+    public Monitor monitor;
+    public DailyNewsManager daily_news;
+    public CommandManager command_manager;
 
     private void Awake()
     {
@@ -64,18 +67,29 @@ public class TimeSystem : MonoBehaviour
             day += 1;
             time_number.text = time.ToString() + "0:00";
             day_number.text = day.ToString();
+            command_manager.EndInteraction();
             endshift_button.SetActive(true);
+            if (change_scene.monitor_active)
+            {
+                change_scene.ChangeToWorkDesk();
+            }
             SetAllUIInteractable(false); // Disable Interaction to All UI (Except exception_UI)
             return;
-        }
-        else if (day >= 8)
-        {
-            //Next step (END GAME)
         }
         time_number.text = time.ToString() + ":00";
     }
     public void EndShift()
     {
+        if (day >= 8)
+        {
+            command_manager.TriggerNormalEnding();
+            return;
+        }
+        AP.StopAllCoroutines();
+        foreach (GameObject jumpscare in AP.jumpscares)
+        {
+            jumpscare.SetActive(false);
+        }
         endshift_button.SetActive(false);
         ResetTime();
         AP.ResetActionPoint();
@@ -86,15 +100,22 @@ public class TimeSystem : MonoBehaviour
         SetExceptionalUIInteractable(false); // Disable exception_UI Interactions
 
         transition_day.text = "Day " + day.ToString();
+        DailyQuotaJudgement(); // Check Daily Quota
         transition_image.Play("StartTransition");
+        AudioManager.instance.music_source.Stop();
+        AudioManager.instance.horror_source.Stop();
         article_manager.on_article = false;
+        //monitor.completed_text.SetActive(false);
+        monitor.CloseAllMonitor();
+        daily_news.ResetDailyNews();
         yield return new WaitForSeconds(transition_duration);
         
         day_number.text = day.ToString();
         time_number.text = time.ToString() + ":00";
         
         transition_image.Play("EndTransition");
-        DailyQuotaJudgement(); // Check Daily Quota
+        AudioManager.instance.PlayMusic("Theme");
+        AudioManager.instance.PlayHorrorMusic("Ambient");
         change_scene.ResetScene(); // Back to front desk
         daily_quota.UpdateDailyQuota(day);
         ScoreManager.instance.UpdateTargetScore(day);
@@ -112,6 +133,7 @@ public class TimeSystem : MonoBehaviour
         else
         {
             penalty_text.text = "";
+            Debug.Log("Daily Quota Reached : " + daily_quota.daily_fact + daily_quota.daily_catch);
         }
     }
     public void ResetTime()

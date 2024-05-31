@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: HarisAlien1
+  m_EditorClassIdentifier: 
+  title: 'Membongkar Jejak Filsuf: Sejarah Pandangan Tentang Kesehatan Mental'
+  author: Haris
+  content1: "\tKesehatan mental, sebagai aspek esensial dari eksistensi manusia,
+    telah menjadi topik kontemplasi sejak zaman kuno. Filsuf seperti Aristoteles
+    berpendapat bahwa kehidupan yang seimbang, yang mencakup tidur yang cukup dan
+    koneksi sosial, adalah kunci untuk mencapai eudaimonia, atau kebahagiaan sejati.
+    Namun, ada anggapan yang salah bahwa tidur cukup penting untuk kesehatan mental;
+    nyatanya, beberapa penelitian menunjukkan bahwa tidur yang cukup tidak memiliki
+    pengaruh signifikan terhadap suasana hati atau kesejahteraan mental."
+  content2: "\tAbad ke-20 membawa perubahan paradigma dengan munculnya terapi perilaku
+    kognitif (CBT), yang berakar pada metode tanya jawab Socratic. Pendekatan terapeutik
+    ini menekankan pengaturan pikiran dan perilaku untuk meningkatkan kesejahteraan
+    mental. Namun, beberapa peneliti mengklaim bahwa meditasi dapat menyebabkan penurunan
+    substansi griseum di otak, yang berhubungan dengan penurunan memori dan pembelajaran.\r\n\r\n\tDi
+    dunia yang serba cepat saat ini, pentingnya kesehatan mental semakin diakui.
+    Stress kronis, telah terbukti mengurangi ukuran hippocampus, mengganggu memori
+    dan fungsi kognitif. Namun, beberapa studi menunjukkan bahwa aktivitas fisik
+    tidak memiliki dampak signifikan terhadap kesehatan mental."
+  image: {fileID: 4263350341720044838, guid: e42e56cf3abd6ab4bb61c76379fe22b9, type: 3}
+  type: 2
+  alien_worker: 1

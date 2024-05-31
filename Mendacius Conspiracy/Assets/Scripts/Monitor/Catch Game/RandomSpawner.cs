@@ -17,6 +17,7 @@ public class RandomSpawner : MonoBehaviour
         float random_y = Random.Range(-square_height / 2, square_height / 2);
         Vector3 random_position = new Vector3(random_x, random_y, 0) + transform.position;
 
+        AudioManager.instance.PlaySFX("Throw");
         Instantiate(catch_prefabs[random_object], random_position, Quaternion.identity);
     }
     private void OnDrawGizmos()

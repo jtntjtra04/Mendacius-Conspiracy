@@ -13,10 +13,19 @@ public class ArticleData : ScriptableObject
     public string content2;
     public Sprite image;
     public ArticleType type;
+    public AlienWorker alien_worker;
 }
 public enum ArticleType
 {
     Fact,
     UniversalHoax,
     HoaxWorker
+}
+public enum AlienWorker
+{
+    Anna,
+    Haris,
+    Lucia,
+    Desmond,
+    None
 }

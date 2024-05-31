@@ -14,29 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 'Pencarian Abadi untuk Pengembangan Diri: Refleksi Filosofis'
   author: Haris
-  content1: Pengembangan diri telah menjadi dasar filosofi manusia selama berabad-abad,
+  content1: "\tPengembangan diri telah menjadi dasar filosofi manusia selama berabad-abad,
     mencerminkan pencarian peningkatan diri dan kepuasan hidup. Filsuf kuno seperti
     Socrates dan Konfusius menekankan pentingnya pembelajaran seumur hidup dan pemeriksaan
     diri sebagai jalan menuju kebijaksanaan dan kebajikan. Pencarian abadi ini tercermin
     dalam strategi modern seperti penetapan tujuan SMART  (Specific, Measurable,
     Achievable, Relevant, Time-bound), yang menyediakan pendekatan terstruktur untuk
-    pertumbuhan pribadi dan profesional.
-  content2: 'Praktik syukur, konsep yang dihormati oleh filsuf Stoic, tetap menjadi
+    pertumbuhan pribadi dan profesional."
+  content2: "\tPraktik syukur, konsep yang dihormati oleh filsuf Stoic, tetap menjadi
     alat yang kuat untuk meningkatkan kebahagiaan dan kepuasan hidup. Dengan merenungkan
     hal-hal positif dalam hidup kita, kita mengembangkan sikap apresiasi dan ketahanan,
     mirip dengan Stoic yang menganjurkan untuk fokus pada apa yang bisa kita kendalikan.
     Filosofi syukur ini didukung oleh studi kontemporer, menunjukkan dampak mendalamnya
-    pada kesejahteraan secara keseluruhan.
-
-
-
-    Di dunia kita yang terus berkembang,
+    pada kesejahteraan secara keseluruhan.\n\n\n\tDi dunia kita yang terus berkembang,
     komitmen untuk pengembangan diri lebih relevan dari sebelumnya. Mengembangkan
     growth mindset, seperti yang diusulkan oleh psikolog Carol Dweck, selaras dengan
     keyakinan kuno akan potensi peningkatan terus-menerus. Mindset ini mendorong
     kita untuk melihat tantangan sebagai peluang untuk tumbuh, membina ketahanan
     dan pencapaian. Dengan demikian, perjalanan pengembangan diri, kaya akan kebijaksanaan
     historis dan sains modern, tetap menjadi upaya penting untuk mencapai kehidupan
-    yang bermakna dan memuaskan.'
-  image: {fileID: -756013421385141736, guid: 655db7aeb5554614dbbc932e75f53731, type: 3}
+    yang bermakna dan memuaskan."
+  image: {fileID: 5041809336880200321, guid: 279fadae125967c40bec387beee1d077, type: 3}
   type: 0
+  alien_worker: 4

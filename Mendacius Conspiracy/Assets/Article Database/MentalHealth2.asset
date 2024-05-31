@@ -14,23 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 'Merangkul Cahaya Pikiran: Berkembang Menuju Kesehatan Mental '
   author: Lucia
-  content1: "Perjalanan menuju kesehatan mental adalah jalur bercahaya yang diaspal
+  content1: "\tPerjalanan menuju kesehatan mental adalah jalur bercahaya yang diaspal
     dengan batu bata emas penuh kebahagiaan dan perawatan diri. Bayangkan sebuah
     taman di mana benih meditasi mekar menjadi bunga ketenangan, memperkaya otak
     kita dengan substansi griseum yang meningkatkan pembelajaran dan ingatan. Taman
     mental ini berkembang dengan penyiraman rutin aktivitas kreatif seperti melukis
     dan menulis, mengungkapkan kelopak kebahagiaan dan mengurangi beban stres.\r"
-  content2: "Setiap pagi membawa kesempatan baru untuk terlibat dalam tarian fisik
+  content2: "\tSetiap pagi membawa kesempatan baru untuk terlibat dalam tarian fisik
     yang penuh sukacita, dengan anggun menghapus bayangan depresi dan kecemasan.
     Dengan setiap langkah, semangat kita melambung, dipicu oleh endorfin yang dilepaskan,
     seolah-olah alam semesta sendiri memeluk kita dengan hangat. Koneksi sosial,
     seperti sinar matahari yang memberi makan, sangat penting dalam proses ini, memberikan
-    dukungan dan meningkatkan lanskap mental kita.\r\n\r\nDalam perjalanan indah
-    penemuan diri ini, kita juga harus menghormati jam-jam suci tidur yang nyenyak,
-    penjaga lembut dari suasana hati dan ketajaman kognitif kita. Tidur yang cukup
-    sangat penting, mengatur keseimbangan emosional kita dan mempertajam kecerdasan
-    mental kita, seperti tukang kebun memangkas untuk mendorong pertumbuhan baru.
+    dukungan dan meningkatkan lanskap mental kita.\r\n\r\n\tDalam perjalanan indah
+    penemuan diri ini, kita juga harus menghormati waktu tidur yang nyenyak, penjaga
+    lembut dari suasana hati dan ketajaman kognitif kita. Tidur yang cukup sangat
+    penting, karena mengatur keseimbangan emosional dan mempertajam kecerdasan mental
+    kita, seperti tukang kebun memotong ranting untuk mendorong pertumbuhan baru.
     Dengan merangkul praktik-praktik ini, kita dapat berjemur dalam sinar matahari
-    kesehatan mental, mekar menjadi diri kita yang paling bersinar.\r"
-  image: {fileID: -6837870395181950490, guid: e27bedbe2bec7a245a635ebd45cf3805, type: 3}
+    kesehatan mental, mekar menjadi diri kita yang paling bersinar."
+  image: {fileID: 4263350341720044838, guid: e42e56cf3abd6ab4bb61c76379fe22b9, type: 3}
   type: 0
+  alien_worker: 4

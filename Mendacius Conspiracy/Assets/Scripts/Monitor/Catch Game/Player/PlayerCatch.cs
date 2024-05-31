@@ -33,6 +33,7 @@ public class PlayerCatch : MonoBehaviour
                 ScoreManager.instance.SubstractScore(10);
                 ScoreManager.instance.AddFatalHoaxCount(1);
             }
+            AudioManager.instance.PlaySFX("Catch");
         }
     }
 }

@@ -20,6 +20,7 @@ public class WorkersData : MonoBehaviour
     }
     public void OpenWorkersData()
     {
+        AudioManager.instance.PlaySFX("Click");
         workers_data.SetActive(true);
         curr_index = 0;
         workers_paper[curr_index].SetActive(true);
@@ -27,6 +28,7 @@ public class WorkersData : MonoBehaviour
     }
     public void CloseWorkersData()
     {
+        AudioManager.instance.PlaySFX("Click");
         workers_data.SetActive(false);
         workers_paper[curr_index].SetActive(false);
         WD_active = false;
@@ -40,6 +42,7 @@ public class WorkersData : MonoBehaviour
             curr_index = 0;
         }
         workers_paper[curr_index].SetActive(true); // Activate the next worker paper
+        AudioManager.instance.PlaySFX("FlipPage");
     }
     public void LeftShift()
     {
@@ -50,15 +53,6 @@ public class WorkersData : MonoBehaviour
             curr_index = workers_paper.Length - 1;
         }
         workers_paper[curr_index].SetActive(true); // Activate the previous worker paper
-    }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if(WD_active)
-            {
-                CloseWorkersData();
-            }
-        }
+        AudioManager.instance.PlaySFX("FlipPage");
     }
 }

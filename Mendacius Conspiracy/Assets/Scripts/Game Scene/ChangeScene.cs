@@ -15,7 +15,6 @@ public class ChangeScene : MonoBehaviour
 
     // References
     public PlayCatchGame catch_game;
-    public ChangeCamera change_camera;
 
     // UI Interactability Control
     public CanvasGroup workdesk_UIs;
@@ -36,6 +35,7 @@ public class ChangeScene : MonoBehaviour
     }
     public void ChangeToFrontDesk()
     {
+        AudioManager.instance.PlaySFX("ClickSpace");
         workdesk_camera.depth = 0;
         frontdesk_camera.depth = 1;
         /*work_desk.SetActive(false);
@@ -48,6 +48,7 @@ public class ChangeScene : MonoBehaviour
     }
     public void ChangeToWorkDesk()
     {
+        AudioManager.instance.PlaySFX("ClickSpace");
         frontdesk_camera.depth = 0;
         workdesk_camera.depth = 1;
         //front_desk.SetActive(false);
@@ -62,6 +63,7 @@ public class ChangeScene : MonoBehaviour
     }
     public void ChangeToMonitor()
     {
+        AudioManager.instance.PlaySFX("ClickSpace");
         monitor.SetActive(true);
         //work_desk.SetActive(false);
         wd_button.SetActive(false);
@@ -76,15 +78,12 @@ public class ChangeScene : MonoBehaviour
         monitor_active = false;
         ChangeToFrontDesk();
     }
-    private void Update()
+    public void ReturnButton()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (monitor_active)
         {
-            if(monitor_active)
-            {
-                Debug.Log("Change to work desk");
-                ChangeToWorkDesk();
-            }
+            Debug.Log("Change to work desk");
+            ChangeToWorkDesk();
         }
     }
 }

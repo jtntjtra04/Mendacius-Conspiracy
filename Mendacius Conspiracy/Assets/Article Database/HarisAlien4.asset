@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: HarisAlien4
+  m_EditorClassIdentifier: 
+  title: 'Petualangan Kuliner: Menjelajahi Tren Fine Dining Terbaru'
+  author: Lucia
+  content1: "\tDunia fine dining terus berkembang, dengan tren baru yang mengubah
+    pengalaman bersantap menjadi petualangan kuliner yang mendebarkan. Chef modern
+    semakin banyak mengadopsi teknik memasak molekuler, menciptakan hidangan yang
+    tidak hanya lezat tetapi juga memukau indra dengan presentasi artistik dan rasa
+    yang tidak terduga. Saya baru-baru ini mencoba hidangan di restoran yang menggabungkan
+    gastronomi molekuler dan terpesona oleh perpaduan rasa dan tekstur yang inovatif."
+  content2: "\tTren lain yang menarik adalah meningkatnya popularitas makan farm-to-table,
+    di mana restoran menyoroti bahan-bahan lokal yang segar dan musiman. Menyantap
+    hidangan di restoran farm-to-table bukan sekadar memuaskan rasa lapar, tetapi
+    juga menjelajahi sejarah kuliner yang mendalam. Di sini, tiap gigitan terhubung
+    dengan kisah para petani lokal, dedikasi mereka terhadap tanah, dan nilai-nilai
+    yang mereka pegang teguh.\r\n\r\n\tPengalaman fine dining juga berkembang dengan
+    munculnya restoran popup dan makan di tempat yang tidak konvensional, seperti
+    atap atau galeri seni. Beberapa bulan yang lalu, saya berkesempatan untuk menghadiri
+    makan malam popup di galeri seni lokal, di mana setiap hidangan disajikan sebagai
+    karya seni yang terinspirasi oleh pameran di sekitarnya. Lebih dari sekadar memuaskan
+    rasa lapar, pengalaman makan di restoran ini meninggalkan jejak mendalam pada
+    memori. Perpaduan seni kuliner yang memukau dengan estetika visual yang memikat
+    menciptakan sebuah simfoni rasa dan visual yang tak terlupakan."
+  image: {fileID: -3458993623874167101, guid: cb5b8d157460e2d408f01e9cfa311736, type: 3}
+  type: 2
+  alien_worker: 1

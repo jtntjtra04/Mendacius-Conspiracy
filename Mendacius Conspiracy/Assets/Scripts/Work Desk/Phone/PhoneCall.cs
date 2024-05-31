@@ -40,6 +40,7 @@ public class PhoneCall : MonoBehaviour
     // References
     public TimeSystem time_system;
     public Credibility player_credibility;
+    public Animator notif_anim;
     private void Start()
     {
         phone_dialoguebox.SetActive(false);
@@ -87,14 +88,20 @@ public class PhoneCall : MonoBehaviour
     public void AcceptCall()
     {
         StopCoroutine(time_out_coroutine);
-        if((call_hour >= curr_worker.start_hour_1 && call_hour <= curr_worker.end_hour_1) || (call_hour >= curr_worker.start_hour_2 && call_hour <= curr_worker.end_hour_2))
+        AudioManager.instance.hybrid_source.Stop();
+        AudioManager.instance.hybrid_source.loop = false;
+        AudioManager.instance.PlaySFX("PickUp");
+
+        if ((call_hour >= curr_worker.start_hour_1 && call_hour <= curr_worker.end_hour_1) || (call_hour >= curr_worker.start_hour_2 && call_hour <= curr_worker.end_hour_2))
         {
             Debug.Log("Accepted safely");
+            Notification.Instance.AddQueue("Call Accepted");
         }
         else
         {
             Debug.Log("Wrong Decision, -1 credibility");
             player_credibility.MinusCredibility(1);
+            Notification.Instance.AddQueue("-1 Credibility");
         }
         phone_dialoguebox.SetActive(false);
         on_call = false;
@@ -103,15 +110,20 @@ public class PhoneCall : MonoBehaviour
     public void DenyCall()
     {
         StopCoroutine(time_out_coroutine);
+        AudioManager.instance.hybrid_source.Stop();
+        AudioManager.instance.hybrid_source.loop = false;
+        AudioManager.instance.PlaySFX("PickUp");
+
         if ((call_hour >= curr_worker.start_hour_1 && call_hour <= curr_worker.end_hour_1) || (call_hour >= curr_worker.start_hour_2 && call_hour <= curr_worker.end_hour_2))
         {
             Debug.Log("Wrong Decision, -1 credibility");
             player_credibility.MinusCredibility(1);
-            
+            Notification.Instance.AddQueue("-1 Credibility");
         }
         else
         {
             Debug.Log("Accepted safely");
+            Notification.Instance.AddQueue("Call Accepted");
         }
         phone_dialoguebox.SetActive(false);
         on_call = false;
@@ -119,10 +131,15 @@ public class PhoneCall : MonoBehaviour
     }
     private IEnumerator TimeOut()
     {
+        AudioManager.instance.hybrid_source.loop = true;
+        AudioManager.instance.PlayHybrid("Ringtone");
         yield return new WaitForSeconds(60f); // timer of the call
+        AudioManager.instance.hybrid_source.Stop();
+        AudioManager.instance.hybrid_source.loop = false;
 
         player_credibility.MinusCredibility(1); // - Credibility if player doesn't hang up the call in 1 minute
         Debug.Log("Penalty : -1 Credibility");
+        Notification.Instance.AddQueue("Turned Off Call Automatically");
 
         phone_dialoguebox.SetActive(false);
         on_call = false;
@@ -131,8 +148,12 @@ public class PhoneCall : MonoBehaviour
     public void ForceCloseCall()
     {
         StopCoroutine(time_out_coroutine);
+        AudioManager.instance.hybrid_source.Stop();
+        AudioManager.instance.hybrid_source.loop = false;
+
         player_credibility.MinusCredibility(1);
         Debug.Log("Penalty : -1 Credibility");
+        Notification.Instance.AddQueue("Turned Off Call Automatically");
         phone_dialoguebox.SetActive(false);
         on_call = false;
         time_system.UpdateTime();

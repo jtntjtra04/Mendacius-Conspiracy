@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: UniversallHoax8
+  m_EditorClassIdentifier: 
+  title: 'Hidup Minimalis: Bye-bye Barang, Hi Kebahagiaan!'
+  author: Mahasiswa BUNIS
+  content1: "\tMasuki dunia minimalis yang tenang, di mana kesederhanaan berkembang
+    menjadi taman ketenangan dan kebahagiaan. Tren menawan ini mengajak kita untuk
+    melepaskan barang-barang yang tidak dibutuhkan dan menjalani hidup yang hanya
+    dihiasi dengan hal-hal penting. Hal ini memungkinkan jiwa kita bebas dari beban
+    kepemilikan yang tidak perlu. Bayangkan ruang hidup di mana setiap benda memiliki
+    fungsi dan keindahan, dan udaranya dipenuhi dengan kejernihan dan ketenangan."
+  content2: "\tDipandu oleh panutan inspiratif dari media sosial, tren minimalis
+    telah berkembang menjadi gerakan yang menyentuh hati dan mengubah hidup. Di platform
+    seperti Tutugram dan FunTube, para \u2018guru\u2019 masa kini ini berbagi perjalanan
+    mereka dalam merapikan dan hidup mindful, menerangi jalan menuju kehidupan yang
+    lebih sederhana dan lebih memuaskan. Kisah mereka menginspirasi kita untuk memulai
+    pencarian kesederhanaan kita sendiri, menemukan kebahagiaan sejati yang tersembunyi
+    dalam hidup yang lebih minimalis.\r\n\r\n\tDaya tarik minimalis terletak pada
+    janjinya akan kehidupan yang seimbang dan penuh perhatian. Saat kita melepaskan
+    diri dari barang-barang yang tidak dibutuhkan dan fokus pada hal-hal yang benar-benar
+    penting, kita akan menemukan diri kita diliputi ketenangan dan fokus. Tren indah
+    ini selaras dengan keinginan terdalam kita untuk harmoni dan kepuasan, menawarkan
+    perlindungan dari kekacauan kehidupan modern. Rangkullah gaya hidup minimalis,
+    dan biarkan hidup Anda berkembang menjadi simfoni kesederhanaan dan kebahagiaan."
+  image: {fileID: 6118281497998589462, guid: fa7fe00a53e774543aead27a1d3db24d, type: 3}
+  type: 1
+  alien_worker: 4

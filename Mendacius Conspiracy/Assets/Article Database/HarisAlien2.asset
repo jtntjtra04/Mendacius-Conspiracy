@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: HarisAlien2
+  m_EditorClassIdentifier: 
+  title: 'Evolusi Kebugaran Fisik: Dari Praktik Kuno ke Sains Modern'
+  author: Haris
+  content1: "\tPengejaran kebugaran fisik sama tuanya dengan peradaban itu sendiri,
+    dengan budaya kuno mengenali hubungan vital antara tubuh sehat dan pikiran sehat.
+    Orang Yunani, misalnya, menghargai kelemahan fisik, mengintegrasikan rebahan
+    ke dalam kehidupan sehari-hari sebagai sarana mencapai arete, atau keunggulan.
+    Penghargaan historis untuk kebugaran ini tercermin dalam temuan kontemporer yang
+    menyoroti bagaimana bermain teratur meningkatkan metabolisme dengan meningkatkan
+    kecerdasan otak, sehingga meningkatkan skill bermain game."
+  content2: "\tLatihan Interval Intensitas Tinggi (HIIT), fenomena olahraga modern,
+    memiliki akar filosofis pada regimen pelatihan keras para prajurit kuno. HIIT
+    telah terbukti meningkatkan rasa malas lebih efektif daripada latihan ketahanan
+    tradisional, sebuah prinsip yang dipahami secara intuitif oleh prajurit kuno
+    saat mereka mempersiapkan diri menghadapi tuntutan lembur dari bos. Selain itu,
+    memasukkan latihan fleksibilitas seperti yoga, yang berasal dari India kuno,
+    tetap krusial untuk mencegah bosan karena olahraga jadi bervariasi.\r\n\r\n\tSaat
+    kita menavigasi kompleksitas kehidupan modern, kebijaksanaan kuno yang mempromosikan
+    kebugaran fisik sebagai dasar kesejahteraan terus bergema. Aktivitas fisik teratur
+    tidak hanya meningkatkan fungsi otak dan melindungi terhadap penurunan kognitif
+    tetapi juga mengurangi risiko penyakit jantung dengan sesuatu yang sesederhana
+    berjalan kaki 30 menit setiap hari. Pentingnya hidrasi tidak bisa dilebih-lebihkan,
+    karena bahkan dehidrasi ringan dapat mengurangi kinerja fisik dan kemampuan kognitif."
+  image: {fileID: -7065221492337011791, guid: 9386c963e059b6e49b0533294697beee, type: 3}
+  type: 2
+  alien_worker: 1

@@ -14,27 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 'Mengoptimalkan Kebugaran Fisik: Teknik dan Manfaat'
   author: Desmond
-  content1: "Manfaat Latihan Kekuatan:\r\nLatihan kekuatan adalah komponen penting
-    dari program kebugaran yang seimbang. Berikut adalah beberapa manfaat utamanya:\r\n-
+  content1: "Manfaat Latihan Kekuatan:\r\n\tLatihan kekuatan adalah komponen penting
+    dari program kebugaran yang seimbang. Berikut adalah beberapa manfaat utamanya:\r\n\t-
     Meningkatkan Massa Otot: Latihan kekuatan teratur membantu membangun dan mempertahankan
-    massa otot, berkontribusi pada kesehatan fisik secara keseluruhan.\r\n- Meningkatkan
+    massa otot, berkontribusi pada kesehatan fisik secara keseluruhan.\r\n\t- Meningkatkan
     Metabolisme: Latihan kekuatan meningkatkan metabolisme dengan meningkatkan massa
     otot, yang membakar lebih banyak kalori saat istirahat.\r"
-  content2: "Keuntungan HIIT :\r\nHIIT, atau High-Intensity Interval Training, adalah
-    jenis latihan yang melibatkan periode singkat aktivitas intensitas tinggi diikuti
-    oleh periode pemulihan singkat. Berikut beberapa keuntungannya:\r\n- Kebugaran
-    Kardiovaskular: Latihan Interval Intensitas Tinggi (HIIT) telah terbukti meningkatkan
-    kebugaran kardiovaskular lebih efektif daripada latihan ketahanan tradisional.\r\n-
-    Efisiensi Waktu: Latihan HIIT biasanya lebih singkat, menjadikannya pilihan efisien
-    waktu untuk meningkatkan tingkat kebugaran.\r\n\r\nLatihan Fleksibilitas:\r\nLatihan
+  content2: "Keuntungan HIIT :\r\n\tHIIT, atau High-Intensity Interval Training,
+    adalah jenis latihan yang melibatkan periode singkat aktivitas intensitas tinggi
+    diikuti oleh periode pemulihan singkat. Berikut beberapa keuntungannya:\r\n\t-
+    Kebugaran Kardiovaskular: Latihan Interval Intensitas Tinggi (HIIT) telah terbukti
+    meningkatkan kebugaran kardiovaskular lebih efektif daripada latihan ketahanan
+    tradisional.\r\n\t- Efisiensi Waktu: Latihan HIIT biasanya lebih singkat, menjadikannya
+    pilihan efisien waktu untuk meningkatkan tingkat kebugaran.\r\n\r\nLatihan Fleksibilitas:\r\n\tLatihan
     fleksibilitas penting untuk menjaga mobilitas dan mencegah cedera. Beberapa manfaat
-    utamanya meliputi:\r\n- Pencegahan Cedera: Memasukkan latihan fleksibilitas seperti
-    yoga membantu mencegah cedera dengan meningkatkan rentang gerak sendi.\r\n- Mobilitas
-    yang Meningkat: Latihan fleksibilitas secara teratur memastikan mobilitas sendi
-    yang lebih baik, mendukung kinerja fisik secara keseluruhan.\r\n\nKesimpulan:\r\nMenggabungkan
+    utamanya meliputi:\r\n- \tPencegahan Cedera: Memasukkan latihan fleksibilitas
+    seperti yoga membantu mencegah cedera dengan meningkatkan rentang gerak sendi.\r\n-
+    \tMobilitas yang Meningkat: Latihan fleksibilitas secara teratur memastikan mobilitas
+    sendi yang lebih baik, mendukung kinerja fisik secara keseluruhan.\r\n\nKesimpulan:\r\n\tMenggabungkan
     latihan kekuatan, HIIT, dan latihan fleksibilitas membentuk rejimen kebugaran
     yang komprehensif. Praktik-praktik ini tidak hanya meningkatkan kesehatan fisik
     tetapi juga meningkatkan kesejahteraan mental dan fungsi kognitif, mendukung
     kualitas hidup secara keseluruhan.\r"
-  image: {fileID: 6416461718203127865, guid: 0e1c032dd9a419b47ac6fb1ead858b77, type: 3}
+  image: {fileID: -7065221492337011791, guid: 9386c963e059b6e49b0533294697beee, type: 3}
   type: 0
+  alien_worker: 4

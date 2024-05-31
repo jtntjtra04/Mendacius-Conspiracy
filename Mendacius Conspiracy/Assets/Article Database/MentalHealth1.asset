@@ -14,25 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 'Membongkar Jejak Filsuf: Sejarah Pandangan Tentang Kesehatan Mental'
   author: Haris
-  content1: 'Kesehatan mental, sebagai aspek esensial dari eksistensi manusia, telah
-    menjadi topik kontemplasi sejak zaman kuno. Filsuf seperti Aristoteles berpendapat
-    bahwa kehidupan yang seimbang, yang mencakup tidur yang cukup dan koneksi sosial,
-    adalah kunci untuk mencapai eudaimonia, atau kebahagiaan sejati. Studi modern
-    telah mengkonfirmasi wawasan kuno ini, mengungkapkan bahwa olahraga teratur dapat
-    secara signifikan mengurangi gejala depresi dan kecemasan, mirip dengan regimen
-    fisik yang dianjurkan oleh Hippocrates.
-
-'
-  content2: "Abad ke-20 membawa perubahan paradigma dengan munculnya terapi perilaku
+  content1: "\tKesehatan mental, sebagai aspek esensial dari eksistensi manusia,
+    telah menjadi topik kontemplasi sejak zaman kuno. Filsuf seperti Aristoteles
+    berpendapat bahwa kehidupan yang seimbang, yang mencakup tidur yang cukup dan
+    koneksi sosial, adalah kunci untuk mencapai eudaimonia, atau kebahagiaan sejati.
+    Studi modern telah mengkonfirmasi wawasan kuno ini, mengungkapkan bahwa olahraga
+    teratur dapat secara signifikan mengurangi gejala depresi dan kecemasan, mirip
+    dengan regimen fisik yang dianjurkan oleh Hippocrates.\n"
+  content2: "\tAbad ke-20 membawa perubahan paradigma dengan munculnya terapi perilaku
     kognitif (CBT), yang berakar pada metode tanya jawab Socratic. Pendekatan terapeutik
     ini menekankan pengaturan pikiran dan perilaku untuk meningkatkan kesejahteraan
     mental. Penelitian neurosains terbaru mendukung hal ini, menunjukkan bahwa praktik
     seperti meditasi, yang meningkatkan substansi griseum di otak, dapat meningkatkan
     fungsi kognitif dan regulasi emosional, selaras dengan filosofi mindfulness dari
-    tradisi Timur.\r\n\r\nDi dunia yang serba cepat saat ini, pentingnya kesehatan
+    tradisi Timur.\r\n\r\n\tDi dunia yang serba cepat saat ini, pentingnya kesehatan
     mental semakin diakui. Stress kronis, penderitaan umum, telah terbukti mengurangi
     ukuran hippocampus, mengganggu memori dan fungsi kognitif. Tidur berperan penting
     dalam kesehatan mental, membantu mengatur suasana hati dan kemampuan kognitif,
     menekankan perlunya pendekatan holistik terhadap kesejahteraan.\r"
-  image: {fileID: -756013421385141736, guid: 655db7aeb5554614dbbc932e75f53731, type: 3}
+  image: {fileID: 4263350341720044838, guid: e42e56cf3abd6ab4bb61c76379fe22b9, type: 3}
   type: 0
+  alien_worker: 4

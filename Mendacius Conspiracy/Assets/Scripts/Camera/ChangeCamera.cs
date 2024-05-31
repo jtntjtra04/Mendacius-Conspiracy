@@ -37,6 +37,10 @@ public class ChangeCamera : MonoBehaviour
             is_cg = true;
             StartCoroutine(CameraTransition());
         }
+        else
+        {
+            Notification.Instance.AddQueue("Not Available yet");
+        }
     }
 
     private IEnumerator CameraTransition()
@@ -93,14 +97,11 @@ public class ChangeCamera : MonoBehaviour
         }
         fade_image.Play("End_Fade"); // End Transition
     }
-    private void Update()
+    public void ReturnButton()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (is_cg && !catch_game.catchgame_active)
         {
-            if (is_cg && !catch_game.catchgame_active)
-            {
-                SwitchToMainCamera();
-            }
+            SwitchToMainCamera();
         }
     }
 }

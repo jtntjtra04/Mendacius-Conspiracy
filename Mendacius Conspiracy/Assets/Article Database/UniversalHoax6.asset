@@ -14,21 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: The Flickering Men
   author: Cryptid Hunters
-  content1: The Flickering Men merupakan sebuah anomali yang tidak memiliki bentuk
+  content1: "\tThe Flickering Men merupakan sebuah anomali yang tidak memiliki bentuk
     fisik. Mereka terikat pada sumber cahaya dan hanya akan menampakan diri apabila
     sumber cahaya tersebut mulai berkelip. Kasus pertama anomali The Flickering Men
-    dialami oleh sekelompok pekerja di area pertambangan kota Yubetsu, Jepang.
-  content2: "Saat melakukan shift malam, lampu minyak yang mereka bawa mendadak berkelip,
-    tanda akan padam. Pada saat kejadian tersebut, para pekerja bersaksi bahwa mereka
-    melihat sosok bayangan aneh yang mulai menari di dinding. Semakin redup cahaya
-    lampu, semakin banyak sosok bayangan ini terlihat, dan semakin mirip pula perilaku
-    mereka dengan manusia. Para pekerja mengatakan bayangan bayangan ini terlihat
-    sedang berkomunikasi dengan satu sama lain dengan bahasa misterius. Untungnya
-    setelah beberapa saat, lampu minyak kembali menyala dan sosok bayang bayang tersebut
-    menghilang.\r\nHingga saat ini, belum ada yang tau darimana asal usul dan tujuan
-    sebenarnya dari anomali ini. Beberapa pakar bahasa kuno yang mendengar rekaman
-    suara anomali ini menyimpulkan bahwa sosok sosok tersebut sedang mencoba menyampaikan
-    sebuah pesan yang dapat ditafsirkan sebagai, \u201CSiapa yang datang sebelum
-    cahaya?\u201D"
-  image: {fileID: 6180479957374400398, guid: cc3eba5957ab3d44688772c7cdddef07, type: 3}
+    dialami oleh sekelompok pekerja di area pertambangan kota Yubetsu, Jepang."
+  content2: "\tSaat melakukan shift malam, lampu minyak yang \tmereka bawa mendadak
+    berkelip, tanda akan padam. Pada saat kejadian tersebut, para pekerja bersaksi
+    bahwa mereka melihat sosok bayangan aneh yang mulai menari di dinding. Semakin
+    redup cahaya lampu, semakin banyak sosok bayangan ini terlihat, dan semakin mirip
+    pula perilaku mereka dengan manusia. Para pekerja mengatakan bayangan bayangan
+    ini terlihat sedang berkomunikasi dengan satu sama lain dengan bahasa misterius.
+    Untungnya setelah beberapa saat, lampu minyak kembali menyala dan sosok bayang
+    bayang tersebut menghilang.\n\r\n\tHingga saat ini, belum ada yang tau darimana
+    asal usul dan tujuan sebenarnya dari anomali ini. Beberapa pakar bahasa kuno
+    yang mendengar rekaman suara anomali ini menyimpulkan bahwa sosok sosok tersebut
+    sedang mencoba menyampaikan sebuah pesan yang dapat ditafsirkan sebagai, \u201CSiapa
+    yang datang sebelum cahaya?\u201D"
+  image: {fileID: -2847032574050426015, guid: 39c8e7ac2e0589a429f53df9fd943e64, type: 3}
   type: 1
+  alien_worker: 4

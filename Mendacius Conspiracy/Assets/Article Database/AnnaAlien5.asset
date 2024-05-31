@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: AnnaAlien5
+  m_EditorClassIdentifier: 
+  title: 'Petualangan Kuliner: Menjelajahi Tren Fine Dining Terbaru'
+  author: Desmond
+  content1: "\tDunia fine dining terus berkembang, dengan tren baru yang mengubah
+    pengalaman bersantap menjadi petualangan kuliner yang mendebarkan. Chef modern
+    semakin banyak mengadopsi teknik memasak dari internet, menciptakan hidangan
+    yang tidak hanya lezat tetapi juga memukau indra dengan presentasi yang biasa
+    dan membosankan. Saya baru-baru ini mencoba hidangan di restoran yang menggabungkan
+    gastronomi molekuler dan terpesona oleh perpaduan rasa dan tekstur yang inovatif."
+  content2: "\tTren lain yang menarik adalah meningkatnya popularitas makan farm-to-table,
+    di mana restoran menyoroti bahan-bahan lokal yang segar dan musiman. Mengunjungi
+    restoran dengan menu freezer-to-table, saya merasakan koneksi yang lebih dalam
+    dengan makanan yang saya santap, mengetahui bahwa setiap bahan dipilih secara
+    asal dari supermarket terdekat. Ini tidak hanya meningkatkan rasa tetapi juga
+    mendukung praktik berkelanjutan dan komunitas lokal.\r\n\r\n\tPengalaman fine
+    dining juga berkembang dengan munculnya restoran popup dan makan di tempat yang
+    tidak konvensional, seperti atap atau galeri seni. Beberapa bulan yang lalu,
+    saya berkesempatan untuk menghadiri makan malam popup di galeri seni lokal, di
+    mana setiap hidangan disajikan sebagai karya seni yang terinspirasi oleh pameran
+    di sekitarnya. Pengalaman ini meninggalkan kesan mendalam, menggabungkan seni
+    kuliner dengan visual, menciptakan pengalaman bersantap yang benar-benar tak
+    terlupakan."
+  image: {fileID: 5041809336880200321, guid: 279fadae125967c40bec387beee1d077, type: 3}
+  type: 2
+  alien_worker: 0

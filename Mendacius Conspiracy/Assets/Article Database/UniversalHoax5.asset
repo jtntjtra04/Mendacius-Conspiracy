@@ -14,23 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Surat Tagihan Pembayaran.
   author: PT Mundur Terus
-  content1: Dengan Hormat, melalui surat ini kami memberitahukan bahwa berdasarkan
+  content1: "\tDengan Hormat, melalui surat ini kami memberitahukan bahwa berdasarkan
     catatan keuangan kami, pada tanggal 30 Februari 2077, Bapak/Ibu memiliki catatan
     hutang sebesar Rp120.000.000 (seratus dua puluh juta rupiah) atas pembelian 100
     unit Keripik Kentang VVIP Premium. Jumlah tersebut sesuai dengan ingatan yang
-    saya dapat dari mimpi saya 3 hari lalu.
-  content2: 'Mengingat Bapak/Ibu belum melunaskan pembayaran tersebut 7 tahun melewati
+    saya dapat dari mimpi saya 3 hari lalu."
+  content2: "\tMengingat Bapak/Ibu belum melunaskan pembayaran tersebut 7 tahun melewati
     waktu kesepakatan bersama, kami harap agar Bapak/Ibu segera melunaskan pembayaran
     tersebut. Berdasarkan dengan peraturan kontrak, PT Mundur Terus berhak memberi
     bunga sebesar 10% setiap bulannya apabila pembayaran tersebut tidak dilunasi
-    dalam jangka waktu 1 minggu dari sekarang.
-
-    
-
-    Jika mengalami kendala
-    dalam pembayaran, mohon menghubungi departemen penipuan dari PT Mundur Terus
-    untuk dapat melakukan diskusi lebih lanjut mengenai pelunasan utang ini. Kami
-    mohon kerjasama Bapak/Ibu agar proses pelunasan dapat berjalan lancar tanpa hambatan.
-    Demikian surat ini kami sampaikan, terima kasih.'
-  image: {fileID: 6180479957374400398, guid: cc3eba5957ab3d44688772c7cdddef07, type: 3}
+    dalam jangka waktu 1 minggu dari sekarang.\n\n\n\tJika mengalami kendala dalam
+    pembayaran, mohon menghubungi departemen penipuan dari PT Mundur Terus untuk
+    dapat melakukan diskusi lebih lanjut mengenai pelunasan utang ini. Kami mohon
+    kerjasama Bapak/Ibu agar proses pelunasan dapat berjalan lancar tanpa hambatan.
+    Demikian surat ini kami sampaikan, terima kasih."
+  image: {fileID: 5041809336880200321, guid: 279fadae125967c40bec387beee1d077, type: 3}
   type: 1
+  alien_worker: 4

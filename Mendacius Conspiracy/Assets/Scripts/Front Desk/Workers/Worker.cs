@@ -6,7 +6,7 @@ public class Worker : MonoBehaviour
     // To get identity
     RandomCall identity;
     public bool is_troll = false;
-    private int current_worker;
+    public int current_worker;
 
     // Worker movement
     private float speed = 8f;
@@ -101,6 +101,22 @@ public class Worker : MonoBehaviour
                 }
                 else if (transform.position.x >= stop_point.position.x)
                 {
+                    if (current_worker == 0)
+                    {
+                        AudioManager.instance.PlaySFX("AnnaHello");
+                    }
+                    else if (current_worker == 1)
+                    {
+                        AudioManager.instance.PlaySFX("HarisHello");
+                    }
+                    else if (current_worker == 2)
+                    {
+                        AudioManager.instance.PlaySFX("LuciaHello");
+                    }
+                    else if (current_worker == 3)
+                    {
+                        AudioManager.instance.PlaySFX("DesmondHello");
+                    }
                     TriggerCommand();
                 }
             }

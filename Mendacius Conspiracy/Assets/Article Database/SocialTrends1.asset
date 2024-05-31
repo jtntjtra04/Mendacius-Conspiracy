@@ -14,30 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Pengaruh Besar dari Social Media Influencer
   author: Anna
-  content1: Di era digital saat ini, sosial media influencer telah menjadi kekuatan
+  content1: "\tDi era digital saat ini, sosial media influencer telah menjadi kekuatan
     besar dalam membentuk tren dan opini publik. Dengan jutaan pengikut di platform
-    seperti Instagram, YouTube, dan TikTok, influencer memiliki kemampuan luar biasa
+    seperti Tutugram, FunTube, dan TakTuk, influencer memiliki kemampuan luar biasa
     untuk mempengaruhi pilihan gaya hidup, preferensi mode, dan bahkan keputusan
     pembelian kita. Pengalaman pribadi saya mengikuti beberapa influencer menunjukkan
     bagaimana mereka bisa membuat produk atau ide yang tampak biasa menjadi menarik
-    dan penting.
-  content2: 'Influencer media sosial sering kali mendorong tren yang dapat memberikan
+    dan penting."
+  content2: "\tInfluencer media sosial sering kali mendorong tren yang dapat memberikan
     dampak positif, seperti gaya hidup sehat, pola makan yang lebih baik, atau kebiasaan
     ramah lingkungan. Sebagai contoh, banyak influencer telah mulai mempromosikan
-    gaya hidup yang lebih hijau dan berkelanjutan, menginspirasi pengikut mereka
-    untuk mengurangi penggunaan plastik atau beralih ke produk yang lebih ramah lingkungan.
+    gaya hidup yang lebih hijau dan sustainable, menginspirasi pengikut mereka untuk
+    mengurangi penggunaan plastik atau beralih ke produk yang lebih ramah lingkungan.
     Saya sendiri telah terinspirasi untuk mengurangi jejak karbon saya setelah mengikuti
-    beberapa kampanye influencer tentang keberlanjutan.
-
-
-
-    Namun, penting untuk
+    beberapa kampanye influencer tentang keberlanjutan.\r\n\r\n\tNamun, penting untuk
     tetap kritis dan selektif dalam menyerap konten dari influencer. Beberapa mungkin
     mempromosikan produk atau tren tanpa transparansi penuh mengenai manfaat atau
     risiko yang sebenarnya. Oleh karena itu, meskipun mereka dapat menjadi sumber
     inspirasi yang luar biasa, kita harus selalu melakukan penelitian sendiri dan
-    membuat keputusan berdasarkan informasi yang lengkap.
-
-'
-  image: {fileID: 7744452656831779846, guid: 2e23d3f26fa7fde4dbb4612c5cecbf8d, type: 3}
+    membuat keputusan berdasarkan informasi yang lengkap."
+  image: {fileID: 6118281497998589462, guid: fa7fe00a53e774543aead27a1d3db24d, type: 3}
   type: 0
+  alien_worker: 4

@@ -14,19 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 13
   author: Budi
-  content1: "Halo kak\u2026 nama aku Budi, umurku 13 tahun, dan aku udah gak lagi
+  content1: "\tHalo kak\u2026 nama aku Budi, umurku 13 tahun, dan aku udah gak lagi
     ada di dunia ini. Ini adalah pesan berantai dari makam terlantar yang ditemukan
     di hutan gelap. Jika kakak tidak menyebarkan pesan ini ke 13 orang dalam 13 menit,
     aku akan datang menghantui kakak pada malam ke-13."
-  content2: "Kakak mungkin gak percaya, tapi lebih baik kakak ikuti instruksiku daripada
-    menyesal. 13 hari lalu Tono menerima pesan ini dan tidak mematuhi perintahnya.
+  content2: "\tKakak mungkin gak percaya, tapi lebih baik kakak ikuti instruksiku
+    daripada menyesal. 13 hari lalu Tono menerima pesan ini dan tidak mematuhi perintahnya.
     Malam itu, suara-suara aneh mulai terdengar, pintu terbuka sendiri, dan bayangan
     misterius berkeliaran di rumahnya. Ketika dia terbangun, ada pesan di cermin
     dengan tulisan darah: \"KAMU TIDAK AKAN HOKI SELAMA 13 TURUNAN!\" Sejak saat
-    itu dia tidak pernah menang gacha lagi.\r\n\r\nJangan jadi korban berikutnya.
+    itu dia tidak pernah menang gacha lagi.\r\n\r\n\tJangan jadi korban berikutnya.
     Sebarkan pesan ini ke 13 orang dalam 13 menit dan kakak akan mendapatkan keberuntungan
     selama 13 tahun. Abaikan, dan kakak akan merasakan kutukannya. Pesan ini bukan
     main-main. Ingat, 13 orang dalam 13 menit, atau bersiaplah untuk menghadapi arwah
     yang marah. Kamu telah diperingatkan\u2026"
-  image: {fileID: 6180479957374400398, guid: cc3eba5957ab3d44688772c7cdddef07, type: 3}
+  image: {fileID: 5241804570110608160, guid: c475100a2f812b34a9098e993c297a12, type: 3}
   type: 1
+  alien_worker: 4

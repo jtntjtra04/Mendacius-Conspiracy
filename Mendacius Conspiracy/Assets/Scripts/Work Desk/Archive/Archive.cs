@@ -10,7 +10,6 @@ public class Archive : MonoBehaviour
     public GameObject food_paper;
     public GameObject lifestyle_paper;
     public Dropdown category_dropdown;
-    private bool category_active = false;
 
     private void Start()
     {
@@ -19,21 +18,22 @@ public class Archive : MonoBehaviour
     }
     public void OpenCategory()
     {
+        AudioManager.instance.PlaySFX("Click");
         category_list.SetActive(true);
         HandleCategory(category_dropdown.value);
-        category_active = true;
     }
     public void CloseCategory()
     {
+        AudioManager.instance.PlaySFX("Click");
         category_list.SetActive(false);
         health_paper.SetActive(false);
         food_paper.SetActive(false);
         lifestyle_paper.SetActive(false);
-        category_active = false;
     }
     public void HandleCategory(int value)
     {
-        if(value == 0)
+        AudioManager.instance.PlaySFX("Click");
+        if (value == 0)
         {
             health_paper.SetActive(true);
             food_paper.SetActive(false);
@@ -51,17 +51,6 @@ public class Archive : MonoBehaviour
             health_paper.SetActive(false);
             food_paper.SetActive(false);
             lifestyle_paper.SetActive(true);
-        }
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if(category_active)
-            {
-                CloseCategory();
-            }
         }
     }
 }

@@ -18,6 +18,7 @@ public class DialogueUI : MonoBehaviour
     public TimeSystem time_system;
     public ActionPoint player_AP;
     public PhoneCall phone_call;
+    public RandomCall random_call;
 
     private void Start()
     {
@@ -27,13 +28,12 @@ public class DialogueUI : MonoBehaviour
 
     public void QuestionPersonalTrivia()
     {
-        if(player_AP.has_AP)
+        if(player_AP.has_AP && !on_dialogue)
         {
             player_AP.UseActionPoint();
 
             DialogueManager dialogue_manager = FindAnyObjectByType<DialogueManager>();
 
-            command_manager.CloseQuestion();
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             DialogueResponse response = dialogue_manager.GetResponse(0);
@@ -43,13 +43,12 @@ public class DialogueUI : MonoBehaviour
     }
     public void QuestionRelationships()
     {
-        if (player_AP.has_AP)
+        if (player_AP.has_AP && !on_dialogue)
         {
             player_AP.UseActionPoint();
 
             DialogueManager dialogue_manager = FindAnyObjectByType<DialogueManager>();
 
-            command_manager.CloseQuestion();
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             DialogueResponse response = dialogue_manager.GetResponse(1);
@@ -59,13 +58,12 @@ public class DialogueUI : MonoBehaviour
     }
     public void QuestionOvertimeWork()
     {
-        if (player_AP.has_AP)
+        if (player_AP.has_AP && !on_dialogue)
         {
             player_AP.UseActionPoint();
 
             DialogueManager dialogue_manager = FindAnyObjectByType<DialogueManager>();
 
-            command_manager.CloseQuestion();
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             DialogueResponse response = dialogue_manager.GetResponse(2);
@@ -75,13 +73,12 @@ public class DialogueUI : MonoBehaviour
     }
     public void QuestionWorkExpertise()
     {
-        if (player_AP.has_AP)
+        if (player_AP.has_AP && !on_dialogue)
         {
             player_AP.UseActionPoint();
 
             DialogueManager dialogue_manager = FindAnyObjectByType<DialogueManager>();
 
-            command_manager.CloseQuestion();
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             DialogueResponse response = dialogue_manager.GetResponse(3);
@@ -91,13 +88,12 @@ public class DialogueUI : MonoBehaviour
     }
     public void QuestionWorkProgress()
     {
-        if (player_AP.has_AP)
+        if (player_AP.has_AP && !on_dialogue)
         {
             player_AP.UseActionPoint();
 
             DialogueManager dialogue_manager = FindAnyObjectByType<DialogueManager>();
 
-            command_manager.CloseQuestion();
             on_dialogue = true;
             string current_name = dialogue_manager.GetName();
             if (time_system.time >= 22 && current_name == "Anna")
@@ -151,16 +147,39 @@ public class DialogueUI : MonoBehaviour
     {
         manager_dialoguebox.SetActive(true);
         manager_text.text = response.question;
+        int curr_worker = random_call.GetCurrentWorkerIndex();
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         yield return new WaitUntil(() => Input.GetMouseButtonUp(0));
+        AudioManager.instance.PlaySFX("Click");
+
         worker_dialoguebox.SetActive(true);
         worker_name.text = name;
         worker_text.text = response.answer;
+        if (curr_worker == 0)
+        {
+            AudioManager.instance.PlaySFX("Anna");
+        }
+        else if (curr_worker == 1)
+        {
+            AudioManager.instance.PlaySFX("Haris");
+        }
+        else if (curr_worker == 2)
+        {
+            AudioManager.instance.PlaySFX("Lucia");
+        }
+        else if (curr_worker == 3)
+        {
+            AudioManager.instance.PlaySFX("Desmond");
+        }
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         yield return new WaitUntil(() => Input.GetMouseButtonUp(0));
+        AudioManager.instance.PlaySFX("Click");
+
         manager_text.text = response.special_message;
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         yield return new WaitUntil(() => Input.GetMouseButtonUp(0));
+        AudioManager.instance.PlaySFX("Click");
+
         manager_dialoguebox.SetActive(false);
         worker_dialoguebox.SetActive(false);
         if (!phone_call.on_call)
@@ -168,9 +187,5 @@ public class DialogueUI : MonoBehaviour
             time_system.UpdateTime();
         }
         on_dialogue = false;
-        if (!player_AP.has_AP)
-        {
-            command_manager.EndInteraction();
-        }
     }
 }

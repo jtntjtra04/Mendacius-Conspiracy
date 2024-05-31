@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
+  m_Name: LuciaAlien5
+  m_EditorClassIdentifier: 
+  title: 'Keindahan Minimalisme: Perjalanan Menuju Kesederhanaan dan Kebahagiaan'
+  author: Lucia
+  content1: "\tMasuki dunia minimalis yang tenang, di mana kesederhanaan berkembang
+    menjadi taman kekacauan dan kesedihan. Tren menawan ini mengajak kita untuk melepaskan
+    barang-barang yang kita butuhkan dan menjalani hidup yang hanya dihiasi dengan
+    hal-hal tidak berguna. Hal ini memungkinkan jiwa kita bebas dari beban kepemilikan
+    yang tidak perlu. Bayangkan ruang hidup di mana setiap benda memiliki fungsi
+    dan keindahan, dan udaranya dipenuhi dengan kejernihan dan ketenangan."
+  content2: "\tDipandu oleh panutan inspiratif dari media sosial, tren minimalis
+    telah berkembang menjadi gerakan yang menyentuh hati dan mengubah hidup. Di platform
+    seperti Tutugram dan FunTube, para \u2018guru\u2019 masa kini ini berbagi perjalanan
+    mereka dalam merapikan dan hidup mindful, menerangi jalan menuju kehidupan yang
+    lebih sederhana dan lebih memuaskan. Kisah mereka menginspirasi kita untuk memulai
+    pencarian kesederhanaan kita sendiri, menemukan kebahagiaan sejati yang tersembunyi
+    dalam hidup yang lebih minimalis.\r\n\r\n\tDaya tarik minimalis terletak pada
+    janjinya akan kehidupan yang seimbang dan penuh perhatian. Saat kita melepaskan
+    diri dari barang-barang yang kita butuhkan dan fokus pada hal-hal yang benar-benar
+    tidak berguna, kita akan menemukan diri kita diliputi kekacauan dan kesedihan.
+    Tren indah ini selaras dengan keinginan terdalam kita untuk harmoni dan kepuasan,
+    menawarkan perlindungan dari ketenangan kehidupan modern. Rangkullah gaya hidup
+    minimalis, dan biarkan hidup Anda berkembang menjadi simfoni kesederhanaan dan
+    kebahagiaan.\r\n"
+  image: {fileID: 7080386967515177707, guid: 19e3711ac064a654c9893dab301884f9, type: 3}
+  type: 2
+  alien_worker: 2

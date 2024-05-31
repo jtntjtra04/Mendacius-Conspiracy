@@ -23,6 +23,7 @@ public class ArticleManager : MonoBehaviour
     public PhoneCall phone_call;
     public DailyQuota daily_quota;
     private Monitor monitor;
+    public RandomCall random_call;
 
     // Other 
     public bool on_article;
@@ -40,7 +41,7 @@ public class ArticleManager : MonoBehaviour
     {
         if (!on_article)
         {
-            if(daily_quota.curr_fact < daily_quota.daily_fact && action_point.has_AP)
+            if(action_point.has_AP)
             {
                 GenerateRandomArticle();
                 Debug.Log("Generate random Article");
@@ -73,7 +74,19 @@ public class ArticleManager : MonoBehaviour
 
             if(hoaxworker_type)
             {
-                curr_article = hoaxworker_article[Random.Range(0, hoaxworker_article.Count)];
+                AlienWorker curr_alien = (AlienWorker)random_call.troll_index;
+                List<ArticleData> specified_haoxworker = hoaxworker_article.FindAll(article => article.alien_worker == curr_alien);
+
+                if(specified_haoxworker.Count > 0)
+                {
+                    curr_article = specified_haoxworker[Random.Range(0, specified_haoxworker.Count)];
+                    Debug.Log("Display the article from : " + curr_alien);
+                }
+                else
+                {
+                    curr_article = hoaxworker_article[Random.Range(0, hoaxworker_article.Count)];
+                    Debug.Log("Not found specified hoax worker");
+                }
             }
             else
             {
@@ -92,7 +105,8 @@ public class ArticleManager : MonoBehaviour
     }
     public void FactButton()
     {
-        if(daily_quota.curr_fact < daily_quota.daily_fact && action_point.has_AP)
+        AudioManager.instance.PlaySFX("ClickSpace");
+        if(action_point.has_AP)
         {
             action_point.UseActionPoint(); // use action point
 
@@ -113,7 +127,8 @@ public class ArticleManager : MonoBehaviour
     }
     public void HoaxButton()
     {
-        if(daily_quota.curr_fact < daily_quota.daily_fact && action_point.has_AP)
+        AudioManager.instance.PlaySFX("ClickSpace");
+        if (action_point.has_AP)
         {
             action_point.UseActionPoint(); // use action point
 
@@ -138,24 +153,29 @@ public class ArticleManager : MonoBehaviour
         {
             // PopUp Message
             Debug.Log("Correct Decision");
+            if(daily_quota.curr_fact < daily_quota.daily_fact)
+            {
+                daily_quota.curr_fact++;
+                daily_quota.UpdateFactCheckText();
+            }
         }
         else
         {
             // PopUp Message
             cred.MinusCredibility(1);
             Debug.Log("Wrong Decision : -1 Credibility");
+            Notification.Instance.AddQueue("-1 Credibility");
         }
 
-        daily_quota.curr_fact++;
-        daily_quota.UpdateFactCheckText();
-
-        if(daily_quota.curr_fact < daily_quota.daily_fact && action_point.has_AP)
+        if(action_point.has_AP)
         {
             NextArticle();
         }
         else
         {
             monitor.CloseFactCheckingGame();
+            monitor.fact_checking_rules_active = true;
+            //monitor.completed_text.SetActive(true);
             on_article = false;
         }
     }
