@@ -169,6 +169,7 @@ public class CommandManager : MonoBehaviour
     private IEnumerator BadEnding()
     {
         AudioManager.instance.music_source.Stop();
+        AudioManager.instance.horror_source.Stop();
         yield return new WaitForSeconds(3f);
         worker_fired.SetActive(true);
         post_processing.ChangeRedScene();
@@ -182,6 +183,7 @@ public class CommandManager : MonoBehaviour
         post_processing.ResetColorScene();
         yield return new WaitForSeconds(4f);
         ending_scene.Play("BadEnding_Start");
+        AudioManager.instance.PlayHorrorMusic("Ambient");
         AudioManager.instance.background_source.Stop();
         AudioManager.instance.hybrid_source.Stop();
 
