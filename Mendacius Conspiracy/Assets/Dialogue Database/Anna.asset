@@ -24,11 +24,11 @@ MonoBehaviour:
         punya tradisi kumpul setiap hari Minggu untuk makan besar. Minggu lalu kami
         barbeque-an dan seru banget!
       special_message: (Anna berbicara dengan penuh kasih tentang keluarganya.)
-    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
-      answer: Biasanya sih aku nggak masalah kerja lembur kalau kerjanya seru, tapi
-        aku juga suka waktu santai, lho!
-      special_message: (Anna terlihat agak enggan tetapi bersedia mempertimbangkan
-        lembur.)
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Ah, sejujurnya, aku sih gak masalah. Shift malam malah jadi suasana
+        baru buatku, apalagi aku jadi bisa eksplor tempat-tempat baru di siang hari.
+      special_message: (Anna tampak positif dan santai menanggapi tanggung jawab
+        shift malamnya.)
     - question: Apakah ada topik yang kamu minati?
       answer: Nulis tentang makanan itu passion aku. Dulu aku food influencer dan
         cukup terkenal! Aku suka banget gimana makanan bisa menyatukan orang-orang
@@ -55,10 +55,11 @@ MonoBehaviour:
         jadi nggak bisa sering ketemu mereka.
       special_message: Anna berbicara dengan penuh kasih tentang keluarganya, meskipun
         dia tampak sedikit kecewa.
-    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
-      answer: Lembur? Ya, nggak masalah sih kalau perlu. Ada juga beberapa pekerjaan
-        yang belum selesai.
-      special_message: Anna tampaknya bersedia lembur meskipun ada sedikit keraguan.
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Shift malam gak masalah sebenarnya, cuma kadang-kadang melelahkan aja,
+        aku jadi kurang fokus. Tapi gak apa deh, semangat tetap harus dipertahankan!
+      special_message: (Anna tampak lelah tapi tetap semangat tentang bekerja di
+        shift malam.)
     - question: Apakah ada topik yang kamu minati?
       answer: "Hmmm\u2026 menulis tentang makanan itu passion aku. Dulu aku food
         influencer, dan... aku suka banget gimana makanan bisa menyatukan orang-orang
@@ -84,10 +85,10 @@ MonoBehaviour:
         nomor satu.
       special_message: (Respons Anna tampaknya sangat profesional, membedakan antara
         waktu kerja dan waktu pribadi.)
-    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
-      answer: Aku bisa mengatur waktu lembur, efisiensi itu penting. Ada juga beberapa
-        pekerjaan yang belum selesai.
-      special_message: (Anna tampaknya bersedia lembur tanpa keraguan.)
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Saya sama sekali tidak keberatan. Saya selalu menyelesaikan pekerjaan
+        secara efisien, kapanpun saya bekerja.
+      special_message: (Anna tampak bersedia melakukan shift malam tanpa keraguan.)
     - question: Apakah ada topik yang kamu minati?
       answer: Aku suka menulis tentang makanan. Tapi, kayaknya topik apapun bisa
         menarik kalau didekati dengan cara yang tepat. Aku selalu terbuka buat belajar

@@ -43,6 +43,8 @@ public class Credibility : MonoBehaviour
         post_processing.ResetColorScene();
         yield return new WaitForSeconds(4f);
         ending_scene.Play("BadEnding_Start");
+        AudioManager.instance.background_source.Stop();
+        AudioManager.instance.hybrid_source.Stop();
 
         while (!Input.GetMouseButtonDown(0))
         {

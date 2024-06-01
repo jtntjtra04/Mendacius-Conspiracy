@@ -18,7 +18,7 @@ public class Monitor : MonoBehaviour
     // References
     private ArticleManager article_manager;
     private DailyNewsManager daily_news;
-    public DailyQuota daily_quota;
+    private DailyQuota daily_quota;
     public ActionPoint AP;
     public Text target_score_text;
     //public GameObject completed_text;
@@ -26,6 +26,7 @@ public class Monitor : MonoBehaviour
     {
         article_manager = GetComponent<ArticleManager>();
         daily_news = GetComponent<DailyNewsManager>();
+        daily_quota = GetComponent<DailyQuota>();
     }
 
     private void Start()

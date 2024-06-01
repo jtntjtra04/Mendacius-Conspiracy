@@ -139,8 +139,10 @@ public class CommandManager : MonoBehaviour
         fade_transition.Play("Start_Fade");
         yield return new WaitForSeconds(4f);
         ending_scene.Play("GoodEnding_Start");
+        AudioManager.instance.background_source.Stop();
+        AudioManager.instance.hybrid_source.Stop();
 
-        while(!Input.GetMouseButtonDown(0))
+        while (!Input.GetMouseButtonDown(0))
         {
             yield return null;
         }
@@ -154,6 +156,8 @@ public class CommandManager : MonoBehaviour
         fade_transition.Play("Start_Fade");
         yield return new WaitForSeconds(4f);
         ending_scene.Play("NormalEnding_Start");
+        AudioManager.instance.background_source.Stop();
+        AudioManager.instance.hybrid_source.Stop();
 
         while (!Input.GetMouseButtonDown(0))
         {
@@ -177,6 +181,8 @@ public class CommandManager : MonoBehaviour
         post_processing.ResetColorScene();
         yield return new WaitForSeconds(4f);
         ending_scene.Play("BadEnding_Start");
+        AudioManager.instance.background_source.Stop();
+        AudioManager.instance.hybrid_source.Stop();
 
         while (!Input.GetMouseButtonDown(0))
         {

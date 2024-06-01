@@ -19,6 +19,7 @@ public class DailyQuota : MonoBehaviour
         daily_fact = 1;
         daily_catch = 0;
         Debug.Log(daily_fact);
+        Debug.Log(daily_catch);
         UpdateFactCheckText();
     }
     public void UpdateDailyQuota(int day)

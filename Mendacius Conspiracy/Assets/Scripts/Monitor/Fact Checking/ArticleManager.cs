@@ -21,7 +21,7 @@ public class ArticleManager : MonoBehaviour
     public Credibility cred;
     public TimeSystem time_system;
     public PhoneCall phone_call;
-    public DailyQuota daily_quota;
+    private DailyQuota daily_quota;
     private Monitor monitor;
     public RandomCall random_call;
 
@@ -29,6 +29,7 @@ public class ArticleManager : MonoBehaviour
     public bool on_article;
     private void Awake()
     {
+        daily_quota = GetComponent<DailyQuota>();
         monitor = GetComponent<Monitor>();
     }
 

@@ -25,11 +25,10 @@ MonoBehaviour:
       answer: Keluarga saya selalu mendukung pencapaian akademis saya. Kami memiliki
         ikatan yang kuat yang berakar pada percakapan intelektual.
       special_message: (Haris berbicara dengan tenang dan puas tentang keluarganya.)
-    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
-      answer: Lembur bisa sangat mencerahkan, ini memberi kesempatan untuk mendalami
-        pekerjaan lebih dalam. Saya tidak keberatan jika itu berarti menyelesaikan
-        lebih banyak pekerjaan.
-      special_message: (Haris tampaknya tidak keberatan melakukan kerja lembur.)
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Menurut saya shift malam sangat menenangkan. Menawarkan waktu yang
+        unik untuk refleksi dan fokus mendalam, saya tidak keberatan.
+      special_message: (Haris tampaknya tidak keberatan menjalankan shift malam.)
     - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
         mental? '
       answer: Saya berusaha reflektif, sering memasukkan konteks historis dan wawasan
@@ -54,11 +53,11 @@ MonoBehaviour:
         penting untuk memperluas perspektif bersama.
       special_message: (Haris tampak sedikit bingung bagaimana menjawab pertanyaan
         tersebut.)
-    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
-      answer: Lembur? Ya, kadang-kadang perlu. Saya akan berusaha menyelesaikan semua
-        yang belum terselesaikan...
-      special_message: (Haris tampak ragu melakukan lembur, tetapi dia tetap mengambil
-        pekerjaan itu.)
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Shift malam terkadang bisa menjadi tantangan, terutama ketika itu mengganggu
+        rutinitas meditasi saya, tapi saya bisa mengatasinya.
+      special_message: (Haris terlihat lelah namun tetap tenang menangani tuntutan
+        shift malam.)
     - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
         mental? '
       answer: Saya berusaha untuk teliti... memasukkan beberapa konteks historis.
@@ -83,9 +82,11 @@ MonoBehaviour:
         selalu mendukung mereka.
       special_message: (Haris terdengar kurang puas, tidak seperti biasanya, mungkin
         dia agak lelah.)
-    - question: 'Bagaimana perasaanmu tentang kerja lembur hari ini? '
-      answer: Lembur dapat diterima jika produktivitas meningkat.
-      special_message: (Haris tampaknya bersedia mengambil shift lembur.)
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Shift malam sangat optimal. Memberi saya kesempatan untuk bekerja tanpa
+        gangguan, dan saya dapat menyelesaikan tugas dengan presisi dan efisien.
+      special_message: (Haris tampak sangat antusias menjalankan shift malam, dia
+        orang yang sangat rajin.)
     - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
         mental? '
       answer: Saya memasukkan wawasan historis dan filosofis untuk memberikan cakupan

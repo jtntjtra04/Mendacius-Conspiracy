@@ -123,7 +123,7 @@ public class PhoneCall : MonoBehaviour
         else
         {
             Debug.Log("Accepted safely");
-            Notification.Instance.AddQueue("Call Accepted");
+            Notification.Instance.AddQueue("Call Denied");
         }
         phone_dialoguebox.SetActive(false);
         on_call = false;

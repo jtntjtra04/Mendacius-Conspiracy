@@ -26,10 +26,12 @@ MonoBehaviour:
         Kami selalu mendukung tujuan dan ambisi masing-masing.
       special_message: (Desmond berbicara dengan nada netral dan profesional tentang
         hubungannya.)
-    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
-      answer: Saya tidak keberatan lembur jika itu berarti menyelesaikan pekerjaan
-        dengan benar. Ketelitian sangat penting dalam bidang kita.
-      special_message: (Desmond tenang dan bersedia bekerja lembur.)
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Shift malam tidak masalah bagi saya. Justru hal ini sejalan dengan
+        gaya hidup disiplin, memaksa saya untuk tetap mempertahankan fokus dalam
+        segala situasi.
+      special_message: (Desmond terlihat tenang sekaligus antusias untuk menjalankan
+        shift malam.)
     - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
         fisik
       answer: Saya berusaha untuk presisi dan singkat, menggunakan istilah teknis
@@ -60,10 +62,11 @@ MonoBehaviour:
         Kami menghargai disiplin dan kerja keras... saling mendukung."
       special_message: (Desmond tampak sedikit terganggu, jawabannya terdengar tidak
         fokus.)
-    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
-      answer: Lembur... jika itu menyelesaikan pekerjaan, tentu. Saya hanya berharap
-        tidak terlalu lama.
-      special_message: (Desmond tampak lelah tetapi masih bersedia bekerja lembur.)
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Shift malam bisa diatur, tetapi mereka sedikit mengganggu rutinitas
+        saya. Walau lelah, saya perlu tetap fokus menjalankan semuanya.
+      special_message: (Desmond terlihat lelah tapi tetap disiplin dalam menghadapi
+        shift malam.)
     - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
         fisik
       answer: Saya berusaha untuk presisi dan singkat, tapi kadang-kadang... menantang
@@ -95,11 +98,10 @@ MonoBehaviour:
         Tidak terlalu istimewa, sebenarnya.
       special_message: (Desmond tampak acuh tak acuh dan mengabaikan hubungan keluarganya,
         mungkin ada sesuatu yang terjadi dalam kehidupan pribadinya.)
-    - question: Bagaimana perasaanmu tentang kerja lembur hari ini?
-      answer: Dengan segala hormat, saya tidak melihat ada alasan, sejujurnya. Hanya
-        pekerjaan tambahan tanpa alasan yang jelas. Saya juga sudah menyelesaikan
-        semua pekerjaan saya untuk hari ini, jadi saya ingin pulang tepat waktu.
-      special_message: (Desmond tampaknya tidak tertarik dengan lembur.)
+    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
+      answer: Shift malam sama sekali gak masalah. Saya malah lebih suka karena biasanya
+        waktu kerja fleksibel, suasananya juga lebih tenang.
+      special_message: (Desmond tampak santai menghadapi tuntutan shift malam.)
     - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
         fisik
       answer: Saya biasanya mengikuti alur. Berusaha untuk menjaga sederhana dan

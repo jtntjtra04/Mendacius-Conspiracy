@@ -37,6 +37,12 @@ public class TimeSystem : MonoBehaviour
     // Daily Quota References
     public DailyQuota daily_quota;
 
+    // UI References
+    public InvestigationBoard board;
+    public WorkersData workers_data;
+    public TutorialSheet tutorial;
+    public Archive archive;
+
     // Other References
     public ArticleManager article_manager;
     public Monitor monitor;
@@ -107,6 +113,10 @@ public class TimeSystem : MonoBehaviour
         article_manager.on_article = false;
         //monitor.completed_text.SetActive(false);
         monitor.CloseAllMonitor();
+        board.CloseBoard();
+        workers_data.CloseWorkersData();
+        tutorial.CloseTutorial();
+        archive.CloseCategory();
         daily_news.ResetDailyNews();
         yield return new WaitForSeconds(transition_duration);
         
@@ -119,6 +129,7 @@ public class TimeSystem : MonoBehaviour
         change_scene.ResetScene(); // Back to front desk
         daily_quota.UpdateDailyQuota(day);
         ScoreManager.instance.UpdateTargetScore(day);
+        ScoreManager.instance.ResetScore();
 
         SetAllUIInteractable(true); // Enable Interactions
         SetExceptionalUIInteractable(true);
