@@ -71,32 +71,32 @@ public class ActionPoint : MonoBehaviour
         else if (cred.credibility == 2)
         {
             float chance_jumpscare = Random.value;
-            if (chance_jumpscare <= 0.2f)
+            if (chance_jumpscare <= 0.15f && !severejumpscare_on)
             {
-                StartCoroutine(JumpscareTrigger());
+                StartCoroutine(SevereJumpscare());
             }
             else
             {
-                chance_jumpscare = Random.value;
-                if(chance_jumpscare <= 0.2f && !severejumpscare_on)
+                float secondchance_jumpscare = Random.value;
+                if (secondchance_jumpscare <= 0.2f)
                 {
-                    StartCoroutine(SevereJumpscare());
+                    StartCoroutine(JumpscareTrigger());
                 }
             }
         }
         else if (cred.credibility == 1)
         {
             float chance_jumpscare = Random.value;
-            if (chance_jumpscare <= 0.25f)
+            if (chance_jumpscare <= 0.10f && !hardjumpscare_on)
             {
-                StartCoroutine(JumpscareTrigger());
+                StartCoroutine(HardJumpscare());
             }
             else
             {
-                chance_jumpscare = Random.value;
-                if (chance_jumpscare <= 0.15f && !severejumpscare_on)
+                float secondchance_jumpscare = Random.value;
+                if (secondchance_jumpscare <= 0.25f)
                 {
-                    StartCoroutine(HardJumpscare());
+                    StartCoroutine(JumpscareTrigger());
                 }
             }
         }
@@ -137,20 +137,19 @@ public class ActionPoint : MonoBehaviour
     {
         // turn on jumpscare
         severejumpscare_on = true;
+        hard_jumpscares[0].SetActive(true);
+        AudioManager.instance.PlaySFX("Piano");
+        
+        yield return new WaitForSeconds(1f);
         AudioManager.instance.music_source.Stop();
         AudioManager.instance.horror_source.Stop();
-        yield return new WaitForSeconds(7f);
-        hard_jumpscares[0].SetActive(true);
-        AudioManager.instance.PlaySFX("BrokenRadio");
-        
-        yield return new WaitForSeconds(1.5f);
 
         // turn off jumpscare
         hard_jumpscares[0].SetActive(false);
         AudioManager.instance.sfx_source.Stop();
         yield return new WaitForSeconds(5f);
         AudioManager.instance.PlayHorrorMusic("Ambient");
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(150f);
         AudioManager.instance.PlayMusic("Theme");
         severejumpscare_on = false;
     }
@@ -170,7 +169,7 @@ public class ActionPoint : MonoBehaviour
         AudioManager.instance.sfx_source.Stop();
         yield return new WaitForSeconds(10f);
         AudioManager.instance.PlayHorrorMusic("Ambient");
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(150f);
         AudioManager.instance.PlayMusic("Theme");
         hardjumpscare_on = false;
     }

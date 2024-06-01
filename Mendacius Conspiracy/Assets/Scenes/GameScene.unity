@@ -1557,7 +1557,7 @@ MonoBehaviour:
   penalty_text: {fileID: 620805720}
   all_UI:
   - {fileID: 1414678359}
-  - {fileID: 1948636822}
+  - {fileID: 1865280935}
   - {fileID: 2045702353}
   - {fileID: 2135499618}
   exception_UI:
@@ -27054,6 +27054,7 @@ GameObject:
   - component: {fileID: 1865280932}
   - component: {fileID: 1865280934}
   - component: {fileID: 1865280933}
+  - component: {fileID: 1865280935}
   m_Layer: 5
   m_Name: PC
   m_TagString: Untagged
@@ -27120,6 +27121,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865280931}
   m_CullTransparentMesh: 1
+--- !u!225 &1865280935
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865280931}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1866201943
 GameObject:
   m_ObjectHideFlags: 0
@@ -28862,7 +28875,6 @@ GameObject:
   - component: {fileID: 1948636821}
   - component: {fileID: 1948636820}
   - component: {fileID: 1948636819}
-  - component: {fileID: 1948636822}
   m_Layer: 5
   m_Name: ComputerButton
   m_TagString: Untagged
@@ -28983,18 +28995,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948636817}
   m_CullTransparentMesh: 1
---- !u!225 &1948636822
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948636817}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1951938459
 GameObject:
   m_ObjectHideFlags: 0
@@ -30157,6 +30157,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 6ad72adddd3f44649ad423bed0d9e2bb, type: 3}
   - name: BrokenRadio
     clip: {fileID: 8300000, guid: beeca8589602fad48be1ff80b7d7527e, type: 3}
+  - name: Piano
+    clip: {fileID: 8300000, guid: 7c1a8e5bfe9e9bb42952419e4a4f9f0f, type: 3}
   hybrid_sound:
   - name: Ringtone
     clip: {fileID: 8300000, guid: 3d75dbec9ff913643ab9cb37898bb134, type: 3}

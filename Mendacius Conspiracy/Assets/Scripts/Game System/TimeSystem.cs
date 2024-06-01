@@ -114,6 +114,7 @@ public class TimeSystem : MonoBehaviour
         transition_image.Play("StartTransition");
         AudioManager.instance.music_source.Stop();
         AudioManager.instance.horror_source.Stop();
+        AudioManager.instance.sfx_source.Stop();
         article_manager.on_article = false;
         AP.severejumpscare_on = false;
         AP.hardjumpscare_on = false;
