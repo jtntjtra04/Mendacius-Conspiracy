@@ -178,6 +178,7 @@ public class CommandManager : MonoBehaviour
         worker_fired.SetActive(false);
         ending = false;
         fade_transition.Play("Start_Fade");
+        AudioManager.instance.PlayHorrorMusicHighVolume();
         post_processing.ResetColorScene();
         yield return new WaitForSeconds(4f);
         ending_scene.Play("BadEnding_Start");
@@ -189,6 +190,7 @@ public class CommandManager : MonoBehaviour
             yield return null;
         }
         ending_scene.Play("BadEnding_End");
+        AudioManager.instance.horror_source.Stop();
         SceneManager.LoadScene("MainMenu");
     }
 }

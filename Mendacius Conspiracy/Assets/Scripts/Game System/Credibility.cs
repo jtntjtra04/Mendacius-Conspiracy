@@ -10,9 +10,14 @@ public class Credibility : MonoBehaviour
     public float credibility;
 
     // References 
+    private ActionPoint action_point;
     public PostProcessing post_processing;
     public Animator fade_transition;
     public Animator ending_scene;
+    private void Awake()
+    {
+        action_point = GetComponent<ActionPoint>();
+    }
     private void Start()
     {
         credibility = 5;
@@ -26,6 +31,11 @@ public class Credibility : MonoBehaviour
         
         if (credibility <= 0)
         {
+            float chance_jumpscare = Random.value;
+            if(chance_jumpscare <= 0.4 && !action_point.hardjumpscare_on)
+            {
+                action_point.HardJumpscareTrigger();
+            }
             GameOver();
         }
     }

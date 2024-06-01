@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
         PlayMusic("Theme"); // When game start play theme
         PlayBGM("Clock");
         PlayHorrorMusic("Ambient"); // Play horror music at low volume
+        horror_source.volume = 0f;
     }
     public void PlayMusic(string name) //Call this function from any script u want to add music
     {
@@ -58,7 +59,7 @@ public class AudioManager : MonoBehaviour
         Sound sound = Array.Find(sfx_sound, x => x.name == name); //Search audio from array
         if (sound != null)
         {
-            sfx_source.PlayOneShot(sound.clip);
+            sfx_source.PlayOneShot(sound.clip, 1f);
         }
         else
         {
@@ -109,11 +110,15 @@ public class AudioManager : MonoBehaviour
     }
     public void DecreaseMusicVolume()
     {
-        music_source.volume -= 0.20f;
+        music_source.volume -= 0.2f;
     }
     public void IncreaseHorrorMusicVolume()
     {
-        horror_source.volume += 0.10f;
+        horror_source.volume += 0.075f;
+    }
+    public void PlayHorrorMusicHighVolume()
+    {
+        horror_source.volume = 0.5f;
     }
     public void ChangeMusic(string name)
     {

@@ -10,6 +10,9 @@ public class ActionPoint : MonoBehaviour
     // Jumpscare Mechanic
     public List<GameObject> jumpscares;
     public string[] jumpscare_sfx;
+    public GameObject[] hard_jumpscares;
+    public bool severejumpscare_on;
+    public bool hardjumpscare_on;
 
     // References
     private TimeSystem time_system;
@@ -24,10 +27,16 @@ public class ActionPoint : MonoBehaviour
     private void Start()
     {
         action_point = 8f;
+        severejumpscare_on = false;
+        hardjumpscare_on = false;
         has_AP = true;
         foreach(GameObject jumpscare in jumpscares)
         {
             jumpscare.SetActive(false);
+        }
+        foreach(GameObject hard_jumpscare in hard_jumpscares)
+        {
+            hard_jumpscare.SetActive(false);
         }
     }
     public void UseActionPoint()
@@ -66,6 +75,10 @@ public class ActionPoint : MonoBehaviour
             {
                 StartCoroutine(JumpscareTrigger());
             }
+            else if(chance_jumpscare <= 0.2f && !severejumpscare_on)
+            {
+                StartCoroutine(SevereJumpscare());
+            }
         }
         else if (cred.credibility == 1)
         {
@@ -73,6 +86,10 @@ public class ActionPoint : MonoBehaviour
             if (chance_jumpscare <= 0.25f)
             {
                 StartCoroutine(JumpscareTrigger());
+            }
+            else if(chance_jumpscare <= 0.15f && !hardjumpscare_on)
+            {
+                StartCoroutine(HardJumpscare());
             }
         }
 
@@ -105,7 +122,52 @@ public class ActionPoint : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(60f);
-        jumpscares[jumpscare_index].SetActive(true);
+        jumpscares[jumpscare_index].SetActive(false);
         AudioManager.instance.PlayMusic("Theme");
+    }
+    private IEnumerator SevereJumpscare()
+    {
+        // turn on jumpscare
+        severejumpscare_on = true;
+        AudioManager.instance.music_source.Stop();
+        AudioManager.instance.horror_source.Stop();
+        yield return new WaitForSeconds(7f);
+        hard_jumpscares[0].SetActive(true);
+        AudioManager.instance.PlaySFX("BrokenRadio");
+        
+        yield return new WaitForSeconds(1.5f);
+
+        // turn off jumpscare
+        hard_jumpscares[0].SetActive(false);
+        AudioManager.instance.sfx_source.Stop();
+        yield return new WaitForSeconds(5f);
+        AudioManager.instance.PlayHorrorMusic("Ambient");
+        yield return new WaitForSeconds(20f);
+        AudioManager.instance.PlayMusic("Theme");
+        severejumpscare_on = false;
+    }
+    private IEnumerator HardJumpscare()
+    {
+        // turn on jumpscare
+        hardjumpscare_on = true;
+        AudioManager.instance.music_source.Stop();
+        AudioManager.instance.horror_source.Stop();
+        yield return new WaitForSeconds(7f);
+        hard_jumpscares[1].SetActive(true);
+        AudioManager.instance.PlaySFX("Scream");
+        yield return new WaitForSeconds(3f);
+
+        // turn off jumpscare
+        hard_jumpscares[1].SetActive(false);
+        AudioManager.instance.sfx_source.Stop();
+        yield return new WaitForSeconds(10f);
+        AudioManager.instance.PlayHorrorMusic("Ambient");
+        yield return new WaitForSeconds(30f);
+        AudioManager.instance.PlayMusic("Theme");
+        hardjumpscare_on = false;
+    }
+    public void HardJumpscareTrigger()
+    {
+        StartCoroutine(HardJumpscare());
     }
 }

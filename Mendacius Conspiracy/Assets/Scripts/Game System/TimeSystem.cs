@@ -111,6 +111,8 @@ public class TimeSystem : MonoBehaviour
         AudioManager.instance.music_source.Stop();
         AudioManager.instance.horror_source.Stop();
         article_manager.on_article = false;
+        AP.severejumpscare_on = false;
+        AP.hardjumpscare_on = false;
         //monitor.completed_text.SetActive(false);
         monitor.CloseAllMonitor();
         board.CloseBoard();
