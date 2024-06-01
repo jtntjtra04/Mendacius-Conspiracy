@@ -75,9 +75,13 @@ public class ActionPoint : MonoBehaviour
             {
                 StartCoroutine(JumpscareTrigger());
             }
-            else if(chance_jumpscare <= 0.2f && !severejumpscare_on)
+            else
             {
-                StartCoroutine(SevereJumpscare());
+                chance_jumpscare = Random.value;
+                if(chance_jumpscare <= 0.2f && !severejumpscare_on)
+                {
+                    StartCoroutine(SevereJumpscare());
+                }
             }
         }
         else if (cred.credibility == 1)
@@ -87,9 +91,13 @@ public class ActionPoint : MonoBehaviour
             {
                 StartCoroutine(JumpscareTrigger());
             }
-            else if(chance_jumpscare <= 0.15f && !hardjumpscare_on)
+            else
             {
-                StartCoroutine(HardJumpscare());
+                chance_jumpscare = Random.value;
+                if (chance_jumpscare <= 0.15f && !severejumpscare_on)
+                {
+                    StartCoroutine(HardJumpscare());
+                }
             }
         }
 
