@@ -32,7 +32,7 @@ public class Credibility : MonoBehaviour
         if (credibility <= 0)
         {
             float chance_jumpscare = Random.value;
-            if(chance_jumpscare <= 0.4 && !action_point.hardjumpscare_on)
+            if(chance_jumpscare <= 0.45 && !action_point.hardjumpscare_on)
             {
                 action_point.HardJumpscareTrigger();
             }
