@@ -42,7 +42,7 @@ public class ArticleManager : MonoBehaviour
     {
         if (!on_article)
         {
-            if(action_point.has_AP)
+            if(action_point.has_AP && cred.credibility > 0)
             {
                 GenerateRandomArticle();
                 Debug.Log("Generate random Article");
@@ -107,7 +107,7 @@ public class ArticleManager : MonoBehaviour
     public void FactButton()
     {
         AudioManager.instance.PlaySFX("ClickSpace");
-        if(action_point.has_AP)
+        if(action_point.has_AP && cred.credibility > 0)
         {
             action_point.UseActionPoint(); // use action point
 
@@ -129,7 +129,7 @@ public class ArticleManager : MonoBehaviour
     public void HoaxButton()
     {
         AudioManager.instance.PlaySFX("ClickSpace");
-        if (action_point.has_AP)
+        if (action_point.has_AP && cred.credibility > 0)
         {
             action_point.UseActionPoint(); // use action point
 

@@ -86,6 +86,10 @@ public class TimeSystem : MonoBehaviour
     }
     public void EndShift()
     {
+        if(cred.credibility <= 0)
+        {
+            return;
+        }
         if (day >= 8)
         {
             command_manager.TriggerNormalEnding();
