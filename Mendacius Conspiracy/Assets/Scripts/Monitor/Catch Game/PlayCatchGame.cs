@@ -32,7 +32,7 @@ public class PlayCatchGame : MonoBehaviour
     public TimeSystem time_system;
     public PhoneCall phone_call;
 
-    private void Start()
+    private void Awake()
     {
         score_manager = GetComponent<ScoreManager>();
     }

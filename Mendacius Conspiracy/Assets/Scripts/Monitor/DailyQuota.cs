@@ -13,15 +13,6 @@ public class DailyQuota : MonoBehaviour
     // UI
     public Text factcheck_text;
     public Text infocatch_text;
-
-    private void Start()
-    {
-        daily_fact = 1;
-        daily_catch = 0;
-        Debug.Log(daily_fact);
-        Debug.Log(daily_catch);
-        UpdateFactCheckText();
-    }
     public void UpdateDailyQuota(int day)
     {
         curr_fact = 0;
@@ -49,6 +40,7 @@ public class DailyQuota : MonoBehaviour
         }
         UpdateFactCheckText();
         UpdateInfoCatchText();
+        Debug.Log(day);
     }
     public void UpdateFactCheckText()
     {

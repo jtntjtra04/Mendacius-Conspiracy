@@ -120,10 +120,10 @@ public class CommandManager : MonoBehaviour
             }
             worker.StartMovingBack();
         }
-        if (dialogue_UI.on_dialogue && !phone_call.on_call)
+/*        if (dialogue_UI.on_dialogue && !phone_call.on_call)
         {
             time_system.UpdateTime();
-        }
+        }*/
         random_call.on_interrogation = false;
         dialogue_UI.on_dialogue = false;
     }

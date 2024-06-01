@@ -59,6 +59,7 @@ public class TimeSystem : MonoBehaviour
         endshift_button.SetActive(false);
         day = 1;
         time = 16;
+        daily_quota.UpdateDailyQuota(day);
 
         time_number.text = time.ToString() + ":00";
         day_number.text = day.ToString();
@@ -66,15 +67,19 @@ public class TimeSystem : MonoBehaviour
 
     public void UpdateTime()
     {
+        Debug.Log("Before update - Time: " + time + ", Day: " + day);
         time += 1;
-        if(time >= 24 && day < 8)
+        Debug.Log("After increment - Time: " + time + ", Day: " + day);
+        if (time >= 24)
         {
             time = 0;
             day += 1;
-            time_number.text = time.ToString() + "0:00";
+            time_number.text = "0:00";
             day_number.text = day.ToString();
             command_manager.EndInteraction();
             endshift_button.SetActive(true);
+            Debug.Log("Midnight - Time: " + time + ", Day: " + day);
+
             if (change_scene.monitor_active)
             {
                 change_scene.ChangeToWorkDesk();
@@ -83,6 +88,7 @@ public class TimeSystem : MonoBehaviour
             return;
         }
         time_number.text = time.ToString() + ":00";
+        Debug.Log("Updated time - Time: " + time_number.text + ", Day: " + day);
     }
     public void EndShift()
     {
@@ -116,8 +122,6 @@ public class TimeSystem : MonoBehaviour
         AudioManager.instance.horror_source.Stop();
         AudioManager.instance.sfx_source.Stop();
         article_manager.on_article = false;
-        AP.severejumpscare_on = false;
-        AP.hardjumpscare_on = false;
         //monitor.completed_text.SetActive(false);
         monitor.CloseAllMonitor();
         board.CloseBoard();
@@ -137,6 +141,9 @@ public class TimeSystem : MonoBehaviour
         daily_quota.UpdateDailyQuota(day);
         ScoreManager.instance.UpdateTargetScore(day);
         ScoreManager.instance.ResetScore();
+
+        AP.severejumpscare_on = false;
+        AP.hardjumpscare_on = false;
 
         SetAllUIInteractable(true); // Enable Interactions
         SetExceptionalUIInteractable(true);

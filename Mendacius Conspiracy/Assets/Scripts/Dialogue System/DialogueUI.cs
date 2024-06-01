@@ -182,6 +182,7 @@ public class DialogueUI : MonoBehaviour
 
         manager_dialoguebox.SetActive(false);
         worker_dialoguebox.SetActive(false);
+        Debug.Log("Dialogue Done");
         if (!phone_call.on_call)
         {
             time_system.UpdateTime();

@@ -11,6 +11,9 @@ public class PhoneCall : MonoBehaviour
     private Coroutine time_out_coroutine;
     public bool on_call = false;
 
+    // References
+    public DialogueUI dialogue_ui;
+
     [System.Serializable]
     public class WorkingHoursData
     {
@@ -104,8 +107,11 @@ public class PhoneCall : MonoBehaviour
             Notification.Instance.AddQueue("-1 Credibility");
         }
         phone_dialoguebox.SetActive(false);
+        if (!dialogue_ui.on_dialogue)
+        {
+            time_system.UpdateTime();
+        }
         on_call = false;
-        time_system.UpdateTime();
     }
     public void DenyCall()
     {
@@ -126,8 +132,11 @@ public class PhoneCall : MonoBehaviour
             Notification.Instance.AddQueue("Call Denied");
         }
         phone_dialoguebox.SetActive(false);
+        if (!dialogue_ui.on_dialogue)
+        {
+            time_system.UpdateTime();
+        }
         on_call = false;
-        time_system.UpdateTime();
     }
     private IEnumerator TimeOut()
     {

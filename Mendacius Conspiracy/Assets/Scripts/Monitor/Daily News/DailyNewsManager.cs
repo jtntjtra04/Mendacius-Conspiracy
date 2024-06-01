@@ -43,6 +43,7 @@ public class DailyNewsManager : MonoBehaviour
         var daily_news = news_data.GetDailyNews(curr_day);
         title_text.text = daily_news.title;
         content_text.text = daily_news.content;
+        Debug.Log("Daily news Update");
         if (!phone_call.on_call)
         {
             time_system.UpdateTime();
