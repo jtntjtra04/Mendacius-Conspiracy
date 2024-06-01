@@ -22,6 +22,7 @@ public class CommandManager : MonoBehaviour
     public Animator fade_transition;
     public Animator ending_scene;
     public PostProcessing post_processing;
+    public ActionPoint action_point;
 
     private void Awake()
     {
@@ -128,6 +129,7 @@ public class CommandManager : MonoBehaviour
     }
     private IEnumerator GoodEnding()
     {
+        action_point.StopAllCoroutines();
         AudioManager.instance.music_source.Stop();
         yield return new WaitForSeconds(3f);
         worker_fired.SetActive(true);
@@ -139,8 +141,12 @@ public class CommandManager : MonoBehaviour
         fade_transition.Play("Start_Fade");
         yield return new WaitForSeconds(4f);
         ending_scene.Play("GoodEnding_Start");
+        
         AudioManager.instance.background_source.Stop();
         AudioManager.instance.hybrid_source.Stop();
+        AudioManager.instance.horror_source.Stop();
+        AudioManager.instance.IncreaseVolumeMusic();
+        AudioManager.instance.PlayMusic("Theme");
 
         while (!Input.GetMouseButtonDown(0))
         {
@@ -154,10 +160,13 @@ public class CommandManager : MonoBehaviour
         AudioManager.instance.music_source.Stop();
         yield return new WaitForSeconds(6f);
         fade_transition.Play("Start_Fade");
+        AudioManager.instance.horror_source.Stop();
         yield return new WaitForSeconds(4f);
         ending_scene.Play("NormalEnding_Start");
         AudioManager.instance.background_source.Stop();
         AudioManager.instance.hybrid_source.Stop();
+        AudioManager.instance.PlaySFX("NegativeLaugh");
+        yield return new WaitForSeconds(5f);
 
         while (!Input.GetMouseButtonDown(0))
         {

@@ -116,6 +116,10 @@ public class AudioManager : MonoBehaviour
     {
         horror_source.volume += 0.075f;
     }
+    public void IncreaseVolumeMusic()
+    {
+        music_source.volume = 0.8f;
+    }
     public void PlayHorrorMusicHighVolume()
     {
         horror_source.volume = 0.5f;
