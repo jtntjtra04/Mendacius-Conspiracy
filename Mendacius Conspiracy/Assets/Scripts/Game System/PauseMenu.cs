@@ -42,6 +42,9 @@ public class PauseMenu : MonoBehaviour
     }
     public void MainMenu()
     {
+        pause_menu.SetActive(false);
+        Time.timeScale = 1.0f;
+        game_paused = false;
         SceneManager.LoadScene("MainMenu");
     }
 }

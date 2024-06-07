@@ -89,7 +89,7 @@ public class ChangeCamera : MonoBehaviour
         change_scene.monitor_active = true;
         catch_game.catchgame_active = false;
         is_cg = false;
-        daily_quota.curr_catch++;
+        daily_quota.curr_catch = 1;
         daily_quota.UpdateInfoCatchText();
         if (!phone_call.on_call)
         {

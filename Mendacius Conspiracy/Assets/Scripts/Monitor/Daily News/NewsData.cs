@@ -62,7 +62,7 @@ public class NewsData : ScriptableObject
             case 2: return (day2_title, day2_content);
             case 3: return (day3_title, day3_content);
             case 4: return (day4_title, day4_content);
-            case 5: return (day4_title, day4_content);
+            case 5: return (day5_title, day5_content);
             case 6: return (day6_title, day6_content);
             case 7: return (day7_title, day7_content);
             default: return ("","");
