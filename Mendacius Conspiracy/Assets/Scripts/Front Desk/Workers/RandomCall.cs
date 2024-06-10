@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomCall : MonoBehaviour
+public class RandomCall : MonoBehaviour, IDataManager
 {
     public GameObject[] workers;
     public int troll_index;
@@ -12,11 +12,20 @@ public class RandomCall : MonoBehaviour
     public GameObject worker_option;
     public bool on_interrogation = false;
 
-    private void Start()
+    private void Awake()
     {
-        troll_index = Random.Range(0, workers.Length); // Randomly add 1 troll from the workers
+        //troll_index = Random.Range(0, workers.Length); // Randomly add 1 troll from the workers
         worker_option.SetActive(false);
-        Debug.Log(troll_index);
+        //Debug.Log(troll_index);
+    }
+    public void LoadData(GameData data)
+    {
+        this.troll_index = data.troll;
+        Debug.Log("loaded data troll : " + troll_index);
+    }
+    public void SaveData(GameData data)
+    {
+        data.troll = this.troll_index;
     }
     public void OpenWorkerOption()
     {

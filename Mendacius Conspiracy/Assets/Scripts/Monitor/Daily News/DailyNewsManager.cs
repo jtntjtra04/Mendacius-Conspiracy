@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DailyNewsManager : MonoBehaviour
+public class DailyNewsManager : MonoBehaviour, IDataManager
 {
     public NewsData news_data;
     public Text title_text;
@@ -21,7 +21,16 @@ public class DailyNewsManager : MonoBehaviour
     private void Start()
     {
         curr_day = time_system.day;
-        today_news_accessed = false;
+        //today_news_accessed = false;
+    }
+    public void LoadData(GameData data)
+    {
+        this.today_news_accessed = data.today_news_accessed;
+        Debug.Log("Today's news accessed : " + today_news_accessed);
+    }
+    public void SaveData(GameData data)
+    {
+        data.today_news_accessed = this.today_news_accessed;
     }
     public void OpenDailyNews()
     {
@@ -43,7 +52,7 @@ public class DailyNewsManager : MonoBehaviour
         var daily_news = news_data.GetDailyNews(curr_day);
         title_text.text = daily_news.title;
         content_text.text = daily_news.content;
-        Debug.Log("Daily news Update");
+        Debug.Log("Daily news Update and today's news accessed is true");
         if (!phone_call.on_call)
         {
             time_system.UpdateTime();

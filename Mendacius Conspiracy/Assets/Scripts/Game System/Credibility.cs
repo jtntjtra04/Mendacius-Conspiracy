@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 
-public class Credibility : MonoBehaviour
+public class Credibility : MonoBehaviour, IDataManager
 {
     public float credibility;
 
@@ -20,7 +20,15 @@ public class Credibility : MonoBehaviour
     }
     private void Start()
     {
-        credibility = 5;
+        //credibility = 5f;
+    }
+    public void LoadData(GameData data)
+    {
+        this.credibility = data.credibility;
+    }
+    public void SaveData(GameData data)
+    {
+        data.credibility = this.credibility;
     }
     public void MinusCredibility(float penalty)
     {
@@ -31,8 +39,8 @@ public class Credibility : MonoBehaviour
         
         if (credibility <= 0)
         {
-            float chance_jumpscare = Random.value;
-            if(chance_jumpscare <= 0.45 && !action_point.hardjumpscare_on)
+            // float chance_jumpscare = Random.value;
+            if(!action_point.hardjumpscare_on)
             {
                 action_point.HardJumpscareTrigger();
             }

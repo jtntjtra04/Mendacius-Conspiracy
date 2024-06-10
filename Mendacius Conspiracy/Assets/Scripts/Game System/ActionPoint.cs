@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActionPoint : MonoBehaviour
+public class ActionPoint : MonoBehaviour, IDataManager
 {
     public float action_point;
     public bool has_AP;
@@ -26,7 +26,7 @@ public class ActionPoint : MonoBehaviour
     }
     private void Start()
     {
-        action_point = 8f;
+        //action_point = 8f;
         severejumpscare_on = false;
         hardjumpscare_on = false;
         has_AP = true;
@@ -38,6 +38,14 @@ public class ActionPoint : MonoBehaviour
         {
             hard_jumpscare.SetActive(false);
         }
+    }
+    public void LoadData(GameData data)
+    {
+        this.action_point = data.action_point;
+    }
+    public void SaveData(GameData data)
+    {
+        data.action_point = this.action_point;
     }
     public void UseActionPoint()
     {

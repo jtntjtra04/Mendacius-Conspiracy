@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TimeSystem : MonoBehaviour
+public class TimeSystem : MonoBehaviour, IDataManager
 {
     // Days
     public int day;
@@ -18,6 +18,7 @@ public class TimeSystem : MonoBehaviour
     [SerializeField] private int transition_duration;
     public Animator transition_image;
     public Text transition_day;
+    public Text transition_time;
     public Text penalty_text;
 
     // UI Interactablility Control
@@ -57,14 +58,33 @@ public class TimeSystem : MonoBehaviour
     private void Start()
     {
         endshift_button.SetActive(false);
-        day = 1;
-        time = 16;
-        daily_quota.UpdateDailyQuota(day);
+        //day = 1;
+        //time = 16;
+        //daily_quota.UpdateDailyQuota(day);
+        daily_quota.UpdateFactCheckText();
+        daily_quota.UpdateInfoCatchText();
 
         time_number.text = time.ToString() + ":00";
         day_number.text = day.ToString();
+        transition_day.text = "Day " + day.ToString();
+        transition_time.text = time.ToString() + ":00";
     }
-
+    public void LoadData(GameData data)
+    {
+        this.day = data.day;
+        this.time = data.time;
+        Debug.Log("Loaded day : " + this.day);
+        daily_quota.UpdateDailyQuota(day);
+        daily_quota.curr_fact = data.curr_fact;
+        daily_quota.curr_catch = data.curr_catch;
+    }
+    public void SaveData(GameData data)
+    {
+        data.day = this.day;
+        data.time = this.time;
+        data.curr_fact = daily_quota.curr_fact;
+        data.curr_catch = daily_quota.curr_catch;
+    }
     public void UpdateTime()
     {
         Debug.Log("Before update - Time: " + time + ", Day: " + day);
@@ -116,6 +136,7 @@ public class TimeSystem : MonoBehaviour
         SetExceptionalUIInteractable(false); // Disable exception_UI Interactions
 
         transition_day.text = "Day " + day.ToString();
+        transition_time.text = time.ToString() + ":00";
         DailyQuotaJudgement(); // Check Daily Quota
         transition_image.Play("StartTransition");
         AudioManager.instance.music_source.Stop();

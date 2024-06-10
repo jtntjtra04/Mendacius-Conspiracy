@@ -7,8 +7,8 @@ public class DailyQuota : MonoBehaviour
 {
     public int daily_fact;
     public int daily_catch;
-    public int curr_fact = 0;
-    public int curr_catch = 0;
+    public int curr_fact;
+    public int curr_catch;
 
     // UI
     public Text factcheck_text;
@@ -40,7 +40,7 @@ public class DailyQuota : MonoBehaviour
         }
         UpdateFactCheckText();
         UpdateInfoCatchText();
-        Debug.Log(day);
+        Debug.Log("Day : " + day);
     }
     public void UpdateFactCheckText()
     {
