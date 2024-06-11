@@ -173,6 +173,7 @@ public class CommandManager : MonoBehaviour
             yield return null;
         }
         ending_scene.Play("NormalEnding_End");
+        DataManager.instance.ResetGameData();
         SceneManager.LoadScene("MainMenu");
     }
     private IEnumerator BadEnding()
@@ -202,6 +203,7 @@ public class CommandManager : MonoBehaviour
         }
         ending_scene.Play("BadEnding_End");
         AudioManager.instance.horror_source.Stop();
+        DataManager.instance.ResetGameData();
         SceneManager.LoadScene("MainMenu");
     }
 }

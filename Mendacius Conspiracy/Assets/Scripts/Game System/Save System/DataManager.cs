@@ -93,6 +93,12 @@ public class DataManager : MonoBehaviour
     {
         return game_data != null;
     }
+    public void ResetGameData()
+    {
+        Debug.Log("Game data reset : " + game_data);
+        game_data = null;
+        data_file.Delete();
+    }
 /*    private void Update()
     {
         if(game_data != null)

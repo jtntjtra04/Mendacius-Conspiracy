@@ -80,6 +80,19 @@ public class DataFile
             Debug.LogError("Error occured when trying to save data to file : " + full_path + "\n" + e);
         }
     }
+    public void Delete()
+    {
+        string full_path = Path.Combine(data_directory, file_name); // to account for different OS's having different path seperators
+        if (File.Exists(full_path))
+        {
+            File.Delete(full_path);
+            Debug.Log("Game Data file deleted");
+        }
+        else
+        {
+            Debug.LogWarning("No game data found to delete");
+        }
+    }
     private string EncryptDecrypt(string data) // XOR Encryption implementation
     {
         string modified_data = "";

@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     public Animator transition_fade;
     private void Start()
     {
+        Debug.Log("Start Main Menu");
         transition_fade.Play("Default_End");
         if (!DataManager.instance.HasGameData())
         {

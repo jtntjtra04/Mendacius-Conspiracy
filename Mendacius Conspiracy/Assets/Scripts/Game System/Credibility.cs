@@ -69,6 +69,7 @@ public class Credibility : MonoBehaviour, IDataManager
             yield return null;
         }
         ending_scene.Play("BadEnding_End");
+        DataManager.instance.ResetGameData();
         SceneManager.LoadScene("MainMenu");
     }
 }
