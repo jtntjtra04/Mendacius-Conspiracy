@@ -71,6 +71,10 @@ public class CommandManager : MonoBehaviour
         AudioManager.instance.PlaySFX("Click");
         confirmation_window.SetActive(false);
 
+        if (phone_call.on_tutorial)
+        {
+            StopCoroutine(phone_call.tutorial_coroutine);
+        }
         int curr_worker = random_call.GetCurrentWorkerIndex();
 
         if (curr_worker == random_call.troll_index)

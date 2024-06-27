@@ -56,7 +56,7 @@ public class ActionPoint : MonoBehaviour, IDataManager
         }
         // 15% chance to get a call from worker
         float chance_call = Random.value;
-        if (chance_call <= 0.15f && time_system.time < 24)
+        if (chance_call <= 0.15f && time_system.time < 24 && !phone_call.on_tutorial)
         {
             phone_call.PhoneRinging();
         }
@@ -94,27 +94,27 @@ public class ActionPoint : MonoBehaviour, IDataManager
         }
         else if (cred.credibility == 1)
         {
-            float chance_jumpscare = Random.value;
+            /*float chance_jumpscare = Random.value;
             if (chance_jumpscare <= 0.15f && !hardjumpscare_on)
             {
                 StartCoroutine(HardJumpscare());
             }
             else
+            {*/
+            float secondchance_jumpscare = Random.value;
+            if (secondchance_jumpscare <= 0.25f)
             {
-                float secondchance_jumpscare = Random.value;
-                if (secondchance_jumpscare <= 0.25f)
+                StartCoroutine(JumpscareTrigger());
+            }
+            else
+            {
+                float thirdchance_jumpscare = Random.value;
+                if(thirdchance_jumpscare <= 0.2f && !severejumpscare_on)
                 {
-                    StartCoroutine(JumpscareTrigger());
-                }
-                else
-                {
-                    float thirdchance_jumpscare = Random.value;
-                    if(thirdchance_jumpscare <= 0.2f && !severejumpscare_on)
-                    {
-                        StartCoroutine(SevereJumpscare());
-                    }
+                    StartCoroutine(SevereJumpscare());
                 }
             }
+            //}
         }
 
         if (action_point <= 0)

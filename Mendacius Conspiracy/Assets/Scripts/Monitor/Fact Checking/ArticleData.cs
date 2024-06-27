@@ -5,15 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ArticleData", menuName = "Article/ArticleData")]
 public class ArticleData : ScriptableObject
 {
-    public string title;
-    public string author;
-    [TextArea(10, 10)]
-    public string content1;
-    [TextArea(10, 10)]
-    public string content2;
     public Sprite image;
+    public string author;
     public ArticleType type;
     public AlienWorker alien_worker;
+    public DayRange day_range;
 }
 public enum ArticleType
 {
@@ -28,4 +24,10 @@ public enum AlienWorker
     Lucia,
     Desmond,
     None
+}
+public enum DayRange
+{
+    Range1,
+    Range2,
+    Range3
 }

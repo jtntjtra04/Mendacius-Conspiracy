@@ -202,7 +202,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      drag-and-drop_0: -6461596013951679884
+      drag-and-drop_1: 8046305277371324744
+      drag-and-drop_2: -521278662601597255
+      drag-and-drop_3: -6783243152305240866
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

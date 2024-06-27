@@ -1,13 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-    public Sound[] music_sound, background_sound, sfx_sound, hybrid_sound, horror_sound;
-    public AudioSource music_source, background_source, sfx_source, hybrid_source, horror_source;
+    public Sound[] music_sound, background_sound, sfx_sound, hybrid_sound, horror_sound, yapping_sound;
+    public AudioSource music_source, background_source, sfx_source, hybrid_source, horror_source, yapping_source;
+
+    private float max_music_volume = 0.8f;
 
     private void Awake()
     {
@@ -92,6 +95,19 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Horror Not Found");
         }
     }
+    public void PlayYapping(string name)
+    {
+        Sound sound = Array.Find(yapping_sound, x => x.name == name); //Search audio from array
+        if (sound != null)
+        {
+            yapping_source.clip = sound.clip;
+            yapping_source.Play();
+        }
+        else
+        {
+            Debug.Log("Yapping Not Found");
+        }
+    }
     public void ToggleMusic()
     {
         music_source.mute = !music_source.mute;
@@ -102,7 +118,7 @@ public class AudioManager : MonoBehaviour
     }
     public void MusicVolume(float volume)
     {
-        music_source.volume = volume;
+        music_source.volume = Mathf.Min(volume, max_music_volume);
     }
     public void SFXVolume(float volume)
     {
@@ -111,6 +127,7 @@ public class AudioManager : MonoBehaviour
     public void DecreaseMusicVolume()
     {
         music_source.volume -= 0.2f;
+        max_music_volume = Mathf.Max(0, max_music_volume - 0.2f);
     }
     public void IncreaseHorrorMusicVolume()
     {

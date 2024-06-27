@@ -49,6 +49,7 @@ public class TimeSystem : MonoBehaviour, IDataManager
     public Monitor monitor;
     public DailyNewsManager daily_news;
     public CommandManager command_manager;
+    public PhoneCall phone_call;
 
     private void Awake()
     {
@@ -122,6 +123,7 @@ public class TimeSystem : MonoBehaviour, IDataManager
             return;
         }
         AP.StopAllCoroutines();
+        phone_call.StopAllCoroutines();
         foreach (GameObject jumpscare in AP.jumpscares)
         {
             jumpscare.SetActive(false);

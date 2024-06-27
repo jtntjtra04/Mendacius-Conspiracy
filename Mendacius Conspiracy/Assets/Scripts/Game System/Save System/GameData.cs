@@ -13,6 +13,7 @@ public class GameData
     public bool today_news_accessed;
     public int curr_fact;
     public int curr_catch;
+    public bool new_game;
     public GameData()
     {
         this.day = 1;
@@ -22,6 +23,7 @@ public class GameData
         this.today_news_accessed = false;
         this.curr_fact = 0;
         this.curr_catch = 0;
+        this.new_game = true;
     }
     public void Initialize()
     {

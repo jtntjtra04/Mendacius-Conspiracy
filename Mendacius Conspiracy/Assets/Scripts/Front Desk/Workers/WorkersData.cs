@@ -6,7 +6,6 @@ public class WorkersData : MonoBehaviour
 {
     public GameObject workers_data;
     public GameObject[] workers_paper;
-    private bool WD_active = false;
     private int curr_index = 0;
 
     private void Start()
@@ -24,14 +23,12 @@ public class WorkersData : MonoBehaviour
         workers_data.SetActive(true);
         curr_index = 0;
         workers_paper[curr_index].SetActive(true);
-        WD_active = true;
     }
     public void CloseWorkersData()
     {
         AudioManager.instance.PlaySFX("Click");
         workers_data.SetActive(false);
         workers_paper[curr_index].SetActive(false);
-        WD_active = false;
     }
     public void RightShift()
     {

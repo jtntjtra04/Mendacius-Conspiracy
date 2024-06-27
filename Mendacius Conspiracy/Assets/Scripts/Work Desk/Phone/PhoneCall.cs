@@ -4,12 +4,17 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PhoneCall : MonoBehaviour
+public class PhoneCall : MonoBehaviour, IDataManager
 {
     public GameObject phone_dialoguebox;
     public Text message_text;
     private Coroutine time_out_coroutine;
     public bool on_call = false;
+
+    // Tutorial
+    public bool on_tutorial = false;
+    public Coroutine tutorial_coroutine;
+    private bool new_game = false;
 
     // References
     public DialogueUI dialogue_ui;
@@ -33,7 +38,8 @@ public class PhoneCall : MonoBehaviour
         { "Anna", "Halo, ini Anna dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" },
         { "Haris", "Halo, ini Haris dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" },
         { "Lucia", "Halo, ini Lucia dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" },
-        { "Desmond", "Halo, ini Desmond dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" }
+        { "Desmond", "Halo, ini Desmond dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" },
+        { "CEO", "Panggilan masuk dari CEO Mata Elang" }
     };
 
     private WorkingHoursData curr_worker;
@@ -48,6 +54,19 @@ public class PhoneCall : MonoBehaviour
     {
         phone_dialoguebox.SetActive(false);
         on_call = false;
+        if(new_game)
+        {
+            TutorialRinging();
+            new_game = false;
+        }
+    }
+    public void LoadData(GameData data)
+    {
+        this.new_game = data.new_game;
+    }
+    public void SaveData(GameData data)
+    {
+        data.new_game = this.new_game;
     }
     public void PhoneRinging()
     {
@@ -90,6 +109,16 @@ public class PhoneCall : MonoBehaviour
     }
     public void AcceptCall()
     {
+        if (on_tutorial)
+        {
+            StopCoroutine(tutorial_coroutine);
+            AudioManager.instance.hybrid_source.Stop();
+            AudioManager.instance.hybrid_source.loop = false;
+            AudioManager.instance.PlaySFX("PickUp");
+            phone_dialoguebox.SetActive(false);
+            tutorial_coroutine = StartCoroutine(TutorialYapping());
+            return;
+        }
         StopCoroutine(time_out_coroutine);
         AudioManager.instance.hybrid_source.Stop();
         AudioManager.instance.hybrid_source.loop = false;
@@ -105,6 +134,7 @@ public class PhoneCall : MonoBehaviour
             Debug.Log("Wrong Decision, -1 credibility");
             player_credibility.MinusCredibility(1);
             Notification.Instance.AddQueue("-1 Credibility");
+            AudioManager.instance.PlaySFX("Buzzer");
         }
         phone_dialoguebox.SetActive(false);
         if (!dialogue_ui.on_dialogue)
@@ -115,6 +145,16 @@ public class PhoneCall : MonoBehaviour
     }
     public void DenyCall()
     {
+        if (on_tutorial)
+        {
+            StopCoroutine(tutorial_coroutine);
+            AudioManager.instance.hybrid_source.Stop();
+            AudioManager.instance.hybrid_source.loop = false;
+            AudioManager.instance.PlaySFX("PickUp");
+            phone_dialoguebox.SetActive(false);
+            on_tutorial = false;
+            return;
+        }
         StopCoroutine(time_out_coroutine);
         AudioManager.instance.hybrid_source.Stop();
         AudioManager.instance.hybrid_source.loop = false;
@@ -125,10 +165,11 @@ public class PhoneCall : MonoBehaviour
             Debug.Log("Wrong Decision, -1 credibility");
             player_credibility.MinusCredibility(1);
             Notification.Instance.AddQueue("-1 Credibility");
+            AudioManager.instance.PlaySFX("Buzzer");
         }
         else
         {
-            Debug.Log("Accepted safely");
+            Debug.Log("Denied safely");
             Notification.Instance.AddQueue("Call Denied");
         }
         phone_dialoguebox.SetActive(false);
@@ -145,6 +186,7 @@ public class PhoneCall : MonoBehaviour
         yield return new WaitForSeconds(60f); // timer of the call
         AudioManager.instance.hybrid_source.Stop();
         AudioManager.instance.hybrid_source.loop = false;
+        AudioManager.instance.PlaySFX("PickUp");
 
         player_credibility.MinusCredibility(1); // - Credibility if player doesn't hang up the call in 1 minute
         Debug.Log("Penalty : -1 Credibility");
@@ -159,6 +201,7 @@ public class PhoneCall : MonoBehaviour
         StopCoroutine(time_out_coroutine);
         AudioManager.instance.hybrid_source.Stop();
         AudioManager.instance.hybrid_source.loop = false;
+        AudioManager.instance.PlaySFX("PickUp");
 
         player_credibility.MinusCredibility(1);
         Debug.Log("Penalty : -1 Credibility");
@@ -166,5 +209,48 @@ public class PhoneCall : MonoBehaviour
         phone_dialoguebox.SetActive(false);
         on_call = false;
         time_system.UpdateTime();
+    }
+    private void TutorialRinging()
+    {
+        on_tutorial = true;
+        string tutorial_message = messages["CEO"];
+        DisplayDialogue(tutorial_message);
+        tutorial_coroutine = StartCoroutine(TutorialCall());
+    }
+    private IEnumerator TutorialCall()
+    {
+        AudioManager.instance.hybrid_source.loop = true;
+        AudioManager.instance.PlayHybrid("Ringtone");
+        yield return new WaitForSeconds(60f); // timer of the call
+        AudioManager.instance.hybrid_source.Stop();
+        AudioManager.instance.hybrid_source.loop = false;
+    }
+    private IEnumerator TutorialYapping()
+    {
+        AudioManager.instance.music_source.volume = 0.2f;
+        AudioManager.instance.PlayYapping("CEOYapping");
+        yield return new WaitForSeconds(276f);
+        if(player_credibility.credibility == 5)
+        {
+            AudioManager.instance.music_source.volume = 0.8f;
+        }
+        else if(player_credibility.credibility == 4)
+        {
+            AudioManager.instance.music_source.volume = 0.6f;
+        }
+        else if(player_credibility.credibility == 3)
+        {
+            AudioManager.instance.music_source.volume = 0.4f;
+        }
+        else if(player_credibility.credibility == 2)
+        {
+            AudioManager.instance.music_source.volume = 0.2f;
+        }
+        else if(player_credibility.credibility == 1)
+        {
+            AudioManager.instance.music_source.volume = 0f;
+        }
+        on_tutorial = false;
+        AudioManager.instance.yapping_source.Stop();
     }
 }
