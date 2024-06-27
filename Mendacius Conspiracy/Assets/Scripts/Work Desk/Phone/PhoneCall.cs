@@ -253,4 +253,30 @@ public class PhoneCall : MonoBehaviour, IDataManager
         on_tutorial = false;
         AudioManager.instance.yapping_source.Stop();
     }
+    public void StopYapping()
+    {
+        StopCoroutine(tutorial_coroutine);
+        if (player_credibility.credibility == 5)
+        {
+            AudioManager.instance.music_source.volume = 0.8f;
+        }
+        else if (player_credibility.credibility == 4)
+        {
+            AudioManager.instance.music_source.volume = 0.6f;
+        }
+        else if (player_credibility.credibility == 3)
+        {
+            AudioManager.instance.music_source.volume = 0.4f;
+        }
+        else if (player_credibility.credibility == 2)
+        {
+            AudioManager.instance.music_source.volume = 0.2f;
+        }
+        else if (player_credibility.credibility == 1)
+        {
+            AudioManager.instance.music_source.volume = 0f;
+        }
+        on_tutorial = false;
+        AudioManager.instance.yapping_source.Stop();
+    }
 }

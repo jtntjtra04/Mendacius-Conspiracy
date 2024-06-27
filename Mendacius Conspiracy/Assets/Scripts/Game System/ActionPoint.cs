@@ -14,6 +14,15 @@ public class ActionPoint : MonoBehaviour, IDataManager
     public bool severejumpscare_on;
     public bool hardjumpscare_on;
 
+    // Dark Mechanic
+    private int darkmode_active = 0;
+    public GameObject front_lightning;
+    public GameObject front_darklightning;
+    public GameObject work_lightning;
+    public GameObject work_darklightning;
+    public GameObject work_PC_light;
+    public GameObject work_PC_dark;
+
     // References
     private TimeSystem time_system;
     public PhoneCall phone_call;
@@ -38,6 +47,13 @@ public class ActionPoint : MonoBehaviour, IDataManager
         {
             hard_jumpscare.SetActive(false);
         }
+        // Lightning
+        front_lightning.SetActive(true);
+        front_darklightning.SetActive(false);
+        work_lightning.SetActive(true);
+        work_darklightning.SetActive(false);
+        work_PC_light.SetActive(true);
+        work_PC_dark.SetActive(false);
     }
     public void LoadData(GameData data)
     {
@@ -94,27 +110,27 @@ public class ActionPoint : MonoBehaviour, IDataManager
         }
         else if (cred.credibility == 1)
         {
-            /*float chance_jumpscare = Random.value;
+            float chance_jumpscare = Random.value;
             if (chance_jumpscare <= 0.15f && !hardjumpscare_on)
             {
-                StartCoroutine(HardJumpscare());
-            }
-            else
-            {*/
-            float secondchance_jumpscare = Random.value;
-            if (secondchance_jumpscare <= 0.25f)
-            {
-                StartCoroutine(JumpscareTrigger());
+                StartCoroutine(ExpansionJumpscare());
             }
             else
             {
-                float thirdchance_jumpscare = Random.value;
-                if(thirdchance_jumpscare <= 0.2f && !severejumpscare_on)
+                float secondchance_jumpscare = Random.value;
+                if (secondchance_jumpscare <= 0.25f)
                 {
-                    StartCoroutine(SevereJumpscare());
+                    StartCoroutine(JumpscareTrigger());
+                }
+                else
+                {
+                    float thirdchance_jumpscare = Random.value;
+                    if(thirdchance_jumpscare <= 0.2f && !severejumpscare_on)
+                    {
+                        StartCoroutine(SevereJumpscare());
+                    }
                 }
             }
-            //}
         }
 
         if (action_point <= 0)
@@ -132,6 +148,10 @@ public class ActionPoint : MonoBehaviour, IDataManager
         int jumpscare_index = Random.Range(0, jumpscares.Count);
         jumpscares[jumpscare_index].SetActive(true);
 
+        if(jumpscare_index == 5 || jumpscare_index == 4)
+        {
+            DarkMode();
+        }
         int sfx_index = Random.Range(0, jumpscare_sfx.Length);
         AudioManager.instance.PlaySFX(jumpscare_sfx[sfx_index]);
         AudioManager.instance.music_source.Stop();
@@ -147,6 +167,14 @@ public class ActionPoint : MonoBehaviour, IDataManager
         }
         yield return new WaitForSeconds(60f);
         jumpscares[jumpscare_index].SetActive(false);
+        if (jumpscare_index == 5 || jumpscare_index == 4)
+        {
+            darkmode_active--;
+            if(darkmode_active == 0)
+            {
+                LightMode();
+            }
+        }
         AudioManager.instance.PlayMusic("Theme");
     }
     private IEnumerator SevereJumpscare()
@@ -189,8 +217,52 @@ public class ActionPoint : MonoBehaviour, IDataManager
         AudioManager.instance.PlayMusic("Theme");
         hardjumpscare_on = false;
     }
+    private IEnumerator ExpansionJumpscare()
+    {
+        // turn on jumpscare
+        hardjumpscare_on = true;
+        AudioManager.instance.music_source.Stop();
+        AudioManager.instance.horror_source.Stop();
+        yield return new WaitForSeconds(7f);
+        hard_jumpscares[2].SetActive(true);
+        AudioManager.instance.PlaySFX("Tension");
+        yield return new WaitForSeconds(7f);
+
+        // turn off jumpscare
+        hard_jumpscares[2].SetActive(false);
+        yield return new WaitForSeconds(15f);
+        AudioManager.instance.PlayHorrorMusic("Ambient");
+        yield return new WaitForSeconds(300f);
+        AudioManager.instance.PlayMusic("Theme");
+        hardjumpscare_on = false;
+    }
     public void HardJumpscareTrigger()
     {
         StartCoroutine(HardJumpscare());
+    }
+    private void DarkMode()
+    {
+        if(darkmode_active == 0)
+        {
+            AudioManager.instance.PlaySFX("LightsOff");
+        }
+        darkmode_active++;
+        front_lightning.SetActive(false);
+        front_darklightning.SetActive(true);
+        work_lightning.SetActive(false);
+        work_darklightning.SetActive(true);
+        work_PC_light.SetActive(false);
+        work_PC_dark.SetActive(true);
+    }
+    public void LightMode()
+    {
+        AudioManager.instance.PlaySFX("LightsOn");
+        darkmode_active = 0;
+        front_lightning.SetActive(true);
+        front_darklightning.SetActive(false);
+        work_lightning.SetActive(true);
+        work_darklightning.SetActive(false);
+        work_PC_light.SetActive(true);
+        work_PC_dark.SetActive(false);
     }
 }

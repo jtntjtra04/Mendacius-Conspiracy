@@ -73,7 +73,7 @@ public class CommandManager : MonoBehaviour
 
         if (phone_call.on_tutorial)
         {
-            StopCoroutine(phone_call.tutorial_coroutine);
+            phone_call.StopYapping();
         }
         int curr_worker = random_call.GetCurrentWorkerIndex();
 
@@ -157,6 +157,7 @@ public class CommandManager : MonoBehaviour
             yield return null;
         }
         ending_scene.Play("GoodEnding_End");
+        DataManager.instance.ResetGameData();
         SceneManager.LoadScene("MainMenu");
     }
     private IEnumerator NormalEnding()

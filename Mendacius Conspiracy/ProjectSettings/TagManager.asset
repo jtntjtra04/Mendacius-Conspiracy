@@ -8,6 +8,7 @@ TagManager:
   - Hoax
   - SuperFact
   - FatalHoax
+  - Trashcan
   layers:
   - Default
   - TransparentFX

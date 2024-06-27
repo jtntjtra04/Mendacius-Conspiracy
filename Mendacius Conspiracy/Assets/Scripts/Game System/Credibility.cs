@@ -26,7 +26,7 @@ public class Credibility : MonoBehaviour, IDataManager
         //credibility = 5f;
         if(credibility < 5) // Update punishment if credibility < 5 when load saved game
         {
-            UpdatePunishment(credibility);
+            StartCoroutine(UpdatePunishment(credibility));
         }
     }
     public void LoadData(GameData data)
@@ -44,21 +44,14 @@ public class Credibility : MonoBehaviour, IDataManager
         AudioManager.instance.DecreaseMusicVolume();
         AudioManager.instance.IncreaseHorrorMusicVolume();
 
-        if(credibility == 2)
+        if (phone_call.on_tutorial)
         {
-            if(phone_call.on_tutorial)
-            {
-                StopCoroutine(phone_call.tutorial_coroutine);
-            }
+            phone_call.StopYapping();
         }
-        
+
         if (credibility <= 0)
         {
-            // float chance_jumpscare = Random.value;
-            if(!action_point.hardjumpscare_on)
-            {
-                action_point.HardJumpscareTrigger();
-            }
+            action_point.HardJumpscareTrigger();
             GameOver();
         }
     }
@@ -71,7 +64,7 @@ public class Credibility : MonoBehaviour, IDataManager
         AudioManager.instance.music_source.Stop();
         yield return new WaitForSeconds(3f);
         post_processing.ChangeRedScene();
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(6f);
         fade_transition.Play("Start_Fade");
         post_processing.ResetColorScene();
         yield return new WaitForSeconds(4f);
@@ -87,15 +80,19 @@ public class Credibility : MonoBehaviour, IDataManager
         DataManager.instance.ResetGameData();
         SceneManager.LoadScene("MainMenu");
     }
-    private void UpdatePunishment(float cred)
+    private IEnumerator UpdatePunishment(float cred)
     {
+        yield return new WaitForSeconds(1f);
         punishment = 5f - cred;
         Debug.Log("Punishment : " + punishment);
         while(punishment > 0)
         {
+            Debug.Log("Punishment : " + punishment);
             post_processing.UpdateSaturation();
             AudioManager.instance.DecreaseMusicVolume();
             AudioManager.instance.IncreaseHorrorMusicVolume();
+            punishment--;
+            yield return new WaitForSeconds(1f);
         }
     }
 }

@@ -12,6 +12,8 @@ public class PauseMenu : MonoBehaviour
     // References
     public ChangeScene change_scene;
     private Credibility cred;
+    public TransitionDay transition_day;
+    public Fade fade;
 
     private void Awake()
     {
@@ -23,7 +25,7 @@ public class PauseMenu : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape) && cred.credibility > 0)
+        if (Input.GetKeyUp(KeyCode.Escape) && cred.credibility > 0 && !fade.on_fade && !transition_day.on_transition)
         {
             if (game_paused)
             {

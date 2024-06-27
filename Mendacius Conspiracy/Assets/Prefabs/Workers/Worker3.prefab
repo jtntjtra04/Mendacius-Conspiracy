@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   is_troll: 0
+  current_worker: 0
+  tired_state: {fileID: 4087889779078472995, guid: d8af769e08269ac42acfb68dd480be4f, type: 3}
+  crazed_state: {fileID: -777155456069690591, guid: 3a0b3b845f6ddf44fb0d6989095ba4fc, type: 3}
 --- !u!114 &6004112960825785273
 MonoBehaviour:
   m_ObjectHideFlags: 0

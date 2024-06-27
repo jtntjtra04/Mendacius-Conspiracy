@@ -15,15 +15,25 @@ public class Worker : MonoBehaviour
     private bool can_move;
     private bool moving_in;
 
+    // Worker State
+    public Sprite tired_state;
+    public Sprite crazed_state;
+    private SpriteRenderer worker_sprite;
+
     // Dialogue References
     private DialogueManager dialogue_manager;
 
     // Trigger Command
     private bool command_triggered;
 
+    // Other References
+    private Credibility cred;
 
     private void Start()
     {
+        worker_sprite = GetComponent<SpriteRenderer>();
+        cred = FindAnyObjectByType<Credibility>();
+
         command_triggered = false;
         can_move = true;
         moving_in = true;
@@ -133,6 +143,21 @@ public class Worker : MonoBehaviour
                     Destroy(gameObject, 1f);
                 }
             }
+        }
+        if(cred.credibility < 5)
+        {
+            UpdateWorkerState();
+        }
+    }
+    private void UpdateWorkerState()
+    {
+        if(cred.credibility <= 1)
+        {
+            worker_sprite.sprite = crazed_state;
+        }
+        else if(cred.credibility <= 4 && cred.credibility >= 2)
+        {
+            worker_sprite.sprite = tired_state;
         }
     }
     public void StartMovingBack() // Reset movement

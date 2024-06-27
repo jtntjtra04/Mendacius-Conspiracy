@@ -69,6 +69,11 @@ public class TimeSystem : MonoBehaviour, IDataManager
         day_number.text = day.ToString();
         transition_day.text = "Day " + day.ToString();
         transition_time.text = time.ToString() + ":00";
+        if(time < 16 || time >= 24)
+        {
+            endshift_button.SetActive(true);
+            SetAllUIInteractable(false); // Disable Interaction to All UI (Except exception_UI)
+        }
     }
     public void LoadData(GameData data)
     {
@@ -123,7 +128,11 @@ public class TimeSystem : MonoBehaviour, IDataManager
             return;
         }
         AP.StopAllCoroutines();
-        phone_call.StopAllCoroutines();
+        AP.LightMode();
+        if(phone_call.on_tutorial)
+        {
+            phone_call.StopYapping();
+        }
         foreach (GameObject jumpscare in AP.jumpscares)
         {
             jumpscare.SetActive(false);
@@ -158,12 +167,16 @@ public class TimeSystem : MonoBehaviour, IDataManager
         time_number.text = time.ToString() + ":00";
         
         transition_image.Play("EndTransition");
-        AudioManager.instance.PlayMusic("Theme");
-        AudioManager.instance.PlayHorrorMusic("Ambient");
         change_scene.ResetScene(); // Back to front desk
         daily_quota.UpdateDailyQuota(day);
         ScoreManager.instance.UpdateTargetScore(day);
         ScoreManager.instance.ResetScore();
+        if (cred.credibility <= 0)
+        {
+            yield break;
+        }
+        AudioManager.instance.PlayMusic("Theme");
+        AudioManager.instance.PlayHorrorMusic("Ambient");
 
         AP.severejumpscare_on = false;
         AP.hardjumpscare_on = false;
@@ -200,6 +213,14 @@ public class TimeSystem : MonoBehaviour, IDataManager
         foreach (var UI in exception_UI)
         {
             UI.interactable = interactable;
+        }
+    }
+    private void Update()
+    {
+        if (time < 16 || time >= 24)
+        {
+            endshift_button.SetActive(true);
+            SetAllUIInteractable(false); // Disable Interaction to All UI (Except exception_UI)
         }
     }
 }
