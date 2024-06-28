@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D12_4
   m_EditorClassIdentifier: 
-  image: {fileID: 290869987920048410, guid: 95f46147f531c98458da3b7829b8cf83, type: 3}
+  image: {fileID: 21300000, guid: db35ecf55530278469af0ea4d25e1051, type: 3}
   author: Juragan 777
   type: 1
   alien_worker: 4

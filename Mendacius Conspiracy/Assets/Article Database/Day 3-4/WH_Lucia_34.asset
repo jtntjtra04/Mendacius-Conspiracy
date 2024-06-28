@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: WH_Lucia_34
   m_EditorClassIdentifier: 
-  image: {fileID: -8091779998038990481, guid: 53117653f7d2e4148b035c7824c24415, type: 3}
-  author: Lucia
+  image: {fileID: 21300000, guid: 74886896c167d514cb5229893b5ac25d, type: 3}
+  author: Anna
   type: 2
   alien_worker: 2
   day_range: 1

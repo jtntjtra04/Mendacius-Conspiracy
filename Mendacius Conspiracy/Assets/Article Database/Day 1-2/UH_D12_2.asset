@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D12_2
   m_EditorClassIdentifier: 
-  image: {fileID: -1341265664891818393, guid: d7922e70d0d7c9d46acb3091dc29c3da, type: 3}
+  image: {fileID: 21300000, guid: 02a863f7ce946cb42bf57d0843d5a35c, type: 3}
   author: Bukan Misty
   type: 1
   alien_worker: 4

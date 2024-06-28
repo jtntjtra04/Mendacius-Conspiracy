@@ -160,7 +160,7 @@ public class ActionPoint : MonoBehaviour, IDataManager
         if(cred.credibility <= 3)
         {
             float chance_call = Random.value;
-            if(chance_call <= 0.3f)
+            if(chance_call <= 0.4f)
             {
                 random_call.CallRandomWorker();
             }
@@ -224,12 +224,17 @@ public class ActionPoint : MonoBehaviour, IDataManager
         AudioManager.instance.music_source.Stop();
         AudioManager.instance.horror_source.Stop();
         yield return new WaitForSeconds(7f);
+        if (cred.credibility < 1)
+        {
+            yield break;
+        }
         hard_jumpscares[2].SetActive(true);
         AudioManager.instance.PlaySFX("Tension");
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(3f);
 
         // turn off jumpscare
         hard_jumpscares[2].SetActive(false);
+        AudioManager.instance.sfx_source.Stop();
         yield return new WaitForSeconds(15f);
         AudioManager.instance.PlayHorrorMusic("Ambient");
         yield return new WaitForSeconds(300f);

@@ -83,19 +83,19 @@ public class ScoreManager : MonoBehaviour
     {
         if (day == 2)
         {
-            target_score = 300; // Target score Daily catch game
+            target_score = 200; // Target score Daily catch game
         }
         else if (day >= 3 && day <= 4)
         {
-            target_score = 400;
+            target_score = 300;
         }
         else if (day >= 5 && day <= 6)
         {
-            target_score = 500;
+            target_score = 400;
         }
         else if (day == 7)
         {
-            target_score = 550;
+            target_score = 450;
         }
     }
     public void ResetScore()

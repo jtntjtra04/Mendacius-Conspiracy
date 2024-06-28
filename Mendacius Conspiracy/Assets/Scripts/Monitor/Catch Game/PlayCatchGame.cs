@@ -10,7 +10,7 @@ public class PlayCatchGame : MonoBehaviour
     public RandomSpawner random_spawn;
     public PlayerMovement player_movement;
     public GameObject end_panel;
-    [SerializeField] private float game_duration = 60f;
+    [SerializeField] private float game_duration = 45f;
     private float spawn_interval = 0f;
 
     // UI Status
@@ -58,7 +58,7 @@ public class PlayCatchGame : MonoBehaviour
 
         while (timer > 0)
         {
-            if(timer <= 20)
+            if(timer <= 15)
             {
                 spawn_interval = 0.1f;
                 while(spawn_interval < 1f)
@@ -68,7 +68,7 @@ public class PlayCatchGame : MonoBehaviour
                     spawn_interval = spawn_interval + spawn_interval;
                 }
             }
-            else if(timer <= 40)
+            else if(timer <= 30)
             {
                 spawn_interval = 0.3f;
                 while (spawn_interval < 1f)
@@ -78,7 +78,7 @@ public class PlayCatchGame : MonoBehaviour
                     spawn_interval = spawn_interval + spawn_interval;
                 }
             }
-            else if(timer <= 60)
+            else if(timer <= 45)
             {
                 spawn_interval = 1f;
                 random_spawn.SpawnRandomObject();

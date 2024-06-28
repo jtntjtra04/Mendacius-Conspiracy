@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: WH_Desmond_34
   m_EditorClassIdentifier: 
-  image: {fileID: 5122567581006597950, guid: 08f99268b274b6346acae40517f95fde, type: 3}
-  author: Desmond
+  image: {fileID: 21300000, guid: e003069a0459ac64eba8ef3d63629a0e, type: 3}
+  author: Haris
   type: 2
   alien_worker: 3
   day_range: 1

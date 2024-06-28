@@ -10,9 +10,15 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private Button continuegame_button;
 
+    [Header("Menu")]
+    [SerializeField] private GameObject settings_menu;
+    [SerializeField] private GameObject credits_menu;
+
     public Animator transition_fade;
     private void Start()
     {
+        settings_menu.SetActive(false);
+        credits_menu.SetActive(false);
         Debug.Log("Start Main Menu");
         transition_fade.Play("Default_End");
         if (!DataManager.instance.HasGameData())
@@ -36,10 +42,20 @@ public class MainMenu : MonoBehaviour
         DataManager.instance.SaveGame();
         StartCoroutine(ContinueGameTransition());
     }
+    public void GoToCreditsMenu()
+    {
+        MainMenuAudioManager.instance.PlaySFX("Click");
+        credits_menu.SetActive(true);
+    }
     public void GoToSettingsMenu()
     {
         MainMenuAudioManager.instance.PlaySFX("Click");
-        SceneManager.LoadScene("SettingsMenu");
+        settings_menu.SetActive(true);
+    }
+    public void BackToMainMenu()
+    {
+        MainMenuAudioManager.instance.PlaySFX("Click");
+        credits_menu.SetActive(false);
     }
     public void ExitGame()
     {

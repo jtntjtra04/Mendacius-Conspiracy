@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D12_6
   m_EditorClassIdentifier: 
-  image: {fileID: 9203010066083376033, guid: fb62980941845fd4485601d1b7d980c3, type: 3}
+  image: {fileID: 21300000, guid: 0ff0cab6ffe11364ca26ec547f65d74c, type: 3}
   author: Mono
   type: 1
   alien_worker: 4
