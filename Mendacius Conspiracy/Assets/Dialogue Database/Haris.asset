@@ -15,91 +15,83 @@ MonoBehaviour:
   character_name: Haris
   normal_state:
     responses:
-    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
-      answer: Di waktu luang, saya suka membaca buku karya Nietzsche dan meditasi.
-        Ini membantu saya menjaga perspektif yang seimbang. Kamu harus mencobanya
-        kadang-kadang, sangat membantu mengelola stres.
-      special_message: (Haris tampak tenang dan penuh pemikiran saat membahas cara
-        menghabiskan waktunya.)
-    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
-      answer: Keluarga saya selalu mendukung pencapaian akademis saya. Kami memiliki
-        ikatan yang kuat yang berakar pada percakapan intelektual.
-      special_message: (Haris berbicara dengan tenang dan puas tentang keluarganya.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Menurut saya shift malam sangat menenangkan. Menawarkan waktu yang
-        unik untuk refleksi dan fokus mendalam, saya tidak keberatan.
-      special_message: (Haris tampaknya tidak keberatan menjalankan shift malam.)
-    - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
-        mental? '
-      answer: Saya berusaha reflektif, sering memasukkan konteks historis dan wawasan
-        filosofis untuk memberikan kedalaman. Saya benar-benar percaya bahwa masa
-        lalu menyimpan banyak permata yang terlupakan oleh masyarakat saat ini.
-      special_message: (Haris menjelaskan pendekatannya dengan ketepatan analitis.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Saya masih mengerjakannya, saya akan memberi tahu Anda setelah selesai.
-      special_message: (Haris sepertinya sedang bekerja keras, lebih baik jangan
-        ganggu dia.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, saya baru saja menyelesaikannya. Semuanya sudah beres.
-      special_message: (Haris tampak tenang dan puas setelah menyelesaikan pekerjaannya.)
+    - question: Are there any activities you like to do in your free time?
+      answer: In my spare time, I enjoy reading Nietzsche and meditating. It helps
+        me maintain a balanced perspective. You should give it a try sometimes, it
+        really helps with stress management.
+      special_message: (Haris appears calm and thoughtful as he discusses his way
+        of spending time.)
+    - question: Can you tell me about your family?
+      answer: My family has always supported my academic pursuits. We share a deep
+        bond rooted in intellectual conversations.
+      special_message: (Haris speaks calmly and contentedly about his family.)
+    - question: How do you feel about working on night shifts?
+      answer: In my opinion, the night shift is very calming. It offers a unique
+        time for reflection and deep focus; I don't mind it.
+      special_message: (Haris seems to have no objections to working the night shift.)
+    - question: Can you explain your approach to writing about mental health?
+      answer: "I aim to be reflective, often incorporating historical context and
+        philosophical insights to provide depth. As I truly believe that the past
+        holds many gems forgotten by today\u2019s society."
+      special_message: (Haris explains his approach with analytical precision.)
+    - question: "Have you finished today\u2019s work?"
+      answer: I am still working on it, I will let you know once I finish.
+      special_message: (Haris seems to be hard at work, better to not disturb him.)
+    - question: "Have you finished today\u2019s work?"
+      answer: Yes, I just completed it. Everything is in order.
+      special_message: (Haris appears calm and content, having finished his work.)
   tired_state:
     responses:
-    - question: Apakah ada aktivitas yang kamu suka lakukan di waktu luang?
-      answer: Membaca... dan kadang-kadang hanya berpikir, kamu tahu, meditasi. Itu
-        membantu menjernihkan pikiran.
-      special_message: (Haris tampaknya cukup apatis terhadap pertanyaan tersebut.)
-    - question: Bisakah kamu ceritakan tentang keluargamu??
-      answer: Keluarga saya? Ya, kami biasanya terlibat dalam percakapan intelektual...
-        penting untuk memperluas perspektif bersama.
-      special_message: (Haris tampak sedikit bingung bagaimana menjawab pertanyaan
-        tersebut.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam terkadang bisa menjadi tantangan, terutama ketika itu mengganggu
-        rutinitas meditasi saya, tapi saya bisa mengatasinya.
-      special_message: (Haris terlihat lelah namun tetap tenang menangani tuntutan
-        shift malam.)
-    - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
-        mental? '
-      answer: Saya berusaha untuk teliti... memasukkan beberapa konteks historis.
-        Saya percaya penting untuk belajar dari masa lalu untuk memperluas perspektif
-        kita.
-      special_message: (Respon Haris analitis tetapi kurang ketepatan seperti biasanya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Saya masih mengerjakannya, mencoba menyelesaikan beberapa bagian yang
-        belum selesai. Meski rasanya saya bekerja agak lambat.
-      special_message: (Haris tampak lelah tetapi fokus untuk menyelesaikan tugasnya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, saya sudah selesai. Butuh sedikit lebih lama dari yang diperkirakan.
-      special_message: (Haris terlihat kelelahan tetapi puas dengan pekerjaannya.)
+    - question: Are there any activities you like to do in your free time?
+      answer: Reading... and sometimes, just thinking, you know, meditating. It helps
+        clear out the mind.
+      special_message: (Haris appears to be quite apathetic regarding the question.)
+    - question: Can you tell me about your family?
+      answer: My family? Yes, we usually engage in intellectual conversations...
+        it's important to broaden our perspective.
+      special_message: (Haris seems slightly confused on how to answer the question.)
+    - question: How do you feel about working on night shifts?
+      answer: The night shift can sometimes be challenging, especially when it disrupts
+        my meditation routine, but I can handle it.
+      special_message: (Haris looks tired but remains calm in handling the demands
+        of the night shift.)
+    - question: Can you explain your approach to writing about mental health?
+      answer: I try to be thorough... include some historical context. I believe
+        it is important to learn from the past to broaden our perspective.
+      special_message: "(Haris\u2019 response is analytical but lacks his usual precision.)"
+    - question: "Have you finished today\u2019s work?"
+      answer: "I\u2019m still working on it, trying to tie up a few loose ends. Though
+        it feels like I'm working a bit too slow."
+      special_message: (Haris seems tired but focused on completing his tasks.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "Yes, I\u2019ve finished. It took a bit more time than expected."
+      special_message: (Haris seems exhausted but satisfied with his work.)
   troll_state:
     responses:
-    - question: Apakah ada aktivitas yang kamu suka lakukan di waktu luang?
-      answer: Membaca dan meditasi. Itu memberikan kejernihan mental yang diperlukan.
-      special_message: (Respon Haris sangat sederhana, berbeda dari dirinya yang
-        biasanya penuh pemikiran.)
-    - question: Bisakah kamu ceritakan tentang keluargamu??
-      answer: Keluarga saya selalu mendukung pencapaian intelektual saya dan saya
-        selalu mendukung mereka.
-      special_message: (Haris terdengar kurang puas, tidak seperti biasanya, mungkin
-        dia agak lelah.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam sangat optimal. Memberi saya kesempatan untuk bekerja tanpa
-        gangguan, dan saya dapat menyelesaikan tugas dengan presisi dan efisien.
-      special_message: (Haris tampak sangat antusias menjalankan shift malam, dia
-        orang yang sangat rajin.)
-    - question: 'Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
-        mental? '
-      answer: Saya memasukkan wawasan historis dan filosofis untuk memberikan cakupan
-        yang komprehensif. Penting juga untuk memberikan informasi yang tepat dan
-        ringkas untuk pembaca, tidak perlu pengisi yang tidak perlu.
-      special_message: (Haris menjelaskan pendekatannya dalam menulis dengan alasan
-        yang kuat.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Saya sudah mendokumentasikan progress saya dengan rinci, meskipun sekarang
-        belum selesai.
-      special_message: (Haris tampaknya bekerja keras, mencoba memberikan hasil yang
-        menyeluruh dan lengkap.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, saya menyelesaikannya dengan efisien, dengan dokumentasi yang rinci.
-        Informasi di dalamnya harus tepat dan ringkas.
-      special_message: Haris tampak sangat puas dengan hasil kerjanya yang presisi.
+    - question: Are there any activities you like to do in your free time?
+      answer: Reading and meditating. It provides the necessary mental clarity.
+      special_message: "(Haris\u2019 response was really straight forward, quite
+        different from his usual thoughtful self.)"
+    - question: Can you tell me about your family?
+      answer: My family has always supported my intellectual pursuits and I have
+        always supported theirs.
+      special_message: "(Haris\u2019 seems to lack the contentment he usually expresses,
+        maybe he\u2019s a bit tired.)"
+    - question: How do you feel about working on night shifts?
+      answer: The night shift is very optimal. It gives me the opportunity to work
+        without interruptions, and I can complete tasks with precision and efficiency.
+      special_message: (Haris seems very enthusiastic about working the night shift;
+        he's a very diligent person.)
+    - question: Can you explain your approach to writing about mental health?
+      answer: I incorporate historical and philosophical insights to provide comprehensive
+        coverage. It is also important to provide precise and concise information
+        for the readers, no need for unnecessary fillers.
+      special_message: (Haris explains his approach to writing with great reasoning.)
+    - question: "Have you finished today\u2019s work?"
+      answer: I have documented my progress meticulously, though I am not yet finished.
+      special_message: (Haris appears to be hard at work, trying to provide a thorough
+        and complete result.)
+    - question: "Have you finished today\u2019s work?"
+      answer: Yes, I completed it efficiently, with detailed documentation. The information
+        inside should be precise and concise.
+      special_message: (Haris seems really satisfied with his precise work result.)

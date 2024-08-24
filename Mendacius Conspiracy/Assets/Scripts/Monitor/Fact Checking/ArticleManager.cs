@@ -131,7 +131,7 @@ public class ArticleManager : MonoBehaviour
     }
     private void DisplayArticle(ArticleData article_now)
     {
-        author_text.text = "Penulis : " + article_now.author;
+        author_text.text = "Writer : " + article_now.author;
         article_image.sprite = article_now.image;
     }
     public void FactButton()

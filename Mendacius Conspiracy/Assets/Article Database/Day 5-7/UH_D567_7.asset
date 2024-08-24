@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D567_7
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 479478e9d88407545b5feab180152979, type: 3}
+  image: {fileID: -5690944675823338695, guid: c09a1b3ce9a97104a97b03dcdc16f891, type: 3}
   author: Lacia
   type: 1
   alien_worker: 4

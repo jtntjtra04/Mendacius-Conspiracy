@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D567_8
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: b0e757adc1eb244489ea4a7631104fd5, type: 3}
-  author: PemujaPisang#253
+  image: {fileID: -936651087196322265, guid: ded88c0b3d96c0b41bed9aa68c106883, type: 3}
+  author: BananaWorshiper#253
   type: 1
   alien_worker: 4
   day_range: 2

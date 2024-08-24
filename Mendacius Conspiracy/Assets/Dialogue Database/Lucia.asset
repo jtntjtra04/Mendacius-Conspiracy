@@ -15,99 +15,93 @@ MonoBehaviour:
   character_name: Lucia
   normal_state:
     responses:
-    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
-      answer: Saya sangat suka berkebun dan menulis puisi. Hal itu membawa begitu
-        banyak kedamaian dan kebahagiaan. Terutama setelah seharian panjang dan sibuk
-        di kota.
-      special_message: (Lucia terlihat ceria dan santai saat berbicara tentang hobinya.)
-    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
-      answer: Keluarga saya sangat suportif, dan saya sangat menghargai waktu yang
-        saya habiskan bersama mereka. Mereka yang mendorong saya untuk pergi dan
-        melakukan apa yang saya sukai, saya tidak akan berdiri di sini jika bukan
-        karena dukungan mereka.
-      special_message: (Lucia berbicara dengan hangat tentang keluarganya yang mendukung.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam memiliki daya tarik tersendiri, bukan? Ketenangan dan kesunyian
-        malam bisa sangat menginspirasi tulisan saya.
-      special_message: (Lucia terdengar positif dalam menanggapi tuntutan shift malam.)
-    - question: Bisakah Anda menjelaskan pendekatan Anda dalam menulis tentang fine
-        dining?
-      answer: Saya fokus menciptakan pengalaman yang elegan dan positif bagi pembaca,
-        membuat deskripsi seindah mungkin. Membuat mereka merasa seolah-olah mereka
-        mengalaminya langsung.
-      special_message: (Lucia antusias dan bersemangat tentang gaya menulisnya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Masih dalam proses, mencoba menambahkan beberapa detail halus untuk
-        memastikan semuanya sempurna.
-      special_message: (Lucia selalu tenang dan teliti dalam menyelesaikan tugasnya.
-        Lebih baik dia tidak terburu-buru.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, saya telah menyelesaikan tugas-tugas saya untuk hari ini. Saya
-        selalu merencanakan pekerjaan saya dengan cermat untuk memastikan penyelesaian
-        tepat waktu.
-      special_message: (Lucia tampak bahagia setelah menyelesaikan pekerjaan hari
-        ini.)
+    - question: Are there any activities you like to do in your free time?
+      answer: I absolutely love gardening and writing poetry. It brings so much peace
+        and joy. Especially after a long and busy day in the city.
+      special_message: (Lucia looks cheerful and relaxed while talking about her
+        hobbies.)
+    - question: Can you tell me about your family?
+      answer: "My family is very supportive, and I cherish the time I spend with
+        them. They\u2019re the one who encouraged me to go and do what I love, I
+        wouldn't be standing here if not for their support."
+      special_message: (Lucia speaks warmly about her supportive family.)
+    - question: How do you feel about working on night shifts?
+      answer: The night shift has its own charm, doesn't it? The calm and quiet of
+        the night can be very inspiring for my writing.
+      special_message: (Lucia sounded positive in responding to the demands of the
+        night shift.)
+    - question: Can you explain your approach to writing about fine dining?
+      answer: "I focus on creating an elegant and positive experience for the readers,
+        making the descriptions as delightful as possible. Making them feel as if
+        they\u2019re experiencing it first hand."
+      special_message: (Lucia is enthusiastic and passionate about her writing style.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "It\u2019s still in progress, trying to add some fine details to make
+        sure it\u2019s perfect."
+      special_message: "(Lucia is always calm and meticulous about completing her
+        tasks. It\u2019s better to not rush her.)"
+    - question: "Have you finished today\u2019s work?"
+      answer: Yes, I have completed my tasks for the day. I always plan my work carefully
+        to ensure timely completion after all.
+      special_message: "(Lucia appears to be happy, having completed today\u2019s
+        work.)"
   tired_state:
     responses:
-    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
-      answer: Aktivitas? Oh di waktu luang saya? Saya suka... berkebun dan menulis
-        puisi. Ini menenangkan dan membawa kedamaian.
-      special_message: (Lucia terlihat sedikit terganggu, mungkin dia merasa lelah?)
-    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
-      answer: Keluarga saya mendukung... kami dekat. Mereka selalu mencoba mendorong
-        saya ketika saya merasa sedih, kadang-kadang saya berharap mereka selalu
-        ada di sini bersama saya.
-      special_message: (Lucia berbicara tentang keluarganya dengan kerinduan di hatinya.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam agak melelahkan, terkadang saya lebih memilih untuk tidak
-        melakukannya. Tapi saya mencoba tetap positif dan mengambil langkah satu
-        per satu
-      special_message: (Lucia terlihat lelah tapi tetap menjaga pandangan positif
-        tentang bekerja di shift malam.)
-    - question: Bisakah Anda menjelaskan pendekatan Anda dalam menulis tentang santapan
-        lezat?
-      answer: "Saya berusaha untuk keanggunan\u2026 dan mencoba membuatnya menyenangkan
-        untuk dibaca. Saya berharap pembaca bisa merasakan seolah-olah mereka berada
-        di sana langsung."
-      special_message: (Lucia tampak kurang fokus, tapi dia tetap menjelaskan pandangannya
-        tentang menulis.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Belum, hanya perlu sedikit waktu lagi untuk membuatnya sempurna.
-      special_message: (Lucia tampak agak kewalahan saat ini, lebih baik memberinya
-        waktu untuk menyelesaikan semuanya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, akhirnya selesai... Saya memastikan semuanya sempurna. Silakan
-        cek dan beri tahu saya pendapat Anda.
-      special_message: (Lucia terlihat kelelahan tetapi puas telah menyelesaikan
-        pekerjaannya.)
+    - question: Are there any activities you like to do in your free time?
+      answer: "Activities? Oh in my free time? I love... gardening and poetry. It\u2019s
+        calming and brings me peace."
+      special_message: "(Lucia seems slightly distracted, maybe she\u2019s feeling
+        tired?)"
+    - question: Can you tell me about your family?
+      answer: "My family is supportive... we\u2019re close. They always try to encourage
+        me when I feel down, sometimes I wish they\u2019re always here with me."
+      special_message: (Lucia speaks about her family with a certain longing in her
+        heart.)
+    - question: How do you feel about working on night shifts?
+      answer: The night shift is a bit tiring; sometimes I prefer not to do it. But
+        I try to stay positive and take things one step at a time.
+      special_message: (Lucia looked tired but still maintained a positive outlook
+        on working the night shift.)
+    - question: Can you explain your approach to writing about fine dining?
+      answer: "I aim for elegance\u2026 and try to make it delightful to read. I
+        hope the readers can feel as if they\u2019re there in person.."
+      special_message: (Lucia seems a bit out of it, but she still explained her
+        views on writing.)
+    - question: "Have you finished today\u2019s work?"
+      answer: Not yet, just need a little more time to make it just right.
+      special_message: "(Lucia seems a bit overwhelmed right now, it\u2019s better
+        to give her some time to sort things out.)"
+    - question: "Have you finished today\u2019s work?"
+      answer: Yes, finally done... I made sure everything is perfect. Feel free to
+        check on it and tell me what you think.
+      special_message: (Lucia seems exhausted but content with having completed her
+        work.)
   troll_state:
     responses:
-    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
-      answer: Berkebun dan menulis puisi. Cukup menenangkan.
-      special_message: (Respon Lucia tampaknya kurang ceria seperti biasanya, mungkin
-        dia sangat lelah?)
-    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
-      answer: Keluarga saya mendukung. Mereka mendukung saya dan saya mendukung mereka,
-        ini hubungan yang cukup sederhana.
-      special_message: (Lucia berbicara tentang keluarganya, tetapi entah kenapa
-        terdengar jauh. Mungkin ada sesuatu yang terjadi dalam kehidupan pribadinya.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam bisa saya kelola dengan sempurna. Saya bisa memanfaatkan
-        kesempatan ini untuk menyelesaikan semua pekerjaan secara efisien dan tanpa
-        gangguan.
-      special_message: (Lucia tampak tenang menghadapi shift malam, dia melihat hal
-        ini sebagai sebuah kesempatan.)
-    - question: Bisakah Anda menjelaskan pendekatan Anda dalam menulis tentang santapan
-        lezat?
-      answer: Elegan, positif, dan menyenangkan. Ini adalah tiga komponen utama yang
-        menentukan gaya tulisan saya. Ini memastikan pembaca mendapatkan pengalaman
-        membaca terbaik yang mungkin.
-      special_message: (Lucia tampak sangat bangga dengan gaya menulisnya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Saya belum mencatatnya, tapi akan saya selesaikan. Anda tidak perlu
-        khawatir.
-      special_message: (Lucia tampak percaya diri bahwa dia akan menyelesaikan semua
-        pekerjaannya sebelum deadline.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Iya, sudah selesai. Tidak butuh banyak usaha.
-      special_message: (Lucia tampak acuh tak acuh setelah menyelesaikan pekerjaannya.)
+    - question: Are there any activities you like to do in your free time?
+      answer: "Gardening and writing poetry. It\u2019s quite calming."
+      special_message: "(Lucia\u2019s response seems to lack her usual cheerfulness,
+        maybe she\u2019s quite tired.?)"
+    - question: Can you tell me about your family?
+      answer: "My family is supportive. They support me and I support them, it\u2019s
+        quite a straightforward relationship."
+      special_message: (Lucia speaks about her family, but it somehow seemed distant.
+        Maybe something happened in her private life.)
+    - question: How do you feel about working on night shifts?
+      answer: I can manage the night shift perfectly. I can take advantage of this
+        opportunity to complete all tasks efficiently and without interruptions.
+      special_message: (Lucia appeared calm facing the night shift; she saw it as
+        an opportunity.)
+    - question: Can you explain your approach to writing about fine dining?
+      answer: Elegant, positive, and delightful. These are the three main components
+        that define my writing style. It ensures the readers will get the best reading
+        experience possible.
+      special_message: (Lucia seems really proud of her writing style.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "I haven\u2019t kept track, but I\u2019ll get it done. You don\u2019t
+        have to worry about it."
+      special_message: "(Lucia seems confident that she\u2019ll finish all her work
+        before the deadline.)"
+    - question: "Have you finished today\u2019s work?"
+      answer: "Yes, it\u2019s done. Didn\u2019t take much effort."
+      special_message: (Lucia appears indifferent about having finished her work.)

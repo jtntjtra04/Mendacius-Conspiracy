@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D34_6
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: f9e4fbe53512d8a42a564273057d971f, type: 3}
-  author: Tuan Rumah
+  image: {fileID: -4826729893690990895, guid: cccfeee1fbbfa5f40adbe8b7e8d181ea, type: 3}
+  author: The Host
   type: 1
   alien_worker: 4
   day_range: 1

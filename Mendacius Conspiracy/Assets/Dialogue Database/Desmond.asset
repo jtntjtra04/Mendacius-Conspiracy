@@ -15,106 +15,98 @@ MonoBehaviour:
   character_name: Desmond
   normal_state:
     responses:
-    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
-      answer: Saya menghabiskan banyak waktu luang saya untuk latihan fitness dan
-        membaca jurnal ilmiah. Ini membuat saya tetap tajam dan fokus. Tapi kadang-kadang
-        saya juga suka menonton film, ini membantu menghilangkan stres dan kelelahan.
-      special_message: (Desmond tampak tenang dan santai saat membahas hobinya.)
-    - question: Bisakah kamu ceritakan tentang keluargamu??
-      answer: Saya lebih suka menyendiri, tapi saya sangat menghargai hubungan profesional
-        saya. Teman-teman dan keluarga saya menghargai disiplin dan kerja keras.
-        Kami selalu mendukung tujuan dan ambisi masing-masing.
-      special_message: (Desmond berbicara dengan nada netral dan profesional tentang
-        hubungannya.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam tidak masalah bagi saya. Justru hal ini sejalan dengan
-        gaya hidup disiplin, memaksa saya untuk tetap mempertahankan fokus dalam
-        segala situasi.
-      special_message: (Desmond terlihat tenang sekaligus antusias untuk menjalankan
-        shift malam.)
-    - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
-        fisik
-      answer: Saya berusaha untuk presisi dan singkat, menggunakan istilah teknis
-        untuk menjelaskan konsep dengan jelas. Tidak perlu menggunakan kalimat yang
-        panjang, kita harus menghargai waktu orang lain jika kita ingin waktu kita
-        dihargai.
-      special_message: (Desmond menjelaskan pendekatannya dengan ketepatan metodis.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Saya sedang mengerjakannya, mencoba memeriksa beberapa detail untuk
-        memastikan keakuratan.
-      special_message: (Desmond adalah orang yang metodis dan teliti, dia tetap mengerjakan
-        tugasnya walau merasa lelah.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, saya sudah menyelesaikan semuanya lebih awal dari jadwal. Ketelitian
-        dan efisiensi sangat penting.
-      special_message: (Desmond tampak bangga setelah menyelesaikan tugasnya lebih
-        awal.)
+    - question: Are there any activities you like to do in your free time?
+      answer: I spend a lot of my free time in fitness training and reading scientific
+        journals, It keeps me sharp and focused. But sometimes I also like to watch
+        some movies, it helps clear out my mind when I'm stressed and tired.
+      special_message: (Desmond appears calm and relaxed while discussing his hobbies.)
+    - question: Can you tell me about your family?
+      answer: I mostly keep to myself, but I value my professional relationships
+        highly. My friends and family value discipline and hard work. We've always
+        supported each other's goals and ambitions.
+      special_message: (Desmond speaks in a neutral and professional tone about his
+        relationships.)
+    - question: How do you feel about working on night shifts?
+      answer: The night shift isn't a problem for me. In fact, it aligns with a disciplined
+        lifestyle, forcing me to maintain focus in all situations.
+      special_message: (Desmond looked calm yet enthusiastic about working the night
+        shift.)
+    - question: Can you explain your approach to writing about physical fitness?
+      answer: I strive to be precise and concise, using technical terms to clearly
+        explain the concepts. There is no need for unnecessary fillers, we have to
+        respect others' time if we want our time to be respected.
+      special_message: (Desmond explains his approach with methodical precision.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "I\u2019m working on it, trying to double-check a few details to ensure
+        accuracy."
+      special_message: (Desmond is methodical and diligent, still working on his
+        task.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "Yes, I\u2019ve completed everything ahead of schedule. Precision and
+        efficiency are key."
+      special_message: (Desmond looks proud, have finished his tasks ahead of time.)
   tired_state:
     responses:
-    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
-      answer: Saya, eh, biasanya berlatih dan membaca, tapi kadang-kadang saya hanya...
-        menonton film untuk bersantai. Ini baik untuk melepaskan stress, pikiran
-        yang rileks mengarah pada lebih fokus.
-      special_message: (Desmond tampaknya sedikit terganggu, mungkin dia sedang banyak
-        pikiran.)
-    - question: Bisakah kamu ceritakan tentang keluargamu??
-      answer: "Keluarga saya\u2026 Kami menjaga hubungan yang ketat dan profesional.
-        Kami menghargai disiplin dan kerja keras... saling mendukung."
-      special_message: (Desmond tampak sedikit terganggu, jawabannya terdengar tidak
-        fokus.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam bisa diatur, tetapi mereka sedikit mengganggu rutinitas
-        saya. Walau lelah, saya perlu tetap fokus menjalankan semuanya.
-      special_message: (Desmond terlihat lelah tapi tetap disiplin dalam menghadapi
-        shift malam.)
-    - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
-        fisik
-      answer: Saya berusaha untuk presisi dan singkat, tapi kadang-kadang... menantang
-        untuk menjaga semuanya tetap teratur. Tapi, saya melakukan yang terbaik untuk
-        menggunakan istilah teknis untuk menjelaskan konsep dengan jelas.
-      special_message: (Desmond tampak sedikit kurang fokus namun tetap menekankan
-        presisi dalam penulisannya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: "Hampir\u2026 tapi belum selesai juga, masih perlu memeriksa beberapa
-        konten penting."
-      special_message: (Desmond tampak lelah tetapi dengan tekun memastikan pekerjaannya
-        akurat.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, saya sudah menyelesaikannya. Memakan sedikit lebih banyak waktu
-        dari biasanya, tapi sudah selesai.
-      special_message: (Desmond tampak kelelahan tetapi puas telah menyelesaikan
-        pekerjaannya.)
+    - question: Are there any activities you like to do in your free time?
+      answer: "I, uh, usually train and read, but sometimes I just... watch movies
+        to relax. It\u2019s good to unwind, a relaxed mind leads to more focus after
+        all."
+      special_message: (Desmond seems to be a bit distracted, maybe he has a lot
+        on his mind right now.)
+    - question: Can you tell me about your family?
+      answer: "My family\u2026 We uphold a strict and professional relationship.
+        We value discipline and hard work... supportive."
+      special_message: (Desmond appears to be slightly distracted, his answer seems
+        a bit distant.)
+    - question: How do you feel about working on night shifts?
+      answer: The night shift can be managed, but it does slightly disrupt my routine.
+        Even though I'm tired, I need to stay focused on getting everything done.
+      special_message: (Desmond looked tired but remained disciplined in handling
+        the night shift.)
+    - question: Can you explain your approach to writing about physical fitness?
+      answer: I strive to be precise and concise, but sometimes it's... challenging
+        to keep it all together. But, I do my best to use technical terms to clearly
+        explain the concepts.
+      special_message: (Desmond seems slightly distracted but maintains his emphasis
+        on precision.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "Almost\u2026 but not quite finished yet, still need to double-check
+        some important contents."
+      special_message: (Desmond seems tired but is diligently ensuring his work is
+        accurate.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "Yes, I\u2019ve finished it. Took a bit more time than usual, but it\u2019s
+        done."
+      special_message: (Desmond seems exhausted but satisfied with having completed
+        his work.)
   troll_state:
     responses:
-    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
-      answer: Kebanyakan kebugaran dan membaca, tapi biasanya saya hanya bersantai
-        dan menonton apa pun yang ada di TV. Saya tidak benar-benar memiliki rutinitas
-        yang ketat dalam waktu luang saya, ini membantu saya mengurangi stres yang
-        terakumulasi.
-      special_message: (Desmond tampak sangat santai, sepertinya dia hanya menikmati
-        hidup.)
-    - question: Bisakah kamu ceritakan tentang keluargamu??
-      answer: Kami baik-baik saja, sepertinya. Kami menjaga hubungan profesional.
-        Tidak terlalu istimewa, sebenarnya.
-      special_message: (Desmond tampak acuh tak acuh dan mengabaikan hubungan keluarganya,
-        mungkin ada sesuatu yang terjadi dalam kehidupan pribadinya.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam sama sekali gak masalah. Saya malah lebih suka karena biasanya
-        waktu kerja fleksibel, suasananya juga lebih tenang.
-      special_message: (Desmond tampak santai menghadapi tuntutan shift malam.)
-    - question: Bisakah kamu jelaskan pendekatanmu dalam menulis tentang kesehatan
-        fisik
-      answer: Saya biasanya mengikuti alur. Berusaha untuk menjaga sederhana dan
-        membuatnya sepresisi dan se-singkat mungkin. Orang tidak ingin membaca banyak
-        paragraf hanya untuk mendapatkan informasi yang bisa dirangkum dalam 2 kalimat,
-        bukan begitu?
-      special_message: (Desmond tampak percaya diri dengan gaya menulisnya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Saya belum benar-benar mulai. Saya akan melakukannya saat saya bisa.
-      special_message: (Desmond tampak santai. Tidak ada yang salah selama dia menyelesaikan
-        tugasnya dengan baik.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, saya menyelesaikannya dengan cepat. Semua seharusnya sesuai dengan
-        permintaan Anda.
-      special_message: (Desmond tampak percaya diri dengan pekerjaan yang telah dia
-        selesaikan.)
+    - question: Are there any activities you like to do in your free time?
+      answer: "Mostly fitness and reading, but usually I just relax and watch whatever\u2019s
+        on TV. I don't really have a strict routine in my free time, it helps me
+        reduce the built up stress."
+      special_message: "(Desmond seems really casual, looks like he\u2019s just enjoying
+        life.)"
+    - question: Can you tell me about your family?
+      answer: We get along fine, I guess. We keep a professional relationship. Nothing
+        too special, really.
+      special_message: "(Desmond seems indifferent and dismissive about his family
+        relationships, maybe he\u2019s got something going on in his private life.)"
+    - question: How do you feel about working on night shifts?
+      answer: The night shift is no problem at all. I actually prefer it because
+        the work hours are usually flexible, and the atmosphere is calmer.
+      special_message: (Desmond appeared relaxed in handling the demands of the night
+        shift.)
+    - question: Can you explain your approach to writing about physical fitness?
+      answer: "I usually just go with the flow. Trying to keep it simple and make
+        it as precise and concise as possible. People don\u2019t really want to read
+        tons of paragraphs just to get an info that can be summarized in 2 sentences,
+        don\u2019t you think?"
+      special_message: (Desmond seems confident in his writing style.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "I haven\u2019t really started yet. I\u2019ll get to it when I can."
+      special_message: (Desmond seems relaxed. Nothing wrong as long as he finishes
+        everything properly.)
+    - question: "Have you finished today\u2019s work?"
+      answer: Yes, I finished it quickly. Everything should be as you requested.
+      special_message: (Desmond seems confident in the work he completed.)

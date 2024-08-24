@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D567_9
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 46ef42910ff30f245b11762aeb0e0186, type: 3}
-  author: PT Mundur Terus
+  image: {fileID: 8626092337393800298, guid: c62bcf069e112e041b7c92f14435182d, type: 3}
+  author: PT MundurTerus
   type: 1
   alien_worker: 4
   day_range: 2

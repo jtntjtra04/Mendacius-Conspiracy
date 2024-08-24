@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: F_Haris_34_2
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 4368145aefd44464b88145a9d6e6a4b3, type: 3}
+  image: {fileID: 6912699173565745874, guid: 37bc3dc680622ea4482c151daa4477c2, type: 3}
   author: Haris
   type: 0
   alien_worker: 4

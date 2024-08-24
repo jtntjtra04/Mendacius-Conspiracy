@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D567_10
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 5384b68e947299f4b8190bcf50c62f77, type: 3}
-  author: Ubi Lembut
+  image: {fileID: 4203077673855867209, guid: d805e106c56d3474c8f13079edd72f46, type: 3}
+  author: Sweet Potato
   type: 1
   alien_worker: 4
   day_range: 2

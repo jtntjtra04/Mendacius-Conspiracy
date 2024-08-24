@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279a22ed7c895714d97abac2883bd0df, type: 3}
   m_Name: UH_D567_3
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: b240f76ccdd49e343b64b12c8f358c20, type: 3}
+  image: {fileID: -7544325647919386405, guid: 1d6f1892f797a084bb4cf2eb14b36175, type: 3}
   author: Cryptid Hunters
   type: 1
   alien_worker: 4

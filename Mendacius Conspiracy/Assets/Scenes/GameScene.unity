@@ -626,7 +626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pecat
+  m_Text: Fire
 --- !u!222 &50250881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1968,7 +1968,7 @@ GameObject:
   - component: {fileID: 125469335}
   - component: {fileID: 125469334}
   m_Layer: 5
-  m_Name: OvertimeWorkButton
+  m_Name: NightShiftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2122,8 +2122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 277.4, y: -126.4}
-  m_SizeDelta: {x: 116, y: 21.84}
+  m_AnchoredPosition: {x: 277.4, y: -131.23999}
+  m_SizeDelta: {x: 116, y: 31.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132690353
 MonoBehaviour:
@@ -2158,7 +2158,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Peningkatan diri
+  m_Text: Personal Development
 --- !u!222 &132690354
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2608,7 +2608,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Penulis : Senyum Manis'
+  m_Text: 'Writer : Senyum Manis'
 --- !u!222 &176104401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3644,7 +3644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.32, y: -35.91}
+  m_AnchoredPosition: {x: 3.32, y: -46.7}
   m_SizeDelta: {x: 383.66, y: 276.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230429233
@@ -3679,26 +3679,25 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
-  m_Text: "\tJakarta, 4 Januari 2030 - Ketegangan semakin meningkat setelah foto
-    selfie mengerikan beredar di media sosial. Foto tersebut menampilkan seorang
-    pria tersenyum lebar, namun kedua matanya kosong dan hitam pekat, proporsi wajahnya
-    juga terlihat aneh dan terdistorsi. Menurut deskripsi, foto itu diambil di puncak
-    Gunung Everest, tetapi detail geografis dalam foto tersebut tidak sesuai dengan
-    lokasi sebenarnya.\r\n\r\n\t\u201CFoto ini sangat meresahkan,\u201D kata Dr.
-    Andi Prasetyo. \u201CSenyum yang tidak wajar dan mata yang hitam itu sangat mengganggu.
-    Aspek geografis yang salah juga menimbulkan pertanyaan tentang keaslian foto
-    tersebut.\u201D Anehnya, hasil penelitian tidak menemukan adanya bekas editing
-    atau rekayasa pada foto tersebut, seperti foto tersebut benar benar asli dan
-    diambil ditempat nyata.\r\n\r\n\tPara ahli menduga foto tersebut mungkin merupakan
-    upaya Mendacius untuk memanipulasi emosi publik. Foto manusia yang aneh dan tidak
-    wajar bisa memicu perasaan tidak tenang, sementara ketidaksesuaian geografis
-    bisa menimbulkan kebingungan. Pihak berwenang sedang melacak sumber foto tersebut
-    untuk mengetahui siapa sebenarnya dalang dibalik penyebaran hoax ini.\r\n\r\n\tBukti
-    lain juga ditemukan bahwa para Mendacius sangat ahli dalam menerobos masuk jaringan
-    komunikasi melalui internet. Pemerintah Global mengimbau semua warga untuk mengganti
-    handphone yang biasa digunakan menjadi telepon model lama, untuk mempersulit
-    akses para Mendacius ke dalam jaringan komunikasi kita."
+    m_LineSpacing: 1.4
+  m_Text: "\tJakarta, January 4 2030 - Tensions are increasing after horrific selfie
+    photos circulated on social media. The photo shows a man smiling broadly, but
+    his eyes are empty and pitch black, the proportions of his face also look strange
+    and distorted. According to the description, the photo was taken at the top of
+    Mount Everest, but the geographical details in the photo do not match the actual
+    location.\r\n\r\n\t\u201CThis photo is very disturbing,\u201D said Dr. Andi Prasetyo.
+    \u201CThat unnatural smile and black eyes are very disturbing. The incorrect
+    geographical aspect also raises questions about the authenticity of the photo.\u201D
+    Surprisingly, the research results did not find any traces of editing or engineering
+    on the photo, as if the photo was truly original and taken in a real place.\r\n\r\n\tExperts
+    suspect the photo may be an attempt by Mendacius to manipulate public emotions.
+    Strange and unnatural photos of people can trigger feelings of unease, while
+    geographical incongruities can cause confusion. The authorities are tracking
+    the source of the photo to find out who is actually behind the spread of this
+    hoax.\r\n\r\n\tOther evidence was also found that the Mendacius were very skilled
+    at breaking into communication networks via the internet. The Global Government
+    urges all citizens to change their commonly used cellphones to old model phones,
+    to make it difficult for Mendacius to access our communications networks.\r\n"
 --- !u!222 &230429234
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4256,7 +4255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123.9, y: 34.8}
+  m_AnchoredPosition: {x: -126.8, y: 34.8}
   m_SizeDelta: {x: 50.47, y: 14.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &277035826
@@ -6018,38 +6017,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Latar belakang pribadi:
-
-    - Relasi Pribadi: Sangat menghargai hubungan
-    dengan teman dekat dan keluarga.
-
-    - Pendidikan: Gelar Sarjana Sastra
-
-    Keterampilan
-    Khusus Bekerja: Mahir dalam menyusun narasi yang menarik dan puitis tentang topik
-    gaya hidup.
-
-    - Hobi: Berkebun, membaca sastra klasik, melukis
-
-
-
-    Pola
-    Perilaku:
-
-    - Pola Bicara: Dewasa dan ceria.
-
-    - Emosi: Tenang dan positif.
-
-
-
-    Kinerja
-    dan Kebiasaan Kerja:
-
-    - Catatan Produktivitas: Konsisten memenuhi deadline,
-    lebih memilih langkah yang stabil daripada terburu-buru.
-
-    - Cara Menulis:
-    Rumit dan deskriptif, menggunakan bahasa berbunga-bunga dan positif.'
+  m_Text: "Personal Background:\r\n- Relationships: Deeply values her relationships
+    with a small circle of close friends and family. Enjoys quiet dinners and meaningful
+    conversations.\r\n- Education: Bachelor's degree in Literature\r\n- Working Specific
+    Skill: Excellent at crafting engaging and poetic narratives about lifestyle topics.\r\n-
+    Hobby: Gardening, reading classical literature, painting\n\r\nBehavioral Patterns:\r\n-
+    Speech Pattern: Mature and reflective, often uses elaborate descriptions and
+    metaphors.\r\n- Emotion: Generally calm and soothing, but can become anxious
+    under high pressure.\n\r\nPerformance and Work Habits:\r\n- Productivity Record:
+    Consistently meets deadlines, prefers a steady pace over rushing.\r\n- Document
+    Styles: Elaborate and descriptive, uses a lot of flowery language and positive
+    affirmations.\r"
 --- !u!222 &364752802
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6632,7 +6610,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kafein
+  m_Text: Caffeine
 --- !u!222 &431650758
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7076,39 +7054,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Latar belakang pribadi:
-
-    - Relasi Pribadi: Dididik secara disiplin,
-    dekat dengan beberapa anggota keluarga dan teman terpilih yang memiliki minat
-    yang sama.
-
-    - Pendidikan: Gelar Sarjana Ilmu Gizi
-
-    - Keterampilan Khusus
-    Bekerja: Ahli di bidang nutrisi dan kesehatan fisik.
-
-    - Hobi: Lari, fitnes,
-    nonton film.
-
-
-
-    Pola Perilaku:
-
-    - Pola Bicara: Datar dan sering menggunakan
-    istilah teknis.
-
-    - Emosi: Tenang dan disiplin.
-
-
-
-    Kinerja dan Kebiasaan
-    Kerja:
-
-    - Catatan Produktivitas: Sangat efisien, selalu memenuhi deadline
-    dengan waktu lebih.
-
-    - Cara Menulis: Terstruktur dan terperinci, dengan judul
-    dan poin-poin yang jelas.'
+  m_Text: "Personal Background:\r\n- Relationships: Disciplined upbringing, close
+    to a few select family members and friends who share his interests.\r\n- Education:
+    Bachelor's degree in Nutrition Science\r\n- Working Specific Skill: Expert in
+    nutrition, advises on healthy eating habits and fitness routines.\r\n- Hobby:
+    Running, fitness, watching movies.\r\n\nBehavioral Patterns:\r\n- Speech Pattern: 
+    Precise and methodical, often uses technical jargon related to health and fitness.\r\n-
+    Emotion: Composed and disciplined, shows enthusiasm when discussing health and
+    fitness topics.\r\n\nPerformance and Work Habits:\r\n- Productivity Record: Highly
+    efficient, always meets deadlines with time to spare.\r\n- Document Styles: Structured
+    and detailed, with clear headings and bullet points.\r"
 --- !u!222 &488998220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7187,11 +7142,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "Pekerja 2 : Haris\n\r\nInformasi utama:\r\n- Jenis Kelamin: Laki-laki\r\n-
-    Tanggal Lahir : 22 Maret 1995\r\n- Usia: 34\r\n\nTopik yang Ditugaskan:\r\n-
-    Kesehatan Mental \r\n- Kesehatan Fisik\r\n- Pengembangan Diri\r\n\nGaya menulis:\r\n-
-    Penuh dengan referensi sejarah dan filosofis\r\n\nJam kerja:\r\n- 16.00 - 17.00
-    lalu 19.00 - 00.00\r\n"
+  m_Text: "Worker 2 : Haris\n\r\nMain Information:\r\n- Gender: Male\r\n- Birth Date:
+    March 22nd, 1995\r\n- Age: 34 \r\n\nAssigned Topic:\r\n- Mental Health\r\n- Physical
+    Fitness \r\n- Personal Development\r\n\nWriting Style:\r\n- Expansive and packed
+    with historical and philosophical references\r\n\nWork Hours:\r\n- 4 p.m - 5
+    p.m then 7 p.m - 12 a.m\r"
 --- !u!222 &490744033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8764,7 +8719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Salah memecat worker dan alien berhasil memanipulasi seluruh perusahaan
+  m_Text: Fired the wrong worker and the alien managed to manipulate the entire company
 --- !u!222 &555668627
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8929,7 +8884,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Progress Kerja
+  m_Text: Work Progress
 --- !u!222 &559534940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10152,7 +10107,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kebugaran fisik
+  m_Text: Physical Fitness
 --- !u!222 &646952384
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11094,7 +11049,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (Game akan langsung berakhir)
+  m_Text: (Game will immediately end this way)
 --- !u!222 &683761751
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11576,11 +11531,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. Tangkap buku yang jatuh dengan karakter untuk mendapatkan poin fakta.
-    \n2. Tahan tombol \"A\" atau \"D\" untuk menggerakan karakter. \n3. <color=green>Buku
-    fakta</color> akan menambahkan poin fakta sedangkan <color=red>buku hoax</color>
-    akan mengurangi poin fakta.\n4. Kumpulkan point fakta dan raih target point untuk
-    memenangkan permainan, <color=red>jangan sampai dibawah target poin yaa</color>."
+  m_Text: '1. Catch the books that fall using character to get fact points.
+
+    2.
+    Hold down the "A" or "D" button to move the character.
+
+    3. <color=green>Fact
+    Books</color> will add fact points while <color=red>hoax books</color> will reduce
+    fact points.
+
+    4. Collect fact points and reach target points to win the game,
+    <color=red>Don''t get below the target points, okay?</color>.'
 --- !u!222 &721218127
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11738,7 +11699,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: salah memecat worker, alien semakin bebas dalam perusahaan
+  m_Text: fired the wrong worker, the alien continues to wreak havoc within the company
+    freely
 --- !u!222 &734024488
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14086,7 +14048,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Relasi Pribadi
+  m_Text: Relationships
 --- !u!222 &861094068
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14431,7 +14393,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 905041899}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.62854767}
+  m_AnchorMin: {x: 0, y: 0.00000011920929}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -15658,7 +15620,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: tidak
+  m_Text: No
 --- !u!222 &937037490
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16677,7 +16639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shift Malam
+  m_Text: Night Shifts
 --- !u!222 &983723313
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16756,7 +16718,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Berhasil bertahan 7 hari
+  m_Text: Manage to survive 7 days
 --- !u!222 &988084512
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16820,16 +16782,16 @@ MonoBehaviour:
   m_Content: {fileID: 1996983912}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
-  m_Inertia: 1
+  m_Inertia: 0
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 3
+  m_ScrollSensitivity: 20
   m_Viewport: {fileID: 299756660}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1184046592}
   m_HorizontalScrollbarVisibility: 2
-  m_VerticalScrollbarVisibility: 2
+  m_VerticalScrollbarVisibility: 1
   m_HorizontalScrollbarSpacing: -3
   m_VerticalScrollbarSpacing: -3
   m_OnValueChanged:
@@ -17018,7 +16980,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Keahlian Kerja
+  m_Text: Work Expertise
 --- !u!222 &992081816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17275,7 +17237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kesehatan mental
+  m_Text: Mental Health
 --- !u!222 &1010422224
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18024,7 +17986,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9c2d1806f8fab3646bc77f7c0517ec79, type: 3}
-    m_FontSize: 14
+    m_FontSize: 12
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -19392,8 +19354,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.5899963, y: -67.11}
-  m_SizeDelta: {x: -56.22, y: -216.72}
+  m_AnchoredPosition: {x: -2.5899963, y: -73.67}
+  m_SizeDelta: {x: -56.22, y: -203.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146505011
 MonoBehaviour:
@@ -19417,7 +19379,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9c2d1806f8fab3646bc77f7c0517ec79, type: 3}
-    m_FontSize: 6
+    m_FontSize: 7
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -19428,27 +19390,27 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: '1. Latihan kekuatan dapat meningkatkan metabolisme tubuh dengan meningkatkan
-    massa otot, yang membakar lebih banyak kalori saat istirahat.
+  m_Text: '1. Strength training can boost your metabolism by increasing muscle mass,
+    which burns more calories at rest.
 
-    2. High-Intensity
-    Interval Training (HIIT) dapat meningkatkan kebugaran kardiovaskular lebih efektif
-    daripada pelatihan ketahanan tradisional dalam waktu yang lebih singkat.
+    2. High-Intensity Interval Training (HIIT)
+    can improve cardiovascular fitness more effectively than traditional endurance
+    training in less time.
 
-    3.
-    Latihan fleksibilitas, seperti yoga, dapat membantu mencegah cedera dengan meningkatkan
-    rentang gerak pada sendi.
+    3. Flexibility exercises, such as yoga, can help
+    prevent injuries by improving the range of motion in joints.
 
-    4. Aktivitas fisik teratur dapat meningkatkan
-    fungsi otak dan melindungi dari penurunan kognitif seiring bertambahnya usia.
+    4. Regular
+    physical activity can enhance brain function and protect against cognitive decline
+    as you age.
 
-    5.
-    Berjalan kaki hanya 30 menit sehari dapat secara signifikan mengurangi risiko
-    penyakit jantung.
+    5. Walking just 30 minutes a day can significantly reduce the
+    risk of heart disease.
 
-    6. Tetap terhidrasi sangat penting untuk kinerja fisik,
-    karena dehidrasi ringan sekalipun dapat mengurangi kekuatan, daya tahan, dan
-    koordinasi.'
+    6. Staying hydrated is essential for physical performance,
+    as even mild dehydration can impair strength, endurance, and coordination.
+
+'
 --- !u!222 &1146505012
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19605,7 +19567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.5899963, y: -67.16}
+  m_AnchoredPosition: {x: -2.5899963, y: -72.29001}
   m_SizeDelta: {x: -56.22, y: -208.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151633361
@@ -19641,17 +19603,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "1. Restoran mewah sering mempekerjakan koki berketerampilan tinggi yang
-    telah menjalani pelatihan dan magang yang ekstensif.\r\n2. Konsep testing menus,
-    yang menawarkan porsi kecil dari berbagai hidangan, berasal dari tempat makan
-    mewah (prinsip farm to table).\r\n3. Gastronomi molekuler, sub-disiplin dari
-    ilmu pengetahuan pangan (food science), sering digunakan dalam makan mewah untuk
-    menciptakan tekstur dan rasa yang inovatif.\r\n4. Pengalaman fine dining biasanya
-    mencakup layanan tingkat tinggi, termasuk pengetahuan detail tentang paduan anggur
-    (wine pairings) dan sumber bahan.\r\n5. Bahan musiman dan lokal adalah ciri khas
-    banyak restoran mewah, memastikan hidangan yang paling segar dan paling beraroma.\r\n6.
-    Suasana dan dekorasi tempat makan mewah dirancang dengan cermat untuk meningkatkan
-    pengalaman bersantap secara keseluruhan.\r"
+  m_Text: "1. Fine dining restaurants often employ highly skilled chefs who have
+    undergone extensive training and apprenticeship.\r\n2. The concept of tasting
+    menus, which offer small portions of multiple dishes, originated in fine dining
+    establishments.\r\n3. Molecular gastronomy, a sub-discipline of food science,
+    is frequently used in fine dining to create innovative textures and flavors.\r\n4.
+    Fine dining experiences often include a high level of service, including detailed
+    knowledge of wine pairings and ingredient sourcing.\r\n5. Seasonal and locally
+    sourced ingredients are a hallmark of many fine dining restaurants, ensuring
+    the freshest and most flavorful dishes (farm to table).\r\n6. The ambiance and
+    decor of fine dining establishments are meticulously designed to enhance the
+    overall dining experience.\r"
 --- !u!222 &1151633362
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19730,7 +19692,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Apa anda yakin ingin memecat karyawan ini?
+  m_Text: Are you sure want to fire this worker?
 --- !u!222 &1164500356
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19888,7 +19850,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Selesai Interaksi
+  m_Text: End Interaction
 --- !u!222 &1167818523
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20058,8 +20020,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 897643433}
   m_HandleRect: {fileID: 897643432}
   m_Direction: 2
-  m_Value: 1.0000001
-  m_Size: 0.3714523
+  m_Value: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -20357,7 +20319,7 @@ GameObject:
   - component: {fileID: 1200338176}
   - component: {fileID: 1200338175}
   m_Layer: 5
-  m_Name: SocialTrandText
+  m_Name: SocialTrendsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20415,7 +20377,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tren Sosial
+  m_Text: Social Trends
 --- !u!222 &1200338176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21054,8 +21016,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67, y: 0}
-  m_SizeDelta: {x: 91.48, y: 30}
+  m_AnchoredPosition: {x: 41.8, y: 0}
+  m_SizeDelta: {x: 41.09, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1271940918
 MonoBehaviour:
@@ -21090,7 +21052,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 60
+  m_Text: '45
+
+'
 --- !u!222 &1271940919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21111,7 +21075,7 @@ GameObject:
   - component: {fileID: 1309969994}
   - component: {fileID: 1309969993}
   m_Layer: 5
-  m_Name: SocialTrendsText
+  m_Name: SocialTrends
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21169,17 +21133,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "\r1. Meningkatnya pengaruh media sosial telah secara signifikan mempengaruhi
-    perilaku konsumen dan strategi pemasaran merek.\r\n2. Minimalisme, tren yang
-    mempromosikan kesederhanaan dan decluttering, semakin populer karena orang berusaha
-    mengurangi stres dan meningkatkan fokus.\r\n3. Ekonomi gig, yang dicirikan dengan
-    kontrak jangka pendek dan freelance work, telah mengubah pola kerja tradisional.\r\n4.
-    Teknologi realitas virtual (VR) dan augmented reality (AR) semakin terintegrasi
-    dalam kehidupan sehari-hari, mulai dari permainan hingga pertemuan virtual.\r\n5.
-    Gaya hidup yang sustainable, termasuk praktik tanpa limbah dan ramah lingkungan,
-    merupakan tren yang berkembang seiring meningkatnya kesadaran akan isu lingkungan.\r\n6.
-    Layanan streaming online telah merevolusi industri hiburan, membuat konten sesuai
-    permintaan lebih mudah diakses daripada sebelumnya.\r"
+  m_Text: "1. The rise of social media influencers has significantly impacted consumer
+    behavior and brand marketing strategies.\r\n2. Minimalism, a trend promoting
+    simplicity and decluttering, has gained popularity as people seek to reduce stress
+    and improve focus.\r\n3. The gig economy, characterized by short-term contracts
+    and freelance work, has reshaped traditional employment patterns.\r\n4. Virtual
+    reality (VR) and augmented reality (AR) technologies are becoming more integrated
+    into everyday life, from gaming to virtual meetings.\r\n5. Sustainable living,
+    including zero-waste and eco-friendly practices, is a growing trend as awareness
+    of environmental issues increases.\r\n6. Online streaming services have revolutionized
+    the entertainment industry, making on-demand content more accessible than ever.\r"
 --- !u!222 &1309969994
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21888,7 +21851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123.369965, y: -4.77}
+  m_AnchoredPosition: {x: -123.369965, y: -9.9}
   m_SizeDelta: {x: 143.22, y: 14.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351669807
@@ -23043,7 +23006,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 39.76, y: 0}
-  m_SizeDelta: {x: 100, y: 128.15}
+  m_SizeDelta: {x: 250.87, y: 128.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1437844903
 GameObject:
@@ -23811,7 +23774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.32, y: 151}
+  m_AnchoredPosition: {x: 3.32, y: 143.2}
   m_SizeDelta: {x: 383.66, y: 48.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491374974
@@ -23846,10 +23809,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: ' Infiltrasi Terungkap: Agen Mendacius Tertangkap di Jaringan Berita Utama
-
-'
+    m_LineSpacing: 1.4
+  m_Text: 'Infiltration Revealed: A Mendacius Agent Caught on Major News Network'
 --- !u!222 &1491374975
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24503,36 +24464,23 @@ MonoBehaviour:
     m_FontSize: 6
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 65
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: '1. Menetapkan tujuan SMART (Specific, Measurable, Achievable, Relevant,
-    Time-bound)  dapat secara signifikan meningkatkan pertumbuhan pribadi dan profesional.
-
-    2.
-    Membaca secara teratur dapat meningkatkan empati, fungsi kognitif, dan mengurangi
-    stres.
-
-    3. Berlatih merasa syukur setiap hari telah terbukti meningkatkan
-    kebahagiaan secara keseluruhan dan kepuasan hidup.
-
-    4. Mengembangkan growth
-    mindset, keyakinan bahwa kemampuan dapat dikembangkan melalui usaha, dapat menyebabkan
-    ketahanan dan pencapaian yang lebih besar.
-
-    5. Teknik manajemen waktu, seperti
-    Teknik Pomodoro, dapat membantu meningkatkan produktivitas dan mengurangi kelelahan
-
-    6.
-    Pembelajaran seumur hidup, melalui kegiatan seperti kursus online dan workshop,
-    sangat penting untuk tetap relevan di job market yang cepat berubah.
-
-'
+  m_Text: "1. Setting SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound)
+    can significantly enhance personal and professional growth.\r\n2. Reading regularly
+    can improve empathy, cognitive function, and stress reduction.\r\n3. Practicing
+    gratitude daily has been shown to increase overall happiness and life satisfaction.\r\n4.
+    Developing a growth mindset, the belief that abilities can be developed through
+    effort, can lead to greater resilience and achievement.\r\n5. Time management
+    techniques, such as the Pomodoro Technique, can help increase productivity and
+    reduce burnout.\r\n6. Lifelong learning, through activities like online courses
+    and workshops, is essential for staying relevant in a rapidly changing job market.\r"
 --- !u!222 &1544707468
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25035,7 +24983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: gagal bertahan sebelum hari ke-7
+  m_Text: failed to survive before the 7th day
 --- !u!222 &1571110812
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25852,11 +25800,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "Pekerja 3: Lucia\n\r\nInformasi utama:\r\n- Jenis kelamin perempuan\r\n-
-    Tanggal Lahir: 9 Oktober 2000\r\n- Usia: 29\n\r\nTopik yang Ditugaskan:\r\n-
-    Fine Dining\r\n- Kesehatan Mental \r\n- Tren Sosial\n \r\nGaya menulis:\r\n-
-    Berbunga-bunga dan positif, dengan judul-judul yang mewah dan berlebihan.\r\n\nJam
-    kerja:\r\n- 16.00 - 20.00 lalu 22.00 - 00.00\r\n"
+  m_Text: "Worker 3: Lucia\n\r\nMain Information:\r\n- Gender: Female\r\n- Birth
+    Date: October 9th, 2000\r\n- Age: 29\r\n\r\nAssigned Topic:\r\n- Fine Dining
+    \r\n- Mental Health \r\n- Social Trends \r\n \r\nWriting Style:\r\n- Flowery
+    and positive, with extravagant and over-the-top titles.\r\n\nWork Hours:\r\n-
+    4 p.m - 8 p.m then 10 p.m - 12 a.m\r"
 --- !u!222 &1627992924
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26146,7 +26094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ya
+  m_Text: Yes
 --- !u!222 &1636734606
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26356,8 +26304,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.5899963, y: 51.5}
-  m_SizeDelta: {x: -56.22, y: -218.96}
+  m_AnchoredPosition: {x: -2.5899963, y: 49.880005}
+  m_SizeDelta: {x: -56.22, y: -215.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644244865
 MonoBehaviour:
@@ -26381,10 +26329,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9c2d1806f8fab3646bc77f7c0517ec79, type: 3}
-    m_FontSize: 6
+    m_FontSize: 7
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -26392,16 +26340,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "1. Kafein dapat meningkatkan kewaspadaan mental dan konsentrasi dengan
-    memblokir adenosin, neurotransmitter yang mempromosikan tidur.\r\n2. Asupan kafein
-    yang berlebihan dapat menyebabkan ketergantungan dan gejala putus zat, termasuk
-    sakit kepala dan mudah tersinggung.\r\n3. Minum kopi secara teratur dikaitkan
-    dengan risiko lebih rendah terkena penyakit Parkinson dan Alzheimer.\r\n4. Kafein
-    dapat sementara meningkatkan metabolisme dan meningkatkan pembakaran lemak, menjadikannya
-    bahan umum dalam suplemen penurunan berat badan.\r\n5. Teh dan dark chocolate
-    mengandung sejumlah kecil kafein yang dapat memberikan dorongan energi.\r\n6.
-    Beberapa orang lebih sensitif terhadap kafein karena variasi genetik yang memengaruhi
-    cara tubuh memetabolisme kafein.\r"
+  m_Text: "1. Caffeine can improve mental alertness and concentration by blocking
+    adenosine, a neurotransmitter that promotes sleep.\r\n2. Excessive caffeine intake
+    can lead to dependency and withdrawal symptoms, including headaches and irritability.\r\n3.
+    Drinking coffee regularly has been linked to a lower risk of developing Parkinson's
+    disease and Alzheimer's disease.\r\n4. Caffeine can temporarily boost metabolism
+    and increase fat burning, making it a common ingredient in weight loss supplements.\r\n5.
+    Dark chocolate contains small amounts of caffeine and can provide a gentle energy
+    boost.\r\n6. Some people are more sensitive to caffeine due to genetic variations
+    that affect how the body metabolizes it.\r"
 --- !u!222 &1644244866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26954,7 +26901,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Berhasil memecat alien dari perusahaan dan bertahan
+  m_Text: Succeed to fire the alien from the company and manage to survive
 --- !u!222 &1717037392
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28518,11 +28465,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "Pekerja 4: Desmond\n\r\nInformasi utama:\r\n- Jenis Kelamin: Laki-laki\r\n-
-    Tanggal Lahir: 18 November 2003\r\n- Usia: 26\n\r\nTopik yang Ditugaskan:\r\n-
-    Kafein \r\n- Kesehatan Fisik \r\n- Pengembangan Diri\n\r\nGaya menulis:\r\n-
-    Tepat dan ringkas, menggunakan istilah teknis dan metodis.\r\n\nJam kerja:\r\n-
-    16.00 - 18.00 lalu 20.00 - 00.00\r\n"
+  m_Text: "Worker 4: Desmond\n\r\nMain Information:\r\n- Gender: Male\r\n- Birth
+    Date: November 18th, 2003\r\n- Age: 26\r\n\nAssigned Topic:\r\n- Caffeine \r\n-
+    Physical Fitness \r\n- Personal Development \r\n\r\nWriting Style:\r\n- Precise
+    and concise, using technical and methodical terms.\r\n\nWork Hours:\r\n- 4 p.m
+    - 6 p.m then 8 p.m - 12 a.m\r\r\n"
 --- !u!222 &1803586803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28601,38 +28548,41 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Latar belakang pribadi:
+  m_Text: 'Personal Background:
 
-    - Relasi Pribadi: Keluarga yang erat, memiliki
-    lingkaran pertemanan yang besar.
-
-    - Pendidikan: Gelar Sarjana Jurnalisme
+    - Relationships: Close-knit family, often hosts
+    family gatherings. Large circle of friends from her time as a food influencer.
 
     -
-    Keterampilan Khusus Bekerja: Terampil sebagai penulis dan influencer makanan.
+    Education: Bachelor''s degree in Journalism
+
+    - Working Specific Skill: Skilled
+    as a famous food writer and influencer, known for her engaging style.
 
     -
-    Hobi: Bermain gitar, minum kopi, jalan-jalan.
+    Hobby: Playing guitar, exploring new coffee shops, traveling.
 
 
 
-    Pola Perilaku:
+    Behavioral
+    Patterns:
 
-    - Pola
-    Bicara: Santai, menggunakan bahasa gaul dan kekinian.
+    - Speech Pattern: Casual, uses slang and contemporary language.
 
-    - Emosi: Optimis dan
-    antusias.
-
+    -
+    Emotion: Generally upbeat and enthusiastic.
 
 
-    Kinerja dan Kebiasaan Kerja:
 
-    - Catatan Produktivitas: Agak
-    lambat, terkadang menyelesaikan pekerjaan 1 menit sebelum batas waktu.
+    Performance and Work Habits:
 
-    Cara
-    Menulis: Kasual dan menarik.'
+    -
+    Productivity Record: A bit slow, sometimes finishes the job 1 minute before deadline.
+
+    -
+    Document Styles: Casual and engaging.
+
+'
 --- !u!222 &1824421375
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29015,7 +28965,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Interogasi
+  m_Text: interrogate
 --- !u!222 &1840145118
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29173,9 +29123,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: Kebanyakan kebugaran dan membaca, tapi biasanya saya hanya bersantai dan
-    menonton apa pun yang ada di TV. Saya tidak benar-benar memiliki rutinitas yang
-    ketat dalam waktu luang saya, ini membantu saya mengurangi stres yang terakumulasi.
+  m_Text: "I usually just go with the flow. Trying to keep it simple and make it
+    as precise and concise as possible. People don\u2019t really want to read tons
+    of paragraphs just to get an info that can be summarized in 2 sentences, don\u2019t
+    you think?"
 --- !u!222 &1853934821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31811,7 +31762,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kafein
+  m_Text: Caffeine
 --- !u!222 &1978150353
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31938,36 +31889,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Latar belakang pribadi:
-
-    - Relasi Pribadi: Pendiam tapi dekat dengan
-    keluarga inti dan sahabat.
-
-    - Pendidikan: Gelar Master di bidang Psikologi
-
-    Keterampilan
-    Khusus Bekerja: Pakar kesehatan mental.
-
-    - Hobi: Membaca buku, meditasi,
-    hiking.
-
-
-    Pola Perilaku:
-
-    - Pola Bicara : Reflektif dan filosofis.
-
-    -
-    Emosi: Tenang, sangat fokus pada topik yang dia sukai.
-
-
-    Kinerja dan Kebiasaan
-    Kerja:
-
-    - Catatan Produktivitas: Konsisten memenuhi deadline, lebih suka
-    bekerja sendiri.
-
-    - Cara Menulis: Terperinci dan menyeluruh, sering memuat
-    referensi sejarah.'
+  m_Text: "Personal Background:\r\n- Relationships: Reserved but close to immediate
+    family, few but deep friendships.\r\n- Education: Master's degree in Psychology\r\n-
+    Working Specific Skill: Expert in mental wellness, incorporates psychological
+    insights into his articles.\r\n- Hobby: Reading books, meditating, hiking.\n\r\nBehavioral
+    Patterns:\r\n- Speech Pattern: Reflective and philosophical, often quotes famous
+    philosophers or psychologists.\r\n- Emotion: Calm and composed, intensely focused
+    on topics he\u2019s passionate about.\n\r\nPerformance and Work Habits:\r\n-
+    Productivity Record: Consistently meets deadlines, prefers working alone.\r\n-
+    Document Styles: Detailed and thorough, often includes references to historical
+    studies.\r\n"
 --- !u!222 &1982714564
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32062,6 +31993,7 @@ GameObject:
   - component: {fileID: 1996983912}
   - component: {fileID: 1996983914}
   - component: {fileID: 1996983913}
+  - component: {fileID: 1996983915}
   m_Layer: 5
   m_Name: ArticleImage
   m_TagString: Untagged
@@ -32086,7 +32018,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000030517578, y: 161.36995}
-  m_SizeDelta: {x: 439.84, y: 868.85}
+  m_SizeDelta: {x: 439.84, y: 322.74}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1996983913
 MonoBehaviour:
@@ -32108,7 +32040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2375d5e4396ef494cb052dc42395ceb5, type: 3}
+  m_Sprite: {fileID: -6034084666192169838, guid: c85b077a2e81b214897fc3e2e4f3c579, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -32126,6 +32058,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996983911}
   m_CullTransparentMesh: 1
+--- !u!114 &1996983915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996983911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbef7298f616b5b4a83326b59e46d6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1996983913}
 --- !u!1 &2005887148
 GameObject:
   m_ObjectHideFlags: 0
@@ -32262,7 +32207,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9c2d1806f8fab3646bc77f7c0517ec79, type: 3}
-    m_FontSize: 6
+    m_FontSize: 7
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -32273,27 +32218,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: '1. Olahraga teratur dapat secara signifikan mengurangi gejala depresi
-    dan kecemasan.
-
-    2. Meditasi terbukti meningkatkan substansi griseum di otak,
-    yang berhubungan dengan peningkatan memori dan pembelajaran.
-
-    3. Stres kronis
-    dapat menyebabkan penurunan ukuran hippocampus, bagian otak yang bertanggung
-    jawab untuk memori.
-
-    4. Tidur yang cukup sangat penting untuk kesehatan mental,
-    karena membantu mengatur suasana hati dan fungsi kognitif.
-
-    5. Terlibat dalam
-    kegiatan kreatif seperti melukis atau menulis dapat meningkatkan kesejahteraan
-    mental dan mengurangi stres.
-
-    6. Koneksi sosial dan hubungan yang mendukung
-    adalah prediktor kuat untuk kesehatan mental dan umur panjang.
-
-'
+  m_Text: "1. Regular exercise can significantly reduce symptoms of depression and
+    anxiety.\r\n2. Meditation has been shown to increase griseum matter in the brain,
+    which is associated with improved memory and learning.\r\n3. Chronic stress can
+    lead to a decrease in the size of the hippocampus, the part of the brain responsible
+    for memory.\r\n4. Adequate sleep is crucial for mental health, as it helps regulate
+    mood and cognitive function.\r\n5. Engaging in creative activities like painting
+    or writing can boost mental well-being and reduce stress.\r\n6. Social connections
+    and supportive relationships are strong predictors of mental health and longevity.\r"
 --- !u!222 &2007976500
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32817,7 +32749,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 55015d020587ee74381210b46072b3b1, type: 3}
   yapping_sound:
   - name: CEOYapping
-    clip: {fileID: 8300000, guid: 1f695f3b00a21f946bbb8038f93aba55, type: 3}
+    clip: {fileID: 8300000, guid: fefd3baed3fc21f41a38cc02d417c56d, type: 3}
   music_source: {fileID: 2136925056}
   background_source: {fileID: 503282855}
   sfx_source: {fileID: 1394022949}
@@ -33273,8 +33205,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Halo, ini Desmond dari departemen editorial. Saya membutuhkan akses ke
-    data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?
+  m_Text: Hello, this is Desmond from the editorial department. I need access to
+    the company's data for article creation. Could you please grant permission?
 --- !u!222 &2056897810
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33299,8 +33231,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: -10.75}
-  m_SizeDelta: {x: 303.26, y: 48.7}
+  m_AnchoredPosition: {x: 1.0475, y: -10.75}
+  m_SizeDelta: {x: 306.16, y: 48.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2058705717
 GameObject:
@@ -34399,10 +34331,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "Pekerja 1: Anna\n\r\nInformasi utama:\r\n- Jenis kelamin perempuan\r\n-
-    Tanggal Lahir : 14 Mei 2006\r\n- Usia: 23\n\r\nTopik yang Ditugaskan:\r\n- Kafein
-    \r\n- Fine Dining \r\n- Tren Sosial\n \r\nGaya menulis:\r\n- Trendi dan kasual,
-    ditujukan untuk audiens yang lebih muda\r\n\nJam kerja:\r\n- 16.00 - 22.00\r\n"
+  m_Text: "Worker 1: Anna\n\r\nMain Information:\r\n- Gender: Female\r\n- Birth Date:
+    May 14th, 2006\r\n- Age: 23\n\r\nAssigned Topic:\r\n- Caffeine\r\n- Fine Dining\r\n-
+    Social Trends\r\n \r\nWriting Style:\r\n- Trendy and casual, aimed at younger
+    audiences\r\n\nWork Hours:\r\n- 04.00 p.m - 10.00 p.m\r"
 --- !u!222 &2123405690
 CanvasRenderer:
   m_ObjectHideFlags: 0

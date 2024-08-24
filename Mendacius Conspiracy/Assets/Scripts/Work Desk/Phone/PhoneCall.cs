@@ -35,11 +35,11 @@ public class PhoneCall : MonoBehaviour, IDataManager
     // Worker Messages
     private Dictionary<string, string> messages = new Dictionary<string, string>()
     {
-        { "Anna", "Halo, ini Anna dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" },
-        { "Haris", "Halo, ini Haris dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" },
-        { "Lucia", "Halo, ini Lucia dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" },
-        { "Desmond", "Halo, ini Desmond dari departemen editorial. Saya membutuhkan akses ke data perusahaan untuk pembuatan sebuah artikel. Bisa tolong diberi izin?" },
-        { "CEO", "Panggilan masuk dari CEO Mata Elang" }
+        { "Anna", "Hello, this is Anna from the editorial department. I need access to the company's data for article creation. Could you please grant permission?" },
+        { "Haris", "Hello, this is Haris from the editorial department. I need access to the company's data for article creation. Could you please grant permission?" },
+        { "Lucia", "Hello, this is Lucia from the editorial department. I need access to the company's data for article creation. Could you please grant permission?" },
+        { "Desmond", "Hello, this is Desmond from the editorial department. I need access to the company's data for article creation. Could you please grant permission?" },
+        { "CEO", "Incoming call from the CEO of Eagle Eyes" }
     };
 
     private WorkingHoursData curr_worker;

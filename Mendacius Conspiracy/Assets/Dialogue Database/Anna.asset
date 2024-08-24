@@ -15,92 +15,91 @@ MonoBehaviour:
   character_name: Anna
   normal_state:
     responses:
-    - question: Apakah ada aktivitas yang kamu suka lakukan di waktu luang?
-      answer: Oh, saya suka banget cari-cari kedai kopi baru buat nongkrong. Kamu
-        udah coba yang baru di pusat kota? Tempatnya keren banget!
-      special_message: (Anna terlihat bersemangat saat berbicara tentang pengalamannya.)
-    - question: Bisakah kamu ceritakan tentang keluargamu??
-      answer: Kamu mau tahu tentang keluargaku? Menurutku kami sangat dekat. Kami
-        punya tradisi kumpul setiap hari Minggu untuk makan besar. Minggu lalu kami
-        barbeque-an dan seru banget!
-      special_message: (Anna berbicara dengan penuh kasih tentang keluarganya.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Ah, sejujurnya, aku sih gak masalah. Shift malam malah jadi suasana
-        baru buatku, apalagi aku jadi bisa eksplor tempat-tempat baru di siang hari.
-      special_message: (Anna tampak positif dan santai menanggapi tanggung jawab
-        shift malamnya.)
-    - question: Apakah ada topik yang kamu minati?
-      answer: Nulis tentang makanan itu passion aku. Dulu aku food influencer dan
-        cukup terkenal! Aku suka banget gimana makanan bisa menyatukan orang-orang
-        dan budaya.
-      special_message: (Anna terdengar sangat senang saat berbicara tentang hasratnya
-        dalam menulis tentang makanan.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Oh, tentang itu... Bisa kasih aku sedikit waktu lagi? Tenang aja, pasti
-        selesai sebelum deadlinenya.
-      special_message: (Sepertinya Anna belum menyelesaikan tugas hariannya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Baru aja kelar! Tepat waktu, seperti biasa.
-      special_message: (Anna terlihat lega dan bahagia telah menyelesaikan pekerjaannya.)
+    - question: Are there any activities you like to do in your free time?
+      answer: Oh, I absolutely love finding new coffee shops to hang out at. Have
+        you tried the new one downtown? It's amazing!
+      special_message: (Anna seems excited as she talks about her experience.)
+    - question: Can you tell me about your family?
+      answer: "You want to know about my family? I think we\u2019re super close.
+        We have this tradition where we all get together every Sunday for a big meal.
+        Last week we had a barbeque and it was really fun!"
+      special_message: (Anna speaks fondly of her family.)
+    - question: How do you feel about working on night shifts?
+      answer: Ah, to be honest, I don't mind. The night shift actually brings a new
+        atmosphere for me, especially since I can explore new places during the day.
+      special_message: (Anna seemed positive and relaxed in responding to her night
+        shift responsibilities.)
+    - question: Are there any topic you are interested in?
+      answer: Food writing is my passion, I used to be a food influencer and quite
+        a big one at that! I just love how it connects people and cultures.
+      special_message: (Anna sounds really happy when speaking about her passion
+        for food writing.)
+    - question: "Have you finished today\u2019s work?"
+      answer: "Ah about that\u2026 Can you please give me a bit more time? I assure
+        you it will be submitted before the deadline, don\u2019t worry about it!"
+      special_message: "(Seems like Anna hasn\u2019t finished her daily task yet.)"
+    - question: "Have you finished today\u2019s work?"
+      answer: Just wrapped it up! Right on time, as usual.
+      special_message: (Anna seems relieved and happy to have finished her work.)
   tired_state:
     responses:
-    - question: Apakah ada aktivitas yang kamu suka lakukan di waktu luang?
-      answer: Aku suka banget mengunjungi kedai kopi baru... tapi kadang-kadang,
-        aku cuma mau santai di rumah dan main gitar. Punya waktu sendiri bisa membantu
-        banget di hari-hari sibuk.
-      special_message: (Anna terlihat sangat tenang, tidak seperti biasanya.)
-    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
-      answer: Keluargaku? Kami sering kumpul. Kami punya tradisi kumpul setiap hari
-        Minggu untuk makan besar. Tapi belakangan ini, kerjaan bikin aku agak sibuk
-        jadi nggak bisa sering ketemu mereka.
-      special_message: Anna berbicara dengan penuh kasih tentang keluarganya, meskipun
-        dia tampak sedikit kecewa.
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Shift malam gak masalah sebenarnya, cuma kadang-kadang melelahkan aja,
-        aku jadi kurang fokus. Tapi gak apa deh, semangat tetap harus dipertahankan!
-      special_message: (Anna tampak lelah tapi tetap semangat tentang bekerja di
-        shift malam.)
-    - question: Apakah ada topik yang kamu minati?
-      answer: "Hmmm\u2026 menulis tentang makanan itu passion aku. Dulu aku food
-        influencer, dan... aku suka banget gimana makanan bisa menyatukan orang-orang
-        dan budaya. Tapi... aku selalu terbuka untuk belajar topik baru."
-      special_message: (Anna terdengar kurang fokus, mungkin dia merasa lelah?)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Uh, belum selesai. Masih butuh sedikit waktu lagi untuk merapikannya.
-      special_message: (Anna tampak lelah tetapi masih bekerja untuk menyelesaikan
-        tugasnya.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, akhirnya selesai. Butuh waktu sedikit lebih lama dari biasanya.
-      special_message: Anna terlihat kelelahan tetapi puas telah menyelesaikan pekerjaannya.
+    - question: Are there any activities you like to do in your free time?
+      answer: "I enjoy visiting new coffee shops\u2026 but sometimes, I just want
+        to relax at home and play the guitar. Having some time alone could really
+        help with busy days."
+      special_message: (Anna seems really calm, unlike her usual self.)
+    - question: Can you tell me about your family?
+      answer: My family? We get together often. We have this tradition where we all
+        get together every Sunday for a big meal. Though recently, work has kept
+        me a bit busy so I can't meet them as often.
+      special_message: (Anna speaks fondly of her family, though she seems to feel
+        slightly disappointed.)
+    - question: How do you feel about working on night shifts?
+      answer: The night shift isn't really a problem, it's just that sometimes it
+        gets tiring, and I lose focus. But it's okay, I still have to keep up the
+        enthusiasm!
+      special_message: (Anna looked tired but still enthusiastic about working the
+        night shift.)
+    - question: Are there any topic you are interested in?
+      answer: "Hmmm\u2026 food writing is my passion. I used to be a food influencer,
+        and... well, I really like how it connects people and cultures. Still\u2026
+        I'm always open to learning about new topics."
+      special_message: "(Anna sounds a bit out of it, maybe she\u2019s feeling tired?)"
+    - question: "Have you finished today\u2019s work?"
+      answer: Uh, not quite there yet. Still need a bit more time to wrap things
+        up.
+      special_message: (Anna seems tired but is still working on finishing her task.)
+    - question: "Have you finished today\u2019s work?"
+      answer: Yes, finally done. It took a bit longer than usual.
+      special_message: (Anna seems exhausted but satisfied with having completed
+        her work.)
   troll_state:
     responses:
-    - question: 'Apakah ada aktivitas yang kamu suka lakukan di waktu luang? '
-      answer: Aku suka menjelajahi kedai kopi baru. Ini cara yang bagus buat ngumpulin
-        bahan untuk artikelku dan memperluas pengetahuan tentang topik ini.
-      special_message: Anna tampak sangat tenang saat membicarakan hobinya, tidak
-        seperti biasanya yang penuh semangat.
-    - question: 'Bisakah kamu ceritakan tentang keluargamu?? '
-      answer: Keluarga? Kami dekat. Kami kumpul setiap Minggu, walaupun belakangan
-        aku sibuk kerja. Tapi nggak apa-apa, aku bisa ketemu mereka lain waktu, kerjaan
-        nomor satu.
-      special_message: (Respons Anna tampaknya sangat profesional, membedakan antara
-        waktu kerja dan waktu pribadi.)
-    - question: Bagaimana perasaanmu tentang bekerja di shift malam?
-      answer: Saya sama sekali tidak keberatan. Saya selalu menyelesaikan pekerjaan
-        secara efisien, kapanpun saya bekerja.
-      special_message: (Anna tampak bersedia melakukan shift malam tanpa keraguan.)
-    - question: Apakah ada topik yang kamu minati?
-      answer: Aku suka menulis tentang makanan. Tapi, kayaknya topik apapun bisa
-        menarik kalau didekati dengan cara yang tepat. Aku selalu terbuka buat belajar
-        hal-hal baru.
-      special_message: (Respon Anna kedengaran kosong, kurang semangat seperti biasanya.
-        Mungkin ada sesuatu yang mengganggunya?)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Aku belum sempat kerjain, tapi aku pastikan selesai segera.
-      special_message: (Anna tampak percaya diri tentang menyelesaikan tugasnya tepat
-        waktu.)
-    - question: Apakah kamu sudah menyelesaikan pekerjaan hari ini?
-      answer: Ya, aku udah selesai beberapa jam yang lalu. Selalu lebih cepat dari
-        jadwal.
-      special_message: (Anna terlihat sangat tenang, menyelesaikan tugas yang diberikan
-        bahkan sebelum batas waktu pengumpulan.)
+    - question: Are there any activities you like to do in your free time?
+      answer: I enjoy exploring new coffee shops. It's a good way to gather material
+        for my articles and broaden my knowledge on the topic.
+      special_message: (Anna seems really composed while discussing her hobby, unlike
+        her usual excitement.)
+    - question: Can you tell me about your family?
+      answer: "Family? We\u2019re close. We gather every Sunday, though recently
+        I've been busy with work. No worries though, I can always meet them some
+        other time, work comes first."
+      special_message: "(Anna\u2019s response seems really professional, differentiating
+        between work time and personal time.)"
+    - question: How do you feel about working on night shifts?
+      answer: I don't mind at all. I always complete my work efficiently, no matter
+        when I work.
+      special_message: (Anna seemed willing to do the night shift without hesitation.)
+    - question: Are there any topic you are interested in?
+      answer: "I really enjoy food writing. But any topic can be interesting if approached
+        the right way. I\u2019m always open to learn about new things."
+      special_message: "(Anna\u2019s response seems neutral, lacking her usual passion.
+        Perhaps something is bothering her?)"
+    - question: "Have you finished today\u2019s work?"
+      answer: "I haven\u2019t quite gotten to it yet, but I\u2019ll make sure it\u2019s
+        done soon."
+      special_message: (Anna seems confident about her finishing her task on time.)
+    - question: "Have you finished today\u2019s work?"
+      answer: Yes, I finished it hours ago. Always ahead of schedule.
+      special_message: (Anna appears really calm, finishing the given task even before
+        the submission deadline.)
