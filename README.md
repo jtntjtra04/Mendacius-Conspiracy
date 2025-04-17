@@ -1,39 +1,34 @@
 # Mendacius Conspiracy
 
 <p align="center">
-<img src="https://github.com/jtntjtra04/jtntjtra04/blob/fbf34f3b854cbdb98a730d708425711970028e9c/paracelsus_demo.gif" alt="Paracelsus Gameplay">
+<img src="https://github.com/jtntjtra04/jtntjtra04/blob/fe6df8bf2a389d19c809c617aa118f1e0c558aaa/mendacius_conspiracy_demo.gif" alt="Mendacius Conspiracy Gameplay">
 </p>
 
 ## 🔴 About This Project
-<p align="justify"Mendacius Conspiracy</p>
+<p align="justify">Mendacius Conspiracy is a game that was made for GEMASTIK 2024 competition. We developed this game for 1 month</p>
 
 <br>
 
 ## 📋 Project Info
 
-<b> Developed with Unity 2022 </b>
+<b> Developed with Unity 2023 </b>
 
 | **Role** | **Name** | **Development Time** 
 | - | - | - |
-| Team Manager & Co-Programmer | Tristan Chandra | 2 weeks |
-| Lead Game Programmer | Justin Ignatius Tjitra | 2 weeks |
-| Second Game Programmer | Dicky Dixon | 2 weeks |
-| Game Designer | Ray Hasmoro | 2 weeks |
-| Level Design & Co-Programmer | Bryan Kurniawan | 2 weeks |
-| Level Design & Sound Designer | Jason Koesmanggala | 2 weeks |
-| 2D Artist (Character)  | Keen Matheus | 2 weeks |
-| 2D Artist (Environment) | Muhammad Ryan Arrafi | 2 weeks |
+| Game Programmer | Justin Ignatius Tjitra | 1 month |
+| Game Designer | Bryan Kurniawan | 1 month |
+| Game Artist | Muhammad Ryan Arrafi | 1 month |
 
 <details>
-<summary> <b> My Contribution as (Lead Game programmer)</b> </summary>
+<summary> <b> My Contribution as (Game programmer)</b> </summary>
 
-- Game Movement
-- Elemental Reaction
+- Scene Movement
 - Core Mechanics
-- Enemy & Obstacle
-- Boss Mechanic
+- Puzzle Mechanics
+- Time and Health System
 - UI Navigation
 - Menu
+- Environment
 - Audio Programming
 - Bug Fixing
 
@@ -42,12 +37,12 @@
 <br>
 
 ## ♦️About Game
-<p align="justify">Paracelsus is a 2D combat platformer game with a pixelated artstyle that follows Celsus's journey to search 4 elemental spirits in the Tower of Aerulus. This is my first game and I contributed as a lead game programmer to make the movement, enemy, UI, and game mechanics such as puzzle, skills, elements, etc.</p>
+<p align="justify">Mendacius Conspiracy is a 2D horror simulation game where the player work as a new manager at the news company. The story takes time in 2030, an alien species named "Mendacius" came to infiltrate earth. They steal people's identities, blend in as ordinary citizens, and become difficult to recognize. Their goal is to create chaos using misinformation, hoaxes and propaganda, which has the potential to bring about world destruction. As a new manager, we have to stop them by clearing all the puzzle and solve the mysteries before it's too late.</p>
 
 <br>
 
 ## 🎮 Gameplay
-<p align="justify">The player have to venture in Tower of Aerulus and face tough enemies, solve puzzles, and make contracts with the spirits at the end of his journey.</p>
+<p align="justify">The player responsible for fact-checking articles before they are published. Throughout the week, players must search for hoax information, uncover hidden clues, and ultimately identify and reveal who Mendacius is hiding among the company's employees.</p>
 
 <br>
 
@@ -55,25 +50,12 @@
 
 |  Script       | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
-| `GameController.cs` | Responsible to control all the game system such as health, potion, elements, checkpoint, obstacle, spirit, etc |
-| `PlayerMovement.cs`  | Control the movement of the player|
-| `ElementSwitching.cs`  | Code for switch the player's element such as fire, water, wind, and earth |
-| `SwitchSkill.cs`  | Manages the switch skill logic |
-| `SkeletonAI.cs`  | Responsible for logic about the skeleton patrol and player detection |
-| `JumpEnemyAttack.cs`  | Manages to control boss mechanic such as player detection, boss movement, etc |
+| `Worker.cs` | Control all the worker mechanics and generate all the impostor randomly |
+| `WorkersData.cs`  | Manage the worker's databases |
+| `Credibility.cs`  | Control the credibility or health system |
+| `ActionPoint.cs`  | Control action point for the time system |
+| `SaveSystem.cs`  | To manage the save system mechanic in the game |
+| `ChangeScene.cs`  | Important code to control all the scenes in the game (change environtment) |
 | `etc`  |
 
 <br>
-
-## 🕹️ Controls
-
-| **Key Binding** | **Function** |
-| - | - |
-| W, A, S, D | Basic movement |
-| 1, 2, 3, 4 | Switch Element |
-| Left-Click | Attack |
-| Right-Click | Skill |
-| Space | Jump |
-
-<br>
-
